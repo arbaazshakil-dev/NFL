@@ -160,6 +160,7 @@
   .signal-value { border-left-color: var(--amber); }
   .signal-upset { border-left-color: var(--steel); }
   .signal-fade { border-left-color: var(--redflag); }
+  .signal-prop { border-left-color: #8B6FB3; }
 
   .signal-tag {
     font-weight: 600;
@@ -232,6 +233,10 @@ function renderGame(game) {
   }
   (game.scoring_fades || []).forEach(fade => {
     signals += `<div class="signal signal-fade"><span class="signal-tag">Scoring fade</span>${fade.team} implied ${fade.implied_total}pts, averaging ${fade.recent_avg} over last ${fade.games_used}</div>`;
+  });
+  (game.player_props || []).filter(p => p.is_value_bet).forEach(prop => {
+    const statLabel = prop.stat.replace('_', ' ');
+    signals += `<div class="signal signal-prop"><span class="signal-tag">Prop value</span>${prop.player} ${prop.side} ${prop.line} ${statLabel} (model ${prop.predicted_value}) &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}</div>`;
   });
 
   return `

@@ -20,15 +20,121 @@ from datetime import datetime, timezone
 import joblib
 import pandas as pd
 
-from odds_api import get_odds, american_to_implied_prob, remove_vig_two_way
+from odds_api import get_odds, get_player_props, american_to_implied_prob, remove_vig_two_way
 from edge_detection import (
     evaluate_market,
     evaluate_upset,
     evaluate_scoring_fade,
+    evaluate_prop_bet,
     calculate_implied_team_total,
     find_best_odds_across_books,
 )
 from train import predict_probabilities
+from train_props import PROP_FEATURES
+
+PROP_MARKET_TO_STAT = {
+    "player_pass_yds": "passing_yards",
+    "player_rush_yds": "rushing_yards",
+    "player_reception_yds": "receiving_yards",
+    "player_receptions": "receptions",
+}
+
+
+def load_props_model(path="nfl_props_model.pkl"):
+    try:
+        return joblib.load(path)
+    except FileNotFoundError:
+        return None
+
+
+def get_player_latest_features(player_features_df: pd.DataFrame, player_name: str, feature_cols: list[str]) -> dict | None:
+    """
+    Pulls a player's most recent rolling-feature row by display name.
+    """
+    rows = player_features_df[player_features_df["player_display_name"] == player_name]
+    rows = rows.sort_values(["season", "week"])
+    if rows.empty:
+        return None
+    latest = rows.iloc[-1]
+    if latest[feature_cols].isnull().any():
+        return None
+    return latest[feature_cols].to_dict()
+
+
+def run_player_props(props_bundle, player_features_df, event_id, home_team, away_team, game_label, api_key):
+    """
+    Fetches player prop odds for one game and evaluates each posted prop
+    against the trained per-stat models. Returns a list of prop signal dicts
+    for the dashboard, printing value bets as it goes.
+    """
+    results = []
+    if props_bundle is None:
+        return results
+
+    try:
+        event_odds = get_player_props("nfl", event_id, api_key)
+    except Exception as e:
+        print(f"  [props] could not fetch props for {game_label}: {e}")
+        return results
+
+    bookmakers = event_odds.get("bookmakers", [])
+    if not bookmakers:
+        return results
+
+    primary_book = bookmakers[0]
+
+    for market in primary_book.get("markets", []):
+        stat = PROP_MARKET_TO_STAT.get(market["key"])
+        if stat is None or stat not in props_bundle:
+            continue
+
+        # Group outcomes by player name to pair up Over/Under
+        by_player = {}
+        for outcome in market["outcomes"]:
+            player_name = outcome.get("description")
+            if not player_name:
+                continue
+            by_player.setdefault(player_name, {})[outcome["name"]] = outcome
+
+        model_info = props_bundle[stat]
+        feature_cols = model_info["features"]
+
+        for player_name, sides in by_player.items():
+            if "Over" not in sides or "Under" not in sides:
+                continue
+
+            player_feats = get_player_latest_features(player_features_df, player_name, feature_cols)
+            if player_feats is None:
+                continue
+
+            feature_row = pd.DataFrame([player_feats])
+            predicted_value = model_info["model"].predict(feature_row)[0]
+
+            line = sides["Over"]["point"]
+            over_odds = sides["Over"]["price"]
+            under_odds = sides["Under"]["price"]
+
+            signal = evaluate_prop_bet(
+                player_name, stat, predicted_value, model_info["std"],
+                line, over_odds, under_odds, primary_book["title"],
+            )
+
+            if signal.is_value_bet:
+                print(f"  >>> PROP VALUE: {player_name} {stat} {signal.side} {line} (model predicts {signal.predicted_value}), edge={signal.edge}")
+
+            results.append({
+                "player": player_name,
+                "stat": stat,
+                "line": line,
+                "predicted_value": signal.predicted_value,
+                "side": signal.side,
+                "edge": signal.edge,
+                "is_value_bet": signal.is_value_bet,
+                "odds": signal.odds,
+                "sportsbook": primary_book["title"],
+            })
+
+    return results
 
 
 def load_model(path="nfl_model.pkl"):
@@ -103,6 +209,14 @@ def run_predictions(api_key: str):
     feature_cols = bundle["feature_columns"]
 
     features_df = pd.read_parquet("nfl_game_features.parquet")
+
+    props_bundle = load_props_model()
+    try:
+        player_features_df = pd.read_parquet("nfl_player_features.parquet")
+    except FileNotFoundError:
+        player_features_df = None
+    if props_bundle is None or player_features_df is None:
+        print("[props] props model or player features not found — skipping player props this run\n")
 
     print("Fetching live NFL odds...")
     odds_data = get_odds("nfl", api_key)
@@ -214,6 +328,15 @@ def run_predictions(api_key: str):
                         })
 
         dashboard_games.append(game_entry)
+
+        if props_bundle is not None and player_features_df is not None:
+            prop_signals = run_player_props(
+                props_bundle, player_features_df, game["id"], home_team, away_team, game_label, api_key,
+            )
+            game_entry["player_props"] = prop_signals
+        else:
+            game_entry["player_props"] = []
+
         print()
 
     output = {
