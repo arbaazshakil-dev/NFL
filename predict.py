@@ -39,6 +39,23 @@ PROP_MARKET_TO_STAT = {
     "player_receptions": "receptions",
 }
 
+# nflverse schedule data uses team abbreviations (e.g. "KC"); The Odds API
+# uses full names (e.g. "Kansas City Chiefs"). This maps abbreviation to
+# full name so the two sources can be matched and merged correctly.
+NFL_TEAM_NAMES = {
+    "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
+    "BUF": "Buffalo Bills", "CAR": "Carolina Panthers", "CHI": "Chicago Bears",
+    "CIN": "Cincinnati Bengals", "CLE": "Cleveland Browns", "DAL": "Dallas Cowboys",
+    "DEN": "Denver Broncos", "DET": "Detroit Lions", "GB": "Green Bay Packers",
+    "HOU": "Houston Texans", "IND": "Indianapolis Colts", "JAX": "Jacksonville Jaguars",
+    "KC": "Kansas City Chiefs", "LA": "Los Angeles Rams", "LAC": "Los Angeles Chargers",
+    "LV": "Las Vegas Raiders", "MIA": "Miami Dolphins", "MIN": "Minnesota Vikings",
+    "NE": "New England Patriots", "NO": "New Orleans Saints", "NYG": "New York Giants",
+    "NYJ": "New York Jets", "PHI": "Philadelphia Eagles", "PIT": "Pittsburgh Steelers",
+    "SEA": "Seattle Seahawks", "SF": "San Francisco 49ers", "TB": "Tampa Bay Buccaneers",
+    "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
+}
+
 
 def load_props_model(path="nfl_props_model.pkl"):
     try:
@@ -200,6 +217,86 @@ def build_feature_row(features_df: pd.DataFrame, home_team: str, away_team: str,
     return pd.DataFrame([row])
 
 
+def load_injury_report(path="nfl_injuries.parquet") -> pd.DataFrame | None:
+    try:
+        injuries = pd.read_parquet(path)
+    except FileNotFoundError:
+        return None
+    if injuries.empty:
+        return None
+    return injuries
+
+
+def get_team_injury_report(injuries: pd.DataFrame, team: str) -> list[dict]:
+    """
+    Pulls the most recent week's injury designations for a team, limited to
+    players actually in question (Out, Doubtful, Questionable) — not the
+    full roster. Column names vary by nflverse release, so this checks for
+    the common variants defensively.
+    """
+    if injuries is None:
+        return []
+
+    team_col = next((c for c in ["team", "recent_team", "club_code"] if c in injuries.columns), None)
+    status_col = next((c for c in ["report_status", "game_status"] if c in injuries.columns), None)
+    name_col = next((c for c in ["full_name", "player_name", "player_display_name"] if c in injuries.columns), None)
+    pos_col = "position" if "position" in injuries.columns else None
+    week_col = "week" if "week" in injuries.columns else None
+
+    if not all([team_col, status_col, name_col]):
+        return []
+
+    team_rows = injuries[injuries[team_col] == team]
+    if week_col and not team_rows.empty:
+        latest_week = team_rows[week_col].max()
+        team_rows = team_rows[team_rows[week_col] == latest_week]
+
+    of_note = team_rows[team_rows[status_col].isin(["Out", "Doubtful", "Questionable"])]
+
+    report = []
+    for _, row in of_note.iterrows():
+        report.append({
+            "player": row[name_col],
+            "position": row[pos_col] if pos_col else None,
+            "status": row[status_col],
+        })
+    return report
+
+
+def get_upcoming_schedule(days_ahead: int = 9) -> list[dict]:
+    """
+    Pulls games from the schedule file that haven't been played yet and
+    kick off within the next `days_ahead` days. This is known well before
+    sportsbooks post odds, so it lets the dashboard show "who's playing"
+    even when predictions aren't available yet.
+    """
+    try:
+        schedules = pd.read_parquet("nfl_schedules.parquet")
+    except FileNotFoundError:
+        return []
+
+    schedules = schedules.copy()
+    schedules["gameday"] = pd.to_datetime(schedules["gameday"])
+
+    now = pd.Timestamp.now(tz="UTC").tz_localize(None)
+    cutoff = now + pd.Timedelta(days=days_ahead)
+
+    unplayed = schedules[schedules["home_score"].isna()]
+    upcoming = unplayed[(unplayed["gameday"] >= now.normalize()) & (unplayed["gameday"] <= cutoff)]
+
+    games = []
+    for _, row in upcoming.sort_values("gameday").iterrows():
+        home_abbr = row["home_team"]
+        away_abbr = row["away_team"]
+        games.append({
+            "home_team": NFL_TEAM_NAMES.get(home_abbr, home_abbr),
+            "away_team": NFL_TEAM_NAMES.get(away_abbr, away_abbr),
+            "gameday": row["gameday"].isoformat(),
+            "week": int(row["week"]) if pd.notna(row["week"]) else None,
+        })
+    return games
+
+
 def run_predictions(api_key: str):
     bundle = load_model()
     margin_model = bundle["margin_model"]
@@ -211,6 +308,7 @@ def run_predictions(api_key: str):
     features_df = pd.read_parquet("nfl_game_features.parquet")
 
     props_bundle = load_props_model()
+    injury_report_df = load_injury_report()
     try:
         player_features_df = pd.read_parquet("nfl_player_features.parquet")
     except FileNotFoundError:
@@ -288,7 +386,15 @@ def run_predictions(api_key: str):
             "high_confidence": None,
             "upset_watch": None,
             "scoring_fades": [],
+            "injury_report": {
+                "home": get_team_injury_report(injury_report_df, home_team),
+                "away": get_team_injury_report(injury_report_df, away_team),
+            },
         }
+
+        for side_label, team in [("home", home_team), ("away", away_team)]:
+            for injured in game_entry["injury_report"][side_label]:
+                print(f"  [injury] {team}: {injured['player']} ({injured['position']}) — {injured['status']}")
 
         if home_ml is not None and away_ml is not None:
             signal = evaluate_market(
@@ -338,6 +444,30 @@ def run_predictions(api_key: str):
             game_entry["player_props"] = []
 
         print()
+
+    # Add any scheduled games that don't have odds posted yet, so the
+    # dashboard shows the full upcoming slate rather than only games
+    # sportsbooks have already priced.
+    odds_matchups = {(g["home_team"], g["away_team"]) for g in dashboard_games}
+    upcoming_schedule = get_upcoming_schedule()
+    scheduled_pending = 0
+
+    for sched_game in upcoming_schedule:
+        pair = (sched_game["home_team"], sched_game["away_team"])
+        if pair in odds_matchups:
+            continue
+        dashboard_games.append({
+            "matchup": f"{sched_game['away_team']} @ {sched_game['home_team']}",
+            "home_team": sched_game["home_team"],
+            "away_team": sched_game["away_team"],
+            "commence_time": sched_game["gameday"],
+            "week": sched_game["week"],
+            "odds_pending": True,
+        })
+        scheduled_pending += 1
+
+    if scheduled_pending:
+        print(f"Added {scheduled_pending} upcoming game(s) awaiting posted odds\n")
 
     output = {
         "generated_at": datetime.now(timezone.utc).isoformat(),

@@ -162,6 +162,24 @@
   .signal-fade { border-left-color: var(--redflag); }
   .signal-prop { border-left-color: #8B6FB3; }
 
+  .injury-report {
+    margin-top: 14px;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  .injury-item {
+    font-size: 12px;
+    padding: 4px 9px;
+    background: rgba(244, 241, 234, 0.04);
+    color: var(--chalk-dim);
+  }
+
+  .injury-status-out { color: var(--redflag); }
+  .injury-status-doubtful { color: var(--amber); }
+  .injury-status-questionable { color: var(--steel); }
+
   .signal-tag {
     font-weight: 600;
     margin-right: 6px;
@@ -218,6 +236,19 @@ function renderGame(game) {
     ? new Date(game.commence_time).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
     : '';
 
+  if (game.odds_pending) {
+    return `
+      <div class="game-row">
+        <div class="matchup-line">
+          <span class="teams">${game.away_team} @ ${game.home_team}</span>
+          <span class="book">Week ${game.week || ''}</span>
+        </div>
+        <div class="kickoff">${kickoff}</div>
+        <div class="signal signal-upset" style="margin-top:10px;">Odds not posted yet — predictions will appear once a sportsbook prices this game.</div>
+      </div>
+    `;
+  }
+
   const homePct = Math.round(game.home_win_prob * 100);
   const awayPct = Math.round(game.away_win_prob * 100);
 
@@ -272,9 +303,28 @@ function renderGame(game) {
       </div>
 
       ${signals ? `<div class="signals">${signals}</div>` : ''}
+      ${renderInjuryReport(game)}
     </div>
   `;
 }
+
+function renderInjuryReport(game) {
+  const report = game.injury_report;
+  if (!report) return '';
+
+  const allEntries = [
+    ...(report.away || []).map(p => ({ ...p, team: game.away_team })),
+    ...(report.home || []).map(p => ({ ...p, team: game.home_team })),
+  ];
+
+  if (allEntries.length === 0) return '';
+
+  const items = allEntries.map(p => {
+    const statusClass = 'injury-status-' + p.status.toLowerCase();
+    return `<span class="injury-item">${p.team} — ${p.player}${p.position ? ' (' + p.position + ')' : ''}: <span class="${statusClass}">${p.status}</span></span>`;
+  }).join('');
+
+  return `<div class="injury-report">${items}</div>`;
 
 loadDashboard();
 </script>
