@@ -43,3 +43,9 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python predict.py
+
+      - name: Commit predictions.json
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Update predictions [automated]"
+          file_pattern: predictions.json
