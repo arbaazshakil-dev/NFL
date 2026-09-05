@@ -38,6 +38,15 @@ jobs:
       - name: Train model
         run: python train.py
 
+      - name: Fetch player data
+        run: python fetch_player_data.py
+
+      - name: Build player features
+        run: python player_features.py
+
+      - name: Train player props models
+        run: python train_props.py
+
       - name: Run predictions
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
