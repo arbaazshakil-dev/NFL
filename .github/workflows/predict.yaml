@@ -32,16 +32,14 @@ jobs:
         with:
           workflow: train.yml
           name: nfl-model
-          path: nfl/
+          path: .
 
       - name: Rebuild feature history
-        working-directory: nfl
         run: |
           python fetch_data.py
           python features.py
 
       - name: Run predictions
-        working-directory: nfl
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
         run: python predict.py
