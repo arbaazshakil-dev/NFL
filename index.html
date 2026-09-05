@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NFL Signal Board</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --turf: #0B2818;
+    --turf-line: #163A26;
+    --chalk: #F4F1EA;
+    --chalk-dim: #A9BBAE;
+    --amber: #E8A33D;
+    --steel: #6E93AC;
+    --redflag: #C24E4E;
+    --row-border: rgba(244, 241, 234, 0.09);
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--turf);
+    color: var(--chalk);
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+  }
+
+  header {
+    padding: 28px 20px 20px;
+    border-bottom: 2px solid var(--turf-line);
+  }
+
+  .eyebrow {
+    color: var(--amber);
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    margin-bottom: 6px;
+  }
+
+  h1 {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+    font-size: 34px;
+    margin: 0;
+    letter-spacing: 0.01em;
+  }
+
+  .updated {
+    color: var(--chalk-dim);
+    font-size: 13px;
+    margin-top: 8px;
+  }
+
+  main {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 8px 0 60px;
+  }
+
+  .empty-state {
+    margin: 60px 20px;
+    padding: 32px 24px;
+    border: 1px dashed var(--turf-line);
+    text-align: center;
+    color: var(--chalk-dim);
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .game-row {
+    padding: 20px;
+    border-bottom: 1px solid var(--row-border);
+  }
+
+  .matchup-line {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+  }
+
+  .teams {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  .book {
+    color: var(--chalk-dim);
+    font-size: 12px;
+  }
+
+  .kickoff {
+    color: var(--chalk-dim);
+    font-size: 13px;
+    margin-bottom: 14px;
+  }
+
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 4px;
+  }
+
+  .stat {
+    background: rgba(244, 241, 234, 0.04);
+    padding: 10px 12px;
+    border-left: 2px solid var(--turf-line);
+  }
+
+  .stat-label {
+    font-size: 11px;
+    color: var(--chalk-dim);
+    margin-bottom: 4px;
+  }
+
+  .stat-value {
+    font-family: 'Oswald', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .prob-bar {
+    display: flex;
+    height: 6px;
+    margin-top: 14px;
+    overflow: hidden;
+  }
+
+  .prob-away { background: var(--steel); }
+  .prob-home { background: var(--amber); }
+
+  .prob-labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: var(--chalk-dim);
+    margin-top: 5px;
+  }
+
+  .signals {
+    margin-top: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .signal {
+    font-size: 13px;
+    padding: 7px 10px;
+    border-left: 3px solid transparent;
+    background: rgba(244, 241, 234, 0.03);
+  }
+
+  .signal-value { border-left-color: var(--amber); }
+  .signal-upset { border-left-color: var(--steel); }
+  .signal-fade { border-left-color: var(--redflag); }
+
+  .signal-tag {
+    font-weight: 600;
+    margin-right: 6px;
+  }
+
+  @media (max-width: 480px) {
+    .stat-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+    .stat-value { font-size: 17px; }
+    h1 { font-size: 27px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="eyebrow">Week's Board</div>
+  <h1>NFL Signal Board</h1>
+  <div class="updated" id="updated-text">Loading...</div>
+</header>
+
+<main id="main-content">
+  <div class="empty-state">Loading predictions&hellip;</div>
+</main>
+
+<script>
+async function loadDashboard() {
+  const main = document.getElementById('main-content');
+  const updatedText = document.getElementById('updated-text');
+
+  try {
+    const res = await fetch('./predictions.json', { cache: 'no-store' });
+    if (!res.ok) throw new Error('not found');
+    const data = await res.json();
+
+    const generated = new Date(data.generated_at);
+    updatedText.textContent = 'Last updated ' + generated.toLocaleString('en-US', {
+      weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit'
+    });
+
+    if (!data.games || data.games.length === 0) {
+      main.innerHTML = '<div class="empty-state">No upcoming games with posted odds right now. Check back closer to kickoff.</div>';
+      return;
+    }
+
+    main.innerHTML = data.games.map(renderGame).join('');
+  } catch (err) {
+    main.innerHTML = '<div class="empty-state">No predictions yet. This page fills in after the first automated run finishes.</div>';
+    updatedText.textContent = '';
+  }
+}
+
+function renderGame(game) {
+  const kickoff = game.commence_time
+    ? new Date(game.commence_time).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
+    : '';
+
+  const homePct = Math.round(game.home_win_prob * 100);
+  const awayPct = Math.round(game.away_win_prob * 100);
+
+  let signals = '';
+  if (game.value_bet) {
+    signals += `<div class="signal signal-value"><span class="signal-tag">Value bet</span>${game.value_bet.side} moneyline &middot; edge ${(game.value_bet.edge * 100).toFixed(1)}pt &middot; ${game.value_bet.odds > 0 ? '+' : ''}${game.value_bet.odds}</div>`;
+  }
+  if (game.high_confidence) {
+    signals += `<div class="signal signal-value"><span class="signal-tag">High confidence</span>${game.high_confidence.side} win prob ${(game.high_confidence.prob * 100).toFixed(0)}%</div>`;
+  }
+  if (game.upset_watch) {
+    signals += `<div class="signal signal-upset"><span class="signal-tag">Upset watch</span>${game.upset_watch.underdog} (+${game.upset_watch.odds}) &middot; model ${(game.upset_watch.model_prob * 100).toFixed(0)}% vs market ${(game.upset_watch.market_prob * 100).toFixed(0)}%</div>`;
+  }
+  (game.scoring_fades || []).forEach(fade => {
+    signals += `<div class="signal signal-fade"><span class="signal-tag">Scoring fade</span>${fade.team} implied ${fade.implied_total}pts, averaging ${fade.recent_avg} over last ${fade.games_used}</div>`;
+  });
+
+  return `
+    <div class="game-row">
+      <div class="matchup-line">
+        <span class="teams">${game.away_team} @ ${game.home_team}</span>
+        <span class="book">${game.sportsbook || ''}</span>
+      </div>
+      <div class="kickoff">${kickoff}</div>
+
+      <div class="stat-grid">
+        <div class="stat">
+          <div class="stat-label">Predicted margin</div>
+          <div class="stat-value">${game.predicted_margin > 0 ? game.home_team : game.away_team} ${Math.abs(game.predicted_margin).toFixed(1)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Predicted total</div>
+          <div class="stat-value">${game.predicted_total.toFixed(1)}</div>
+        </div>
+        <div class="stat">
+          <div class="stat-label">Market line</div>
+          <div class="stat-value">${game.spread_line !== null ? game.spread_line : '—'} / ${game.total_line !== null ? game.total_line : '—'}</div>
+        </div>
+      </div>
+
+      <div class="prob-bar">
+        <div class="prob-away" style="width:${awayPct}%"></div>
+        <div class="prob-home" style="width:${homePct}%"></div>
+      </div>
+      <div class="prob-labels">
+        <span>${game.away_team} ${awayPct}%</span>
+        <span>${game.home_team} ${homePct}%</span>
+      </div>
+
+      ${signals ? `<div class="signals">${signals}</div>` : ''}
+    </div>
+  `;
+}
+
+loadDashboard();
+</script>
+
+</body>
+</html>
