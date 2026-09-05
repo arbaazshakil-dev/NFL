@@ -1,7 +1,9 @@
 name: Run NFL Predictions
 
 # Runs daily at 14:00 UTC (adjust to your timezone/needs) to check upcoming
-# games against live odds, plus manual trigger anytime.
+# games against live odds, plus manual trigger anytime. Trains a fresh model
+# each run (fast, ~30s) rather than depending on a separate workflow's
+# artifact — simpler and avoids cross-workflow permission issues.
 on:
   schedule:
     - cron: "0 14 * * *"
@@ -10,6 +12,9 @@ on:
 jobs:
   predict:
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
 
     steps:
       - name: Check out repo
@@ -24,20 +29,14 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      # Predictions need the trained model + feature history. Rather than
-      # retraining every day, we reuse the artifact from the most recent
-      # successful Train NFL Model run.
-      - name: Download latest trained model
-        uses: dawidd6/action-download-artifact@v6
-        with:
-          workflow: train.yml
-          name: nfl-model
-          path: .
+      - name: Fetch NFL data
+        run: python fetch_data.py
 
-      - name: Rebuild feature history
-        run: |
-          python fetch_data.py
-          python features.py
+      - name: Build features
+        run: python features.py
+
+      - name: Train model
+        run: python train.py
 
       - name: Run predictions
         env:
