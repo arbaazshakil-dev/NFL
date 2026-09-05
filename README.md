@@ -19,28 +19,31 @@ export ODDS_API_KEY="your_key_here"
 ## Pipeline (run in order)
 
 ```bash
-cd nfl
 python fetch_data.py      # pulls historical PBP + schedules, saves .parquet files
 python features.py        # builds rolling team-form features per game
 python train.py           # trains margin + total models, saves nfl_model.pkl
-```
-
-Then, for live predictions:
-
-```bash
-cd ../shared
-python odds_api.py        # test pulling live NFL odds
+python predict.py         # pulls live odds, runs predictions + edge/upset/fade signals
 ```
 
 ## What each file does
 
 | File | Purpose |
 |---|---|
-| `nfl/fetch_data.py` | Pulls historical play-by-play, schedules, weekly stats, injuries via `nfl_data_py` (free, no key) |
-| `nfl/features.py` | Builds trailing rolling-window EPA/success-rate features per team, merges into home-vs-away differential features per game |
-| `nfl/train.py` | Trains XGBoost regressors for margin and total, derives win/cover/over probabilities from a normal distribution around the prediction |
-| `shared/odds_api.py` | Pulls live NFL/CFB odds from The Odds API, converts American odds to implied probability |
-| `shared/edge_detection.py` | Compares model probability to no-vig market probability, flags value bets and high-confidence picks, finds best price across sportsbooks |
+| `fetch_data.py` | Pulls historical play-by-play, schedules, weekly stats, injuries via `nfl_data_py` (free, no key) |
+| `features.py` | Builds trailing rolling-window EPA/success-rate features per team, merges into home-vs-away differential features per game |
+| `train.py` | Trains XGBoost regressors for margin and total, derives win/cover/over probabilities from a normal distribution around the prediction |
+| `odds_api.py` | Pulls live NFL/CFB odds from The Odds API, converts American odds to implied probability |
+| `edge_detection.py` | Compares model probability to no-vig market probability, flags value bets, upset watches, and scoring fades, finds best price across sportsbooks |
+| `predict.py` | Ties it all together: loads the trained model, builds features for upcoming games, pulls live odds, prints all signals |
+
+## Automation (GitHub Actions)
+
+- `.github/workflows/train.yml` — retrains the model every Tuesday (after MNF), saves it as a build artifact
+- `.github/workflows/predict.yml` — runs daily, downloads the latest model, pulls live odds, prints predictions
+
+**Required setup:** add your Odds API key as a GitHub repo secret named `ODDS_API_KEY`
+(Settings → Secrets and variables → Actions → New repository secret). This is separate
+from your local `.env` file — GitHub Actions can't read `.env` since it never leaves your computer.
 
 ## Not built yet (next steps)
 

@@ -14,12 +14,9 @@ nfl_game_features.parquet already present (produced by train.py / features.py),
 and shared/ on your Python path.
 """
 
-import sys
 import os
 import joblib
 import pandas as pd
-
-sys.path.append(os.path.join(os.path.dirname(__file__), "..", "shared"))
 
 from odds_api import get_odds, american_to_implied_prob, remove_vig_two_way
 from edge_detection import (
