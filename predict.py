@@ -15,6 +15,8 @@ and shared/ on your Python path.
 """
 
 import os
+import json
+from datetime import datetime, timezone
 import joblib
 import pandas as pd
 
@@ -106,6 +108,8 @@ def run_predictions(api_key: str):
     odds_data = get_odds("nfl", api_key)
     print(f"Found {len(odds_data)} upcoming games\n")
 
+    dashboard_games = []
+
     for game in odds_data:
         home_team = game["home_team"]
         away_team = game["away_team"]
@@ -154,6 +158,24 @@ def run_predictions(api_key: str):
         print(f"  Predicted total:  {probs['predicted_total']}")
         print(f"  Home win prob: {probs['home_win_prob']}  |  Away win prob: {probs['away_win_prob']}")
 
+        game_entry = {
+            "matchup": game_label,
+            "home_team": home_team,
+            "away_team": away_team,
+            "commence_time": game.get("commence_time"),
+            "predicted_margin": probs["predicted_margin"],
+            "predicted_total": probs["predicted_total"],
+            "home_win_prob": probs["home_win_prob"],
+            "away_win_prob": probs["away_win_prob"],
+            "spread_line": spread_line,
+            "total_line": total_line,
+            "sportsbook": primary_book["title"],
+            "value_bet": None,
+            "high_confidence": None,
+            "upset_watch": None,
+            "scoring_fades": [],
+        }
+
         if home_ml is not None and away_ml is not None:
             signal = evaluate_market(
                 game_label, "moneyline", home_team, probs["home_win_prob"],
@@ -161,12 +183,20 @@ def run_predictions(api_key: str):
             )
             if signal.is_value_bet:
                 print(f"  >>> VALUE BET: {home_team} moneyline, edge={signal.edge}")
+                game_entry["value_bet"] = {"side": home_team, "edge": signal.edge, "odds": signal.best_odds}
             if signal.is_high_confidence:
                 print(f"  >>> HIGH CONFIDENCE: {home_team} win prob={signal.model_prob}")
+                game_entry["high_confidence"] = {"side": home_team, "prob": signal.model_prob}
 
             upset = evaluate_upset(game_label, home_team, away_team, probs["home_win_prob"], home_ml, away_ml, primary_book["title"])
             if upset:
                 print(f"  >>> UPSET WATCH: {upset.underdog} (+{upset.underdog_odds}) model gives {upset.model_underdog_win_prob} vs market {upset.market_underdog_implied_prob}")
+                game_entry["upset_watch"] = {
+                    "underdog": upset.underdog,
+                    "odds": upset.underdog_odds,
+                    "model_prob": upset.model_underdog_win_prob,
+                    "market_prob": upset.market_underdog_implied_prob,
+                }
 
         if spread_line is not None:
             for team, is_fav in [(home_team, spread_line < 0), (away_team, spread_line > 0)]:
@@ -176,8 +206,23 @@ def run_predictions(api_key: str):
                     fade = evaluate_scoring_fade(team, game_label, implied_total, recent_scores)
                     if fade.is_fading:
                         print(f"  >>> SCORING FADE: {team} implied {fade.implied_team_total} pts but averaging {fade.recent_scoring_avg} over last {fade.recent_games_used}")
+                        game_entry["scoring_fades"].append({
+                            "team": team,
+                            "implied_total": fade.implied_team_total,
+                            "recent_avg": fade.recent_scoring_avg,
+                            "games_used": fade.recent_games_used,
+                        })
 
+        dashboard_games.append(game_entry)
         print()
+
+    output = {
+        "generated_at": datetime.now(timezone.utc).isoformat(),
+        "games": dashboard_games,
+    }
+    with open("predictions.json", "w") as f:
+        json.dump(output, f, indent=2)
+    print(f"Wrote {len(dashboard_games)} games to predictions.json")
 
 
 if __name__ == "__main__":
