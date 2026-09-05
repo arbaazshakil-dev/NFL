@@ -273,16 +273,24 @@ def get_upcoming_schedule(days_ahead: int = 9) -> list[dict]:
     try:
         schedules = pd.read_parquet("nfl_schedules.parquet")
     except FileNotFoundError:
+        print("  [schedule] nfl_schedules.parquet not found")
         return []
 
     schedules = schedules.copy()
     schedules["gameday"] = pd.to_datetime(schedules["gameday"])
+    if schedules["gameday"].dt.tz is not None:
+        schedules["gameday"] = schedules["gameday"].dt.tz_localize(None)
 
-    now = pd.Timestamp.now(tz="UTC").tz_localize(None)
+    # Use a plain naive timestamp — the schedule's gameday column has no
+    # timezone info, so "now" needs to match that to compare correctly.
+    now = pd.Timestamp.now().normalize()
     cutoff = now + pd.Timedelta(days=days_ahead)
 
     unplayed = schedules[schedules["home_score"].isna()]
-    upcoming = unplayed[(unplayed["gameday"] >= now.normalize()) & (unplayed["gameday"] <= cutoff)]
+    upcoming = unplayed[(unplayed["gameday"] >= now) & (unplayed["gameday"] <= cutoff)]
+
+    print(f"  [schedule] {len(schedules)} total games, {len(unplayed)} unplayed, "
+          f"{len(upcoming)} within {days_ahead} days (window {now.date()} to {cutoff.date()})")
 
     games = []
     for _, row in upcoming.sort_values("gameday").iterrows():
