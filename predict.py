@@ -103,7 +103,32 @@ def get_player_latest_features(player_features_df: pd.DataFrame, player_name: st
     return latest[feature_cols].to_dict()
 
 
-def run_player_props(props_bundle, player_features_df, event_id, home_team, away_team, game_label, api_key):
+def load_player_weekly_stats(path="nfl_player_weekly_stats.parquet") -> pd.DataFrame | None:
+    try:
+        stats = pd.read_parquet(path)
+    except FileNotFoundError:
+        return None
+    if stats.empty:
+        return None
+    return stats
+
+
+def get_player_recent_stat_history(weekly_df: pd.DataFrame | None, player_name: str, stat_col: str, n_games: int = 5) -> list[float]:
+    """
+    Pulls a player's actual per-game values for one stat (e.g. receiving_yards)
+    over their last n_games — real game-log history, not a rolling average.
+    Used to back up a prop value bet with what the player has actually done
+    recently, rather than just the model's predicted number.
+    """
+    if weekly_df is None or stat_col not in weekly_df.columns:
+        return []
+    rows = weekly_df[weekly_df["player_display_name"] == player_name].sort_values(["season", "week"])
+    if rows.empty:
+        return []
+    return rows[stat_col].tail(n_games).tolist()
+
+
+def run_player_props(props_bundle, player_features_df, player_weekly_df, event_id, home_team, away_team, game_label, api_key):
     """
     Fetches player prop odds for one game and evaluates each posted prop
     against the trained per-stat models. Returns a list of prop signal dicts
@@ -174,6 +199,7 @@ def run_player_props(props_bundle, player_features_df, event_id, home_team, away
                 "is_value_bet": signal.is_value_bet,
                 "odds": signal.odds,
                 "sportsbook": primary_book["title"],
+                "recent_games": get_player_recent_stat_history(player_weekly_df, player_name, stat),
             })
 
     return results
@@ -350,6 +376,7 @@ def run_predictions(api_key: str):
         player_features_df = pd.read_parquet("nfl_player_features.parquet")
     except FileNotFoundError:
         player_features_df = None
+    player_weekly_df = load_player_weekly_stats()
     if props_bundle is None or player_features_df is None:
         print("[props] props model or player features not found — skipping player props this run\n")
 
@@ -494,7 +521,7 @@ def run_predictions(api_key: str):
 
         if props_bundle is not None and player_features_df is not None:
             prop_signals = run_player_props(
-                props_bundle, player_features_df, game["id"], home_team, away_team, game_label, api_key,
+                props_bundle, player_features_df, player_weekly_df, game["id"], home_team, away_team, game_label, api_key,
             )
             game_entry["player_props"] = prop_signals
         else:

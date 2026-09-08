@@ -485,6 +485,16 @@ function renderPropSignal(prop) {
   const sideClass = prop.side.toLowerCase() === 'over' ? 'over' : 'under';
   const predicted = round1(prop.predicted_value);
   const gap = round1(Math.abs(predicted - prop.line));
+  const recentGames = prop.recent_games || [];
+
+  const historyHtml = recentGames.length ? `
+    <div class="form-compare">
+      <div class="form-side">
+        <div class="form-side-label">${prop.player} — last ${recentGames.length} games (${statLabel})</div>
+        <div class="form-scores">${recentGames.map(v => `<span class="form-score">${round1(v)}</span>`).join('')}</div>
+      </div>
+    </div>
+  ` : '';
 
   return `
     <details class="signal-expand signal-prop-${sideClass}">
@@ -496,7 +506,8 @@ function renderPropSignal(prop) {
       </summary>
       <div class="signal-why">
         The model projects ${prop.player} for ${predicted} ${statLabel}, ${gap} ${sideClass === 'over' ? 'above' : 'below'}
-        the posted line of ${prop.line} — based on their recent rolling performance in this stat, not a single-game trend.
+        the posted line of ${prop.line}.
+        ${historyHtml}
       </div>
     </details>
   `;
