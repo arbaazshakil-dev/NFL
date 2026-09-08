@@ -39,8 +39,8 @@ PROP_MARKET_TO_STAT = {
     "player_receptions": "receptions",
 }
 
-# nflverse schedule data uses team abbreviations (e.g. "KC"); The Odds API
-# uses full names (e.g. "Kansas City Chiefs"). This maps abbreviation to
+# nflverse schedule/feature data uses team abbreviations (e.g. "KC"); The Odds
+# API uses full names (e.g. "Kansas City Chiefs"). This maps abbreviation to
 # full name so the two sources can be matched and merged correctly.
 NFL_TEAM_NAMES = {
     "ARI": "Arizona Cardinals", "ATL": "Atlanta Falcons", "BAL": "Baltimore Ravens",
@@ -55,6 +55,12 @@ NFL_TEAM_NAMES = {
     "SEA": "Seattle Seahawks", "SF": "San Francisco 49ers", "TB": "Tampa Bay Buccaneers",
     "TEN": "Tennessee Titans", "WAS": "Washington Commanders",
 }
+
+# Reverse lookup: full name (as returned by The Odds API) -> abbreviation
+# (as used in features_df / injuries / schedules). This is the missing
+# piece — without it, every feature/injury/score lookup below silently
+# returns nothing because "New England Patriots" never matches "NE".
+NFL_TEAM_ABBR = {v: k for k, v in NFL_TEAM_NAMES.items()}
 
 
 def load_props_model(path="nfl_props_model.pkl"):
@@ -158,13 +164,16 @@ def load_model(path="nfl_model.pkl"):
     return joblib.load(path)
 
 
-def get_team_recent_form(features_df: pd.DataFrame, team: str) -> dict | None:
+def get_team_recent_form(features_df: pd.DataFrame, team_abbr: str) -> dict | None:
     """
     Pulls the most recent rolling-feature row for a team — this represents
     their current form heading into their next game.
+
+    `team_abbr` must be in the same format used inside features_df (nflverse
+    abbreviations, e.g. "NE", "SEA") — NOT the full team name from the odds API.
     """
     team_rows = features_df[
-        (features_df["home_team"] == team) | (features_df["away_team"] == team)
+        (features_df["home_team"] == team_abbr) | (features_df["away_team"] == team_abbr)
     ].sort_values("gameday")
 
     if team_rows.empty:
@@ -173,29 +182,29 @@ def get_team_recent_form(features_df: pd.DataFrame, team: str) -> dict | None:
     return team_rows.iloc[-1].to_dict()
 
 
-def get_team_recent_scores(features_df: pd.DataFrame, team: str, n_games: int = 5) -> list[float]:
+def get_team_recent_scores(features_df: pd.DataFrame, team_abbr: str, n_games: int = 5) -> list[float]:
     """
     Pulls a team's actual points scored over their last n games, for the
-    scoring-fade check.
+    scoring-fade check. `team_abbr` must be in nflverse abbreviation format.
     """
-    home_games = features_df[features_df["home_team"] == team][["gameday", "home_score"]]
+    home_games = features_df[features_df["home_team"] == team_abbr][["gameday", "home_score"]]
     home_games = home_games.rename(columns={"home_score": "points"})
 
-    away_games = features_df[features_df["away_team"] == team][["gameday", "away_score"]]
+    away_games = features_df[features_df["away_team"] == team_abbr][["gameday", "away_score"]]
     away_games = away_games.rename(columns={"away_score": "points"})
 
     all_games = pd.concat([home_games, away_games]).sort_values("gameday")
     return all_games["points"].tail(n_games).tolist()
 
 
-def build_feature_row(features_df: pd.DataFrame, home_team: str, away_team: str, feature_cols: list[str]) -> pd.DataFrame | None:
+def build_feature_row(features_df: pd.DataFrame, home_team_abbr: str, away_team_abbr: str, feature_cols: list[str]) -> pd.DataFrame | None:
     """
     Builds a single-row feature dataframe for an UPCOMING game using each
     team's most recent rolling form. This mimics the diff_ features the
-    model was trained on.
+    model was trained on. Both team args must be nflverse abbreviations.
     """
-    home_form = get_team_recent_form(features_df, home_team)
-    away_form = get_team_recent_form(features_df, away_team)
+    home_form = get_team_recent_form(features_df, home_team_abbr)
+    away_form = get_team_recent_form(features_df, away_team_abbr)
 
     if home_form is None or away_form is None:
         return None
@@ -227,12 +236,13 @@ def load_injury_report(path="nfl_injuries.parquet") -> pd.DataFrame | None:
     return injuries
 
 
-def get_team_injury_report(injuries: pd.DataFrame, team: str) -> list[dict]:
+def get_team_injury_report(injuries: pd.DataFrame, team_abbr: str) -> list[dict]:
     """
     Pulls the most recent week's injury designations for a team, limited to
     players actually in question (Out, Doubtful, Questionable) — not the
     full roster. Column names vary by nflverse release, so this checks for
-    the common variants defensively.
+    the common variants defensively. `team_abbr` must be in nflverse
+    abbreviation format.
     """
     if injuries is None:
         return []
@@ -246,7 +256,7 @@ def get_team_injury_report(injuries: pd.DataFrame, team: str) -> list[dict]:
     if not all([team_col, status_col, name_col]):
         return []
 
-    team_rows = injuries[injuries[team_col] == team]
+    team_rows = injuries[injuries[team_col] == team_abbr]
     if week_col and not team_rows.empty:
         latest_week = team_rows[week_col].max()
         team_rows = team_rows[team_rows[week_col] == latest_week]
@@ -331,11 +341,18 @@ def run_predictions(api_key: str):
     dashboard_games = []
 
     for game in odds_data:
+        # The Odds API returns full team names ("New England Patriots").
+        # features_df / injuries / schedules use nflverse abbreviations
+        # ("NE"). Convert here, once, and use the abbreviations for every
+        # internal lookup — this is the fix for games always showing
+        # "not enough recent form data yet" even when data exists.
         home_team = game["home_team"]
         away_team = game["away_team"]
+        home_abbr = NFL_TEAM_ABBR.get(home_team, home_team)
+        away_abbr = NFL_TEAM_ABBR.get(away_team, away_team)
         game_label = f"{away_team} @ {home_team}"
 
-        feature_row = build_feature_row(features_df, home_team, away_team, feature_cols)
+        feature_row = build_feature_row(features_df, home_abbr, away_abbr, feature_cols)
         if feature_row is None:
             print(f"[skip] {game_label} — not enough recent form data yet")
             continue
@@ -395,8 +412,8 @@ def run_predictions(api_key: str):
             "upset_watch": None,
             "scoring_fades": [],
             "injury_report": {
-                "home": get_team_injury_report(injury_report_df, home_team),
-                "away": get_team_injury_report(injury_report_df, away_team),
+                "home": get_team_injury_report(injury_report_df, home_abbr),
+                "away": get_team_injury_report(injury_report_df, away_abbr),
             },
         }
 
@@ -427,9 +444,12 @@ def run_predictions(api_key: str):
                 }
 
         if spread_line is not None:
-            for team, is_fav in [(home_team, spread_line < 0), (away_team, spread_line > 0)]:
+            for team, team_abbr, is_fav in [
+                (home_team, home_abbr, spread_line < 0),
+                (away_team, away_abbr, spread_line > 0),
+            ]:
                 implied_total = calculate_implied_team_total(total_line, spread_line, is_fav)
-                recent_scores = get_team_recent_scores(features_df, team)
+                recent_scores = get_team_recent_scores(features_df, team_abbr)
                 if len(recent_scores) >= 2:
                     fade = evaluate_scoring_fade(team, game_label, implied_total, recent_scores)
                     if fade.is_fading:
