@@ -235,7 +235,20 @@
   .signal-value { border-left-color: var(--green); }
   .signal-upset { border-left-color: var(--steel); }
   .signal-fade { border-left-color: var(--redflag); }
-  .signal-prop { border-left-color: #8B6FB3; }
+  .signal-prop-over { border-left-color: var(--green); }
+  .signal-prop-under { border-left-color: var(--redflag); }
+
+  .signal-side {
+    font-weight: 600;
+  }
+  .signal-side-over { color: var(--green); }
+  .signal-side-under { color: var(--redflag); }
+
+  .signal-more {
+    font-size: 12px;
+    color: var(--chalk-dim);
+    padding: 4px 10px;
+  }
 
   .injury-report {
     margin-top: 14px;
@@ -292,7 +305,8 @@
     background: rgba(244, 241, 234, 0.03);
   }
 
-  .prop-row-value { border-left: 2px solid #8B6FB3; }
+  .prop-row-value.over { border-left: 2px solid var(--green); }
+  .prop-row-value.under { border-left: 2px solid var(--redflag); }
 
   .signal-tag {
     font-weight: 600;
@@ -360,6 +374,23 @@ function countSignals(game) {
   return { good, risk, total: good + risk };
 }
 
+// Rounds to 1 decimal place — model outputs come back as raw float32
+// (e.g. 259.3999938964844), which is noise beyond one decimal for display.
+function round1(n) {
+  return Math.round(n * 10) / 10;
+}
+
+function renderPropSignal(prop) {
+  const statLabel = prop.stat.replace('_', ' ');
+  const sideClass = prop.side.toLowerCase() === 'over' ? 'over' : 'under';
+  return `<div class="signal signal-prop-${sideClass}">
+    <span class="signal-tag">Prop value</span>${prop.player}
+    <span class="signal-side signal-side-${sideClass}">${prop.side}</span>
+    ${prop.line} ${statLabel} (model ${round1(prop.predicted_value)})
+    &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}
+  </div>`;
+}
+
 function renderGame(game, idx) {
   const kickoff = game.commence_time
     ? new Date(game.commence_time).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
@@ -402,21 +433,28 @@ function renderGame(game, idx) {
 
   let signals = '';
   if (game.value_bet) {
-    signals += `<div class="signal signal-value"><span class="signal-tag">Value bet</span>${game.value_bet.side} moneyline &middot; edge ${(game.value_bet.edge * 100).toFixed(1)}pt &middot; ${game.value_bet.odds > 0 ? '+' : ''}${game.value_bet.odds}</div>`;
+    signals += `<div class="signal signal-value"><span class="signal-tag">Value bet</span>${game.value_bet.side} moneyline &middot; edge ${round1(game.value_bet.edge * 100)}pt &middot; ${game.value_bet.odds > 0 ? '+' : ''}${game.value_bet.odds}</div>`;
   }
   if (game.high_confidence) {
-    signals += `<div class="signal signal-value"><span class="signal-tag">High confidence</span>${game.high_confidence.side} win prob ${(game.high_confidence.prob * 100).toFixed(0)}%</div>`;
+    signals += `<div class="signal signal-value"><span class="signal-tag">High confidence</span>${game.high_confidence.side} win prob ${Math.round(game.high_confidence.prob * 100)}%</div>`;
   }
   if (game.upset_watch) {
-    signals += `<div class="signal signal-upset"><span class="signal-tag">Upset watch</span>${game.upset_watch.underdog} (+${game.upset_watch.odds}) &middot; model ${(game.upset_watch.model_prob * 100).toFixed(0)}% vs market ${(game.upset_watch.market_prob * 100).toFixed(0)}%</div>`;
+    signals += `<div class="signal signal-upset"><span class="signal-tag">Upset watch</span>${game.upset_watch.underdog} (+${game.upset_watch.odds}) &middot; model ${Math.round(game.upset_watch.model_prob * 100)}% vs market ${Math.round(game.upset_watch.market_prob * 100)}%</div>`;
   }
   (game.scoring_fades || []).forEach(fade => {
-    signals += `<div class="signal signal-fade"><span class="signal-tag">Scoring fade</span>${fade.team} implied ${fade.implied_total}pts, averaging ${fade.recent_avg} over last ${fade.games_used}</div>`;
+    signals += `<div class="signal signal-fade"><span class="signal-tag">Scoring fade</span>${fade.team} implied ${round1(fade.implied_total)}pts, averaging ${round1(fade.recent_avg)} over last ${fade.games_used}</div>`;
   });
-  (game.player_props || []).filter(p => p.is_value_bet).forEach(prop => {
-    const statLabel = prop.stat.replace('_', ' ');
-    signals += `<div class="signal signal-prop"><span class="signal-tag">Prop value</span>${prop.player} ${prop.side} ${prop.line} ${statLabel} (model ${prop.predicted_value}) &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}</div>`;
+
+  const valueProps = (game.player_props || [])
+    .filter(p => p.is_value_bet)
+    .sort((a, b) => b.edge - a.edge);
+
+  valueProps.slice(0, 3).forEach(prop => {
+    signals += renderPropSignal(prop);
   });
+  if (valueProps.length > 3) {
+    signals += `<div class="signal-more">+ ${valueProps.length - 3} more prop value${valueProps.length - 3 === 1 ? '' : 's'} below</div>`;
+  }
 
   const countChip = total > 0
     ? `<span class="signal-count has-signals">${total} signal${total === 1 ? '' : 's'}</span>`
