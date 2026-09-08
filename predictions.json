@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T22:44:00.690530+00:00",
+  "generated_at": "2026-09-08T23:34:50.242127+00:00",
   "games": [
     {
       "matchup": "New England Patriots @ Seattle Seahawks",
@@ -51,7 +51,14 @@
           "edge": 0.09,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            238.0,
+            202.0,
+            261.0,
+            117.0,
+            0.0
+          ]
         },
         {
           "player": "Sam Darnold",
@@ -62,7 +69,14 @@
           "edge": 0.138,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            231.0,
+            246.0,
+            377.0,
+            166.0,
+            245.0
+          ]
         },
         {
           "player": "Jaxon Smith-Njigba",
@@ -73,7 +87,14 @@
           "edge": 0.23,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            82.0,
+            83.0,
+            95.0,
+            32.0,
+            9.0
+          ]
         },
         {
           "player": "A.J. Brown",
@@ -84,7 +105,14 @@
           "edge": 0.144,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            36.0,
+            10.0,
+            14.0,
+            96.0,
+            43.0
+          ]
         },
         {
           "player": "Romeo Doubs",
@@ -95,7 +123,14 @@
           "edge": 0.011,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            54.0,
+            40.0,
+            20.0,
+            58.0,
+            13.0
+          ]
         },
         {
           "player": "Hunter Henry",
@@ -106,7 +141,14 @@
           "edge": 0.266,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            44.0,
+            75.0,
+            25.0,
+            39.0,
+            0.0
+          ]
         },
         {
           "player": "Rashid Shaheed",
@@ -117,7 +159,14 @@
           "edge": 0.359,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            96.0,
+            0.0,
+            83.0,
+            86.0,
+            11.0
+          ]
         },
         {
           "player": "Cooper Kupp",
@@ -128,7 +177,14 @@
           "edge": 0.002,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            24.0,
+            29.0,
+            29.0,
+            61.0
+          ]
         },
         {
           "player": "Rhamondre Stevenson",
@@ -139,7 +195,14 @@
           "edge": 0.108,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            21.0,
+            16.0,
+            13.0,
+            0.0
+          ]
         },
         {
           "player": "Jaxon Smith-Njigba",
@@ -150,7 +213,14 @@
           "edge": 0.228,
           "is_value_bet": true,
           "odds": -124,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            10,
+            8,
+            3,
+            4
+          ]
         },
         {
           "player": "A.J. Brown",
@@ -161,7 +231,14 @@
           "edge": 0.14,
           "is_value_bet": true,
           "odds": -160,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            1,
+            2,
+            6,
+            3
+          ]
         },
         {
           "player": "Rhamondre Stevenson",
@@ -172,7 +249,14 @@
           "edge": 0.262,
           "is_value_bet": true,
           "odds": -139,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            3,
+            1,
+            1,
+            0
+          ]
         },
         {
           "player": "Romeo Doubs",
@@ -183,7 +267,14 @@
           "edge": 0.008,
           "is_value_bet": false,
           "odds": 115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            2,
+            7,
+            2
+          ]
         },
         {
           "player": "Hunter Henry",
@@ -194,7 +285,14 @@
           "edge": 0.341,
           "is_value_bet": true,
           "odds": 122,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            7,
+            4,
+            4,
+            0
+          ]
         },
         {
           "player": "Cooper Kupp",
@@ -205,7 +303,14 @@
           "edge": 0.095,
           "is_value_bet": true,
           "odds": 111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            3,
+            1,
+            1,
+            5
+          ]
         },
         {
           "player": "Rashid Shaheed",
@@ -216,7 +321,14 @@
           "edge": 0.307,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            0,
+            8,
+            4,
+            1
+          ]
         },
         {
           "player": "Rhamondre Stevenson",
@@ -227,7 +339,14 @@
           "edge": 0.067,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            13.0,
+            73.0,
+            69.0,
+            60.0,
+            1.0
+          ]
         },
         {
           "player": "Drake Maye",
@@ -238,7 +357,14 @@
           "edge": 0.002,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            59.0,
+            14.0,
+            30.0,
+            32.0,
+            0.0
+          ]
         },
         {
           "player": "Sam Darnold",
@@ -249,7 +375,14 @@
           "edge": 0.084,
           "is_value_bet": true,
           "odds": -116,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            11.0,
+            -3.0,
+            10.0,
+            19.0
+          ]
         },
         {
           "player": "Rashid Shaheed",
@@ -260,7 +393,14 @@
           "edge": 0.091,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            13.0,
+            0.0,
+            14.0,
+            0.0,
+            2.0
+          ]
         }
       ]
     },
@@ -301,7 +441,14 @@
           "edge": 0.321,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            160.0,
+            110.0,
+            189.0,
+            209.0,
+            324.0
+          ]
         },
         {
           "player": "Brock Purdy",
@@ -312,7 +459,14 @@
           "edge": 0.156,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            94.0,
+            325.0,
+            142.0,
+            313.0,
+            377.0
+          ]
         },
         {
           "player": "Puka Nacua",
@@ -323,7 +477,14 @@
           "edge": 0.113,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            97.0,
+            56.0,
+            129.0,
+            44.0,
+            97.0
+          ]
         },
         {
           "player": "Davante Adams",
@@ -334,7 +495,14 @@
           "edge": 0.369,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            109.0,
+            198.0,
+            68.0,
+            47.0,
+            88.0
+          ]
         },
         {
           "player": "Mike Evans",
@@ -345,7 +513,14 @@
           "edge": 0.335,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            159.0,
+            69.0,
+            97.0,
+            89.0,
+            92.0
+          ]
         },
         {
           "player": "Christian McCaffrey",
@@ -356,7 +531,14 @@
           "edge": 0.03,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            80.0,
+            68.0,
+            27.0,
+            37.0,
+            14.0
+          ]
         },
         {
           "player": "George Kittle",
@@ -367,7 +549,14 @@
           "edge": 0.222,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            151.0,
+            61.0,
+            106.0,
+            112.0,
+            27.0
+          ]
         },
         {
           "player": "Deebo Samuel",
@@ -378,7 +567,14 @@
           "edge": 0.151,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            20.0,
+            22.0,
+            16.0,
+            96.0,
+            5.0
+          ]
         },
         {
           "player": "Colby Parkinson",
@@ -389,7 +585,14 @@
           "edge": 0.115,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            0.0,
+            6.0,
+            13.0,
+            9.0
+          ]
         },
         {
           "player": "Tyler Higbee",
@@ -400,7 +603,14 @@
           "edge": 0.133,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            11.0,
+            9.0,
+            46.0,
+            58.0,
+            54.0
+          ]
         },
         {
           "player": "Demarcus Robinson",
@@ -411,7 +621,14 @@
           "edge": 0.079,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            0.0,
+            72.0,
+            23.0,
+            74.0
+          ]
         },
         {
           "player": "Kyren Williams",
@@ -422,7 +639,14 @@
           "edge": 0.045,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4.0,
+            7.0,
+            16.0,
+            16.0,
+            -1.0
+          ]
         },
         {
           "player": "Kyle Juszczyk",
@@ -433,7 +657,14 @@
           "edge": 0.1,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            3.0,
+            20.0,
+            9.0,
+            49.0
+          ]
         },
         {
           "player": "Puka Nacua",
@@ -444,7 +675,14 @@
           "edge": 0.182,
           "is_value_bet": true,
           "odds": -138,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            8,
+            10,
+            5,
+            6
+          ]
         },
         {
           "player": "Christian McCaffrey",
@@ -455,7 +693,14 @@
           "edge": 0.014,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8,
+            6,
+            4,
+            3,
+            2
+          ]
         },
         {
           "player": "Davante Adams",
@@ -466,7 +711,14 @@
           "edge": 0.339,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            9,
+            9,
+            7,
+            5,
+            6
+          ]
         },
         {
           "player": "Mike Evans",
@@ -477,7 +729,14 @@
           "edge": 0.315,
           "is_value_bet": true,
           "odds": -148,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            9,
+            5,
+            8,
+            9,
+            7
+          ]
         },
         {
           "player": "George Kittle",
@@ -488,7 +747,14 @@
           "edge": 0.128,
           "is_value_bet": true,
           "odds": -141,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            6,
+            4,
+            8,
+            8,
+            2
+          ]
         },
         {
           "player": "Deebo Samuel",
@@ -499,7 +765,14 @@
           "edge": 0.135,
           "is_value_bet": true,
           "odds": -152,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            3,
+            7,
+            1
+          ]
         },
         {
           "player": "Colby Parkinson",
@@ -510,7 +783,14 @@
           "edge": 0.136,
           "is_value_bet": true,
           "odds": -156,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            0,
+            1,
+            2,
+            2
+          ]
         },
         {
           "player": "Kyren Williams",
@@ -521,7 +801,14 @@
           "edge": 0.015,
           "is_value_bet": false,
           "odds": -147,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            1,
+            3,
+            3,
+            1
+          ]
         },
         {
           "player": "Tyler Higbee",
@@ -532,7 +819,14 @@
           "edge": 0.188,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            2,
+            5,
+            5,
+            7
+          ]
         },
         {
           "player": "Demarcus Robinson",
@@ -543,7 +837,14 @@
           "edge": 0.154,
           "is_value_bet": true,
           "odds": 156,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            0,
+            3,
+            1,
+            3
+          ]
         },
         {
           "player": "Kyle Juszczyk",
@@ -554,7 +855,14 @@
           "edge": 0.108,
           "is_value_bet": true,
           "odds": 173,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            1,
+            1,
+            1,
+            2
+          ]
         },
         {
           "player": "Christian McCaffrey",
@@ -565,7 +873,14 @@
           "edge": 0.047,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            80.0,
+            39.0,
+            79.0,
+            31.0,
+            53.0
+          ]
         },
         {
           "player": "Kyren Williams",
@@ -576,7 +891,14 @@
           "edge": 0.319,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            108.0,
+            122.0,
+            56.0,
+            76.0,
+            106.0
+          ]
         },
         {
           "player": "Blake Corum",
@@ -587,7 +909,14 @@
           "edge": 0.318,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            34.0,
+            5.0,
+            14.0,
+            -4.0,
+            10.0
+          ]
         },
         {
           "player": "Brock Purdy",
@@ -598,7 +927,14 @@
           "edge": 0.0,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4.0,
+            11.0,
+            3.0,
+            26.0,
+            12.0
+          ]
         },
         {
           "player": "Puka Nacua",
@@ -609,7 +945,14 @@
           "edge": 0.119,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            11.0,
+            0.0,
+            0.0,
+            7.0,
+            0.0
+          ]
         },
         {
           "player": "Matthew Stafford",
@@ -620,7 +963,14 @@
           "edge": 0.229,
           "is_value_bet": true,
           "odds": 119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            18.0,
+            -4.0,
+            16.0,
+            -1.0,
+            5.0
+          ]
         }
       ]
     },
@@ -681,7 +1031,14 @@
           "edge": 0.117,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            339.0,
+            289.0,
+            256.0,
+            112.0,
+            274.0
+          ]
         },
         {
           "player": "Tua Tagovailoa",
@@ -692,7 +1049,14 @@
           "edge": 0.241,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            317.0,
+            365.0,
+            331.0,
+            196.0,
+            215.0
+          ]
         },
         {
           "player": "Drake London",
@@ -703,7 +1067,14 @@
           "edge": 0.128,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            70.0,
+            53.0,
+            59.0,
+            106.0,
+            187.0
+          ]
         },
         {
           "player": "DK Metcalf",
@@ -714,7 +1085,14 @@
           "edge": 0.063,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            49.0,
+            28.0,
+            57.0,
+            42.0,
+            53.0
+          ]
         },
         {
           "player": "Kyle Pitts",
@@ -725,7 +1103,14 @@
           "edge": 0.307,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14.0,
+            28.0,
+            7.0,
+            44.0,
+            15.0
+          ]
         },
         {
           "player": "Bijan Robinson",
@@ -736,7 +1121,14 @@
           "edge": 0.224,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            9.0,
+            10.0,
+            9.0,
+            8.0,
+            3.0
+          ]
         },
         {
           "player": "Pat Freiermuth",
@@ -747,7 +1139,14 @@
           "edge": 0.247,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            22.0,
+            16.0,
+            60.0,
+            85.0,
+            15.0
+          ]
         },
         {
           "player": "Jahan Dotson",
@@ -758,7 +1157,14 @@
           "edge": 0.074,
           "is_value_bet": true,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5.0,
+            0.0,
+            94.0,
+            11.0,
+            42.0
+          ]
         },
         {
           "player": "Darnell Washington",
@@ -769,7 +1175,14 @@
           "edge": 0.065,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14.0,
+            10.0,
+            0.0,
+            8.0,
+            9.0
+          ]
         },
         {
           "player": "Jaylen Warren",
@@ -780,7 +1193,14 @@
           "edge": 0.055,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3.0,
+            44.0,
+            41.0,
+            0.0,
+            19.0
+          ]
         },
         {
           "player": "Rico Dowdle",
@@ -791,7 +1211,14 @@
           "edge": 0.068,
           "is_value_bet": true,
           "odds": -107,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            10.0,
+            0.0,
+            28.0,
+            4.0,
+            12.0
+          ]
         },
         {
           "player": "Drake London",
@@ -802,7 +1229,14 @@
           "edge": 0.032,
           "is_value_bet": false,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            3,
+            5,
+            7,
+            10
+          ]
         },
         {
           "player": "Kyle Pitts",
@@ -813,7 +1247,14 @@
           "edge": 0.34,
           "is_value_bet": true,
           "odds": -133,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            4,
+            1,
+            4,
+            2
+          ]
         },
         {
           "player": "Bijan Robinson",
@@ -824,7 +1265,14 @@
           "edge": 0.297,
           "is_value_bet": true,
           "odds": -144,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            1,
+            2,
+            3,
+            2
+          ]
         },
         {
           "player": "DK Metcalf",
@@ -835,7 +1283,14 @@
           "edge": 0.005,
           "is_value_bet": false,
           "odds": -101,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            3,
+            3,
+            3,
+            3
+          ]
         },
         {
           "player": "Jaylen Warren",
@@ -846,7 +1301,14 @@
           "edge": 0.001,
           "is_value_bet": false,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            5,
+            5,
+            0,
+            4
+          ]
         },
         {
           "player": "Pat Freiermuth",
@@ -857,7 +1319,14 @@
           "edge": 0.283,
           "is_value_bet": true,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            7,
+            8,
+            3
+          ]
         },
         {
           "player": "Darnell Washington",
@@ -868,7 +1337,14 @@
           "edge": 0.105,
           "is_value_bet": true,
           "odds": 140,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            1,
+            0,
+            1,
+            1
+          ]
         },
         {
           "player": "Jahan Dotson",
@@ -879,7 +1355,14 @@
           "edge": 0.089,
           "is_value_bet": true,
           "odds": -150,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            0,
+            7,
+            1,
+            2
+          ]
         },
         {
           "player": "Rico Dowdle",
@@ -890,7 +1373,14 @@
           "edge": 0.044,
           "is_value_bet": true,
           "odds": 106,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            0,
+            3,
+            1,
+            2
+          ]
         },
         {
           "player": "Bijan Robinson",
@@ -901,7 +1391,14 @@
           "edge": 0.407,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            92.0,
+            125.0,
+            94.0,
+            90.0,
+            170.0
+          ]
         },
         {
           "player": "Jaylen Warren",
@@ -912,7 +1409,14 @@
           "edge": 0.069,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            12.0,
+            48.0,
+            71.0,
+            21.0,
+            6.0
+          ]
         },
         {
           "player": "Rico Dowdle",
@@ -923,7 +1427,14 @@
           "edge": 0.344,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            131.0,
+            149.0,
+            23.0,
+            104.0,
+            72.0
+          ]
         },
         {
           "player": "Tua Tagovailoa",
@@ -934,7 +1445,14 @@
           "edge": 0.068,
           "is_value_bet": true,
           "odds": -107,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            -2.0,
+            6.0,
+            3.0,
+            0.0,
+            -1.0
+          ]
         },
         {
           "player": "Aaron Rodgers",
@@ -945,7 +1463,14 @@
           "edge": 0.165,
           "is_value_bet": true,
           "odds": -107,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            45.0,
+            6.0,
+            0.0,
+            0.0
+          ]
         }
       ]
     },
@@ -999,7 +1524,14 @@
           "edge": 0.112,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            205.0,
+            99.0,
+            264.0,
+            174.0,
+            190.0
+          ]
         },
         {
           "player": "Lamar Jackson",
@@ -1010,7 +1542,14 @@
           "edge": 0.037,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            207.0,
+            168.0,
+            217.0,
+            175.0,
+            254.0
+          ]
         },
         {
           "player": "Zay Flowers",
@@ -1021,7 +1560,14 @@
           "edge": 0.146,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            74.0,
+            53.0,
+            100.0,
+            31.0,
+            12.0
+          ]
         },
         {
           "player": "Alec Pierce",
@@ -1032,7 +1578,14 @@
           "edge": 0.039,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            39.0,
+            16.0,
+            0.0,
+            122.0,
+            57.0
+          ]
         },
         {
           "player": "Josh Downs",
@@ -1043,7 +1596,14 @@
           "edge": 0.023,
           "is_value_bet": false,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            27.0,
+            32.0,
+            61.0,
+            22.0,
+            94.0
+          ]
         },
         {
           "player": "Mark Andrews",
@@ -1054,7 +1614,14 @@
           "edge": 0.046,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            37.0,
+            68.0,
+            54.0,
+            27.0,
+            61.0
+          ]
         },
         {
           "player": "Rashod Bateman",
@@ -1065,7 +1632,14 @@
           "edge": 0.141,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14.0,
+            12.0,
+            76.0,
+            24.0,
+            66.0
+          ]
         },
         {
           "player": "Jonathan Taylor",
@@ -1076,7 +1650,14 @@
           "edge": 0.086,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7.0,
+            4.0,
+            0.0,
+            11.0,
+            3.0
+          ]
         },
         {
           "player": "Justice Hill",
@@ -1087,7 +1668,14 @@
           "edge": 0.172,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            15.0,
+            61.0,
+            0.0,
+            13.0,
+            7.0
+          ]
         },
         {
           "player": "Derrick Henry",
@@ -1098,7 +1686,14 @@
           "edge": 0.118,
           "is_value_bet": true,
           "odds": -107,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            27.0,
+            18.0,
+            23.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "player": "Zay Flowers",
@@ -1109,7 +1704,14 @@
           "edge": 0.135,
           "is_value_bet": true,
           "odds": 110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            6,
+            5,
+            2,
+            1
+          ]
         },
         {
           "player": "Josh Downs",
@@ -1120,7 +1722,14 @@
           "edge": 0.118,
           "is_value_bet": true,
           "odds": -157,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            3,
+            3,
+            10
+          ]
         },
         {
           "player": "Alec Pierce",
@@ -1131,7 +1740,14 @@
           "edge": 0.052,
           "is_value_bet": true,
           "odds": -135,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            2,
+            0,
+            6,
+            2
+          ]
         },
         {
           "player": "Mark Andrews",
@@ -1142,7 +1758,14 @@
           "edge": 0.106,
           "is_value_bet": true,
           "odds": -137,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            4,
+            2,
+            5
+          ]
         },
         {
           "player": "Jonathan Taylor",
@@ -1153,7 +1776,14 @@
           "edge": 0.33,
           "is_value_bet": true,
           "odds": 122,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            1,
+            0,
+            2,
+            1
+          ]
         },
         {
           "player": "Justice Hill",
@@ -1164,7 +1794,14 @@
           "edge": 0.112,
           "is_value_bet": true,
           "odds": -192,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            5,
+            0,
+            4,
+            2
+          ]
         },
         {
           "player": "Rashod Bateman",
@@ -1175,7 +1812,14 @@
           "edge": 0.082,
           "is_value_bet": true,
           "odds": -187,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            1,
+            5,
+            2,
+            4
+          ]
         },
         {
           "player": "Derrick Henry",
@@ -1186,7 +1830,14 @@
           "edge": 0.005,
           "is_value_bet": false,
           "odds": -237,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            2,
+            2,
+            0,
+            0
+          ]
         },
         {
           "player": "Derrick Henry",
@@ -1197,7 +1848,14 @@
           "edge": 0.306,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            162.0,
+            147.0,
+            138.0,
+            186.0,
+            84.0
+          ]
         },
         {
           "player": "Jonathan Taylor",
@@ -1208,7 +1866,14 @@
           "edge": 0.399,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            96.0,
+            107.0,
+            218.0,
+            125.0,
+            177.0
+          ]
         },
         {
           "player": "Lamar Jackson",
@@ -1219,7 +1884,14 @@
           "edge": 0.184,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            22.0,
+            87.0,
+            63.0,
+            81.0,
+            39.0
+          ]
         },
         {
           "player": "Daniel Jones",
@@ -1230,7 +1902,14 @@
           "edge": 0.28,
           "is_value_bet": true,
           "odds": -116,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            56.0,
+            20.0,
+            1.0,
+            54.0,
+            26.0
+          ]
         },
         {
           "player": "Justice Hill",
@@ -1241,7 +1920,14 @@
           "edge": 0.134,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            6.0,
+            7.0,
+            30.0,
+            12.0,
+            50.0
+          ]
         }
       ]
     },
@@ -1259,8 +1945,8 @@
       "sportsbook": "DraftKings",
       "value_bet": {
         "side": "Houston Texans",
-        "edge": 0.099,
-        "odds": -105
+        "edge": 0.105,
+        "odds": -102
       },
       "high_confidence": null,
       "upset_watch": null,
@@ -1273,24 +1959,38 @@
         {
           "player": "Josh Allen",
           "stat": "passing_yards",
-          "line": 222.5,
+          "line": 224.5,
           "predicted_value": 216.5,
           "side": "under",
-          "edge": 0.025,
+          "edge": 0.034,
           "is_value_bet": false,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            154.0,
+            182.0,
+            272.0,
+            127.0,
+            237.0
+          ]
         },
         {
           "player": "C.J. Stroud",
           "stat": "passing_yards",
-          "line": 220.5,
+          "line": 219.5,
           "predicted_value": 198.60000610351562,
           "side": "under",
-          "edge": 0.099,
+          "edge": 0.093,
           "is_value_bet": true,
-          "odds": -111,
-          "sportsbook": "DraftKings"
+          "odds": -112,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            244.0,
+            185.0,
+            50.0,
+            282.0,
+            245.0
+          ]
         },
         {
           "player": "Nico Collins",
@@ -1301,7 +2001,14 @@
           "edge": 0.195,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            60.0,
+            59.0,
+            38.0,
+            122.0,
+            81.0
+          ]
         },
         {
           "player": "DJ Moore",
@@ -1312,7 +2019,14 @@
           "edge": 0.351,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            68.0,
+            52.0,
+            18.0,
+            159.0,
+            64.0
+          ]
         },
         {
           "player": "Dalton Kincaid",
@@ -1323,29 +2037,50 @@
           "edge": 0.122,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            15.0,
+            24.0,
+            47.0,
+            11.0,
+            13.0
+          ]
         },
         {
           "player": "Khalil Shakir",
           "stat": "receiving_yards",
-          "line": 35.5,
+          "line": 36.5,
           "predicted_value": 45.0,
           "side": "over",
-          "edge": 0.135,
+          "edge": 0.129,
           "is_value_bet": true,
-          "odds": -115,
-          "sportsbook": "DraftKings"
+          "odds": -111,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            22.0,
+            25.0,
+            61.0,
+            67.0,
+            46.0
+          ]
         },
         {
           "player": "Dalton Schultz",
           "stat": "receiving_yards",
-          "line": 34.5,
+          "line": 33.5,
           "predicted_value": 31.100000381469727,
           "side": "under",
-          "edge": 0.048,
+          "edge": 0.043,
           "is_value_bet": true,
-          "odds": -114,
-          "sportsbook": "DraftKings"
+          "odds": -109,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            45.0,
+            21.0,
+            29.0,
+            23.0,
+            63.0
+          ]
         },
         {
           "player": "Kayshon Boutte",
@@ -1356,18 +2091,50 @@
           "edge": 0.225,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            41.0,
+            19.0,
+            95.0,
+            28.0,
+            117.0
+          ]
         },
         {
           "player": "Xavier Hutchinson",
           "stat": "receiving_yards",
-          "line": 17.5,
+          "line": 18.5,
           "predicted_value": 16.399999618530273,
           "side": "under",
-          "edge": 0.025,
+          "edge": 0.024,
           "is_value_bet": false,
-          "odds": -108,
-          "sportsbook": "DraftKings"
+          "odds": -116,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8.0,
+            21.0,
+            5.0,
+            34.0,
+            52.0
+          ]
+        },
+        {
+          "player": "James Cook",
+          "stat": "receiving_yards",
+          "line": 14.5,
+          "predicted_value": 10.699999809265137,
+          "side": "under",
+          "edge": 0.059,
+          "is_value_bet": true,
+          "odds": -111,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            0.0,
+            0.0,
+            15.0,
+            49.0
+          ]
         },
         {
           "player": "Dawson Knox",
@@ -1378,18 +2145,14 @@
           "edge": 0.074,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
-        },
-        {
-          "player": "James Cook",
-          "stat": "receiving_yards",
-          "line": 14.5,
-          "predicted_value": 10.699999809265137,
-          "side": "under",
-          "edge": 0.051,
-          "is_value_bet": true,
-          "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            22.0,
+            4.0,
+            38.0,
+            0.0,
+            7.0
+          ]
         },
         {
           "player": "David Montgomery",
@@ -1400,7 +2163,14 @@
           "edge": 0.242,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            36.0,
+            36.0,
+            33.0,
+            31.0,
+            0.0
+          ]
         },
         {
           "player": "Nico Collins",
@@ -1411,7 +2181,14 @@
           "edge": 0.147,
           "is_value_bet": true,
           "odds": -128,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            3,
+            5,
+            7,
+            5
+          ]
         },
         {
           "player": "Dalton Schultz",
@@ -1422,7 +2199,14 @@
           "edge": 0.166,
           "is_value_bet": true,
           "odds": 111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            2,
+            3,
+            2,
+            4
+          ]
         },
         {
           "player": "Khalil Shakir",
@@ -1433,7 +2217,14 @@
           "edge": 0.048,
           "is_value_bet": true,
           "odds": -134,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            6,
+            6,
+            6
+          ]
         },
         {
           "player": "DJ Moore",
@@ -1444,7 +2235,14 @@
           "edge": 0.394,
           "is_value_bet": true,
           "odds": -123,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            6,
+            4,
+            3,
+            9,
+            4
+          ]
         },
         {
           "player": "Dalton Kincaid",
@@ -1455,7 +2253,14 @@
           "edge": 0.113,
           "is_value_bet": true,
           "odds": -136,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            3,
+            1,
+            2
+          ]
         },
         {
           "player": "James Cook",
@@ -1466,7 +2271,14 @@
           "edge": 0.169,
           "is_value_bet": true,
           "odds": -159,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            0,
+            0,
+            3,
+            3
+          ]
         },
         {
           "player": "Xavier Hutchinson",
@@ -1477,7 +2289,14 @@
           "edge": 0.093,
           "is_value_bet": true,
           "odds": -195,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            2,
+            1,
+            1,
+            4
+          ]
         },
         {
           "player": "Kayshon Boutte",
@@ -1488,7 +2307,14 @@
           "edge": 0.252,
           "is_value_bet": true,
           "odds": -158,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            2,
+            5,
+            4,
+            7
+          ]
         },
         {
           "player": "David Montgomery",
@@ -1499,7 +2325,14 @@
           "edge": 0.216,
           "is_value_bet": true,
           "odds": -124,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            5,
+            4,
+            0
+          ]
         },
         {
           "player": "Dawson Knox",
@@ -1510,18 +2343,32 @@
           "edge": 0.082,
           "is_value_bet": true,
           "odds": -105,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            1,
+            2,
+            1,
+            1
+          ]
         },
         {
           "player": "James Cook",
           "stat": "rushing_yards",
-          "line": 73.5,
+          "line": 74.5,
           "predicted_value": 67.4000015258789,
           "side": "under",
-          "edge": 0.087,
+          "edge": 0.101,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            53.0,
+            28.0,
+            120.0,
+            67.0,
+            85.0
+          ]
         },
         {
           "player": "David Montgomery",
@@ -1529,10 +2376,17 @@
           "line": 54.5,
           "predicted_value": 56.0,
           "side": "over",
-          "edge": 0.017,
+          "edge": 0.026,
           "is_value_bet": false,
-          "odds": -114,
-          "sportsbook": "DraftKings"
+          "odds": -110,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            37.0,
+            88.0,
+            51.0,
+            4.0,
+            28.0
+          ]
         },
         {
           "player": "Josh Allen",
@@ -1540,10 +2394,17 @@
           "line": 32.5,
           "predicted_value": 37.20000076293945,
           "side": "over",
-          "edge": 0.068,
+          "edge": 0.061,
           "is_value_bet": true,
-          "odds": -111,
-          "sportsbook": "DraftKings"
+          "odds": -115,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            30.0,
+            17.0,
+            46.0,
+            20.0,
+            39.0
+          ]
         },
         {
           "player": "C.J. Stroud",
@@ -1551,10 +2412,17 @@
           "line": 9.5,
           "predicted_value": 18.5,
           "side": "over",
-          "edge": 0.129,
+          "edge": 0.115,
           "is_value_bet": true,
-          "odds": -109,
-          "sportsbook": "DraftKings"
+          "odds": -116,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            23.0,
+            7.0,
+            0.0,
+            42.0,
+            42.0
+          ]
         }
       ]
     },
@@ -1568,19 +2436,12 @@
       "home_win_prob": 0.195,
       "away_win_prob": 0.805,
       "spread_line": 3.0,
-      "total_line": 47.5,
+      "total_line": 46.5,
       "sportsbook": "DraftKings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": null,
-      "scoring_fades": [
-        {
-          "team": "Carolina Panthers",
-          "implied_total": 22.2,
-          "recent_avg": 19.0,
-          "games_used": 5
-        }
-      ],
+      "scoring_fades": [],
       "injury_report": {
         "home": [],
         "away": []
@@ -1589,57 +2450,92 @@
         {
           "player": "Caleb Williams",
           "stat": "passing_yards",
-          "line": 229.5,
+          "line": 225.5,
           "predicted_value": 213.0,
           "side": "under",
-          "edge": 0.072,
+          "edge": 0.054,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            134.0,
+            191.0,
+            334.0,
+            122.0,
+            148.0
+          ]
         },
         {
           "player": "Bryce Young",
           "stat": "passing_yards",
-          "line": 210.5,
+          "line": 204.5,
           "predicted_value": 221.6999969482422,
           "side": "over",
-          "edge": 0.05,
+          "edge": 0.077,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            191.0,
+            219.0,
+            158.0,
+            203.0,
+            251.0
+          ]
         },
         {
           "player": "Rome Odunze",
           "stat": "receiving_yards",
-          "line": 44.5,
+          "line": 43.5,
           "predicted_value": 39.0,
           "side": "under",
-          "edge": 0.082,
+          "edge": 0.067,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            42.0,
+            39.0,
+            77.0,
+            15.0,
+            18.0
+          ]
         },
         {
           "player": "Jalen Coker",
           "stat": "receiving_yards",
-          "line": 39.5,
+          "line": 38.5,
           "predicted_value": 38.099998474121094,
           "side": "under",
-          "edge": 0.017,
+          "edge": 0.006,
           "is_value_bet": false,
-          "odds": -114,
-          "sportsbook": "DraftKings"
+          "odds": -112,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            41.0,
+            110.0,
+            8.0,
+            35.0,
+            62.0
+          ]
         },
         {
           "player": "Xavier Legette",
           "stat": "receiving_yards",
-          "line": 18.5,
+          "line": 17.5,
           "predicted_value": 44.099998474121094,
           "side": "over",
-          "edge": 0.34,
+          "edge": 0.341,
           "is_value_bet": true,
-          "odds": -110,
-          "sportsbook": "DraftKings"
+          "odds": -114,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            53.0,
+            39.0,
+            7.0,
+            28.0,
+            30.0
+          ]
         },
         {
           "player": "Kalif Raymond",
@@ -1650,7 +2546,14 @@
           "edge": 0.06,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            12.0,
+            30.0,
+            0.0,
+            11.0,
+            37.0
+          ]
         },
         {
           "player": "Cole Kmet",
@@ -1658,10 +2561,35 @@
           "line": 15.5,
           "predicted_value": 28.600000381469727,
           "side": "over",
-          "edge": 0.19,
+          "edge": 0.198,
           "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "DraftKings"
+          "odds": -109,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            64.0,
+            26.0,
+            14.0,
+            9.0,
+            3.0
+          ]
+        },
+        {
+          "player": "Tommy Tremble",
+          "stat": "receiving_yards",
+          "line": 14.5,
+          "predicted_value": 25.299999237060547,
+          "side": "over",
+          "edge": 0.153,
+          "is_value_bet": true,
+          "odds": -115,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            77.0,
+            3.0,
+            15.0,
+            32.0,
+            30.0
+          ]
         },
         {
           "player": "Jalen Coker",
@@ -1669,32 +2597,71 @@
           "line": 3.5,
           "predicted_value": 2.9000000953674316,
           "side": "under",
-          "edge": 0.194,
+          "edge": 0.177,
           "is_value_bet": true,
-          "odds": 115,
-          "sportsbook": "DraftKings"
+          "odds": 107,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            4,
+            2,
+            2,
+            7
+          ]
         },
         {
           "player": "Rome Odunze",
           "stat": "receptions",
           "line": 3.5,
           "predicted_value": 3.200000047683716,
-          "side": "under",
-          "edge": 0.005,
+          "side": "over",
+          "edge": 0.012,
           "is_value_bet": false,
-          "odds": -141,
-          "sportsbook": "DraftKings"
+          "odds": 119,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            4,
+            1,
+            2
+          ]
         },
         {
           "player": "Xavier Legette",
           "stat": "receptions",
-          "line": 2.5,
+          "line": 1.5,
           "predicted_value": 3.9000000953674316,
           "side": "over",
-          "edge": 0.391,
+          "edge": 0.274,
           "is_value_bet": true,
-          "odds": 150,
-          "sportsbook": "DraftKings"
+          "odds": -194,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            2,
+            5,
+            3
+          ]
+        },
+        {
+          "player": "Tommy Tremble",
+          "stat": "receptions",
+          "line": 1.5,
+          "predicted_value": 2.4000000953674316,
+          "side": "over",
+          "edge": 0.075,
+          "is_value_bet": true,
+          "odds": -177,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            1,
+            2,
+            3,
+            2
+          ]
         },
         {
           "player": "Cole Kmet",
@@ -1705,7 +2672,14 @@
           "edge": 0.205,
           "is_value_bet": true,
           "odds": -139,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            3,
+            1,
+            2,
+            2
+          ]
         },
         {
           "player": "Kalif Raymond",
@@ -1716,7 +2690,14 @@
           "edge": 0.1,
           "is_value_bet": true,
           "odds": 103,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            2,
+            0,
+            1,
+            3
+          ]
         },
         {
           "player": "Caleb Williams",
@@ -1727,7 +2708,14 @@
           "edge": 0.013,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            27.0,
+            3.0,
+            34.0,
+            37.0,
+            10.0
+          ]
         },
         {
           "player": "Bryce Young",
@@ -1738,7 +2726,14 @@
           "edge": 0.111,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            29.0,
+            12.0,
+            68.0,
+            8.0,
+            24.0
+          ]
         }
       ]
     },
@@ -1799,7 +2794,14 @@
           "edge": 0.003,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            369.0,
+            271.0,
+            252.0,
+            412.0,
+            277.0
+          ]
         },
         {
           "player": "Baker Mayfield",
@@ -1810,7 +2812,14 @@
           "edge": 0.161,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            288.0,
+            303.0,
+            359.0,
+            221.0,
+            185.0
+          ]
         },
         {
           "player": "Ja'Marr Chase",
@@ -1821,7 +2830,14 @@
           "edge": 0.084,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            177.0,
+            94.0,
+            97.0,
+            102.0,
+            96.0
+          ]
         },
         {
           "player": "Tee Higgins",
@@ -1832,7 +2848,14 @@
           "edge": 0.089,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            23.0,
+            88.0,
+            58.0,
+            131.0,
+            53.0
+          ]
         },
         {
           "player": "Chris Godwin",
@@ -1843,7 +2866,14 @@
           "edge": 0.337,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            53.0,
+            69.0,
+            64.0,
+            125.0,
+            65.0
+          ]
         },
         {
           "player": "Jalen McMillan",
@@ -1854,7 +2884,14 @@
           "edge": 0.23,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            75.0,
+            57.0,
+            51.0,
+            74.0,
+            41.0
+          ]
         },
         {
           "player": "Cade Otton",
@@ -1865,7 +2902,14 @@
           "edge": 0.096,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            30.0,
+            20.0,
+            70.0,
+            24.0,
+            32.0
+          ]
         },
         {
           "player": "Chase Brown",
@@ -1876,7 +2920,14 @@
           "edge": 0.187,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            30.0,
+            65.0,
+            16.0,
+            18.0,
+            24.0
+          ]
         },
         {
           "player": "Mike Gesicki",
@@ -1887,7 +2938,14 @@
           "edge": 0.274,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            24.0,
+            37.0,
+            14.0,
+            86.0,
+            68.0
+          ]
         },
         {
           "player": "Bucky Irving",
@@ -1898,7 +2956,14 @@
           "edge": 0.081,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            -4.0,
+            24.0,
+            77.0,
+            -5.0,
+            6.0
+          ]
         },
         {
           "player": "Samaje Perine",
@@ -1909,7 +2974,14 @@
           "edge": 0.134,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            20.0,
+            13.0,
+            0.0,
+            17.0,
+            0.0
+          ]
         },
         {
           "player": "Ja'Marr Chase",
@@ -1920,7 +2992,14 @@
           "edge": 0.066,
           "is_value_bet": true,
           "odds": -136,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14,
+            9,
+            6,
+            9,
+            10
+          ]
         },
         {
           "player": "Tee Higgins",
@@ -1931,7 +3010,14 @@
           "edge": 0.125,
           "is_value_bet": true,
           "odds": -148,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            5,
+            8,
+            11,
+            4
+          ]
         },
         {
           "player": "Chris Godwin",
@@ -1942,7 +3028,14 @@
           "edge": 0.372,
           "is_value_bet": true,
           "odds": -144,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            6,
+            6,
+            5,
+            11,
+            7
+          ]
         },
         {
           "player": "Chase Brown",
@@ -1953,7 +3046,14 @@
           "edge": 0.015,
           "is_value_bet": false,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            6,
+            3,
+            3,
+            4
+          ]
         },
         {
           "player": "Cade Otton",
@@ -1964,7 +3064,14 @@
           "edge": 0.035,
           "is_value_bet": false,
           "odds": -152,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            4,
+            3,
+            2,
+            2
+          ]
         },
         {
           "player": "Jalen McMillan",
@@ -1975,7 +3082,14 @@
           "edge": 0.21,
           "is_value_bet": true,
           "odds": 136,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            5,
+            5,
+            5,
+            2
+          ]
         },
         {
           "player": "Mike Gesicki",
@@ -1986,7 +3100,14 @@
           "edge": 0.277,
           "is_value_bet": true,
           "odds": 119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            2,
+            10,
+            8
+          ]
         },
         {
           "player": "Bucky Irving",
@@ -1997,7 +3118,14 @@
           "edge": 0.053,
           "is_value_bet": true,
           "odds": 143,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            4,
+            2,
+            2
+          ]
         },
         {
           "player": "Samaje Perine",
@@ -2008,7 +3136,14 @@
           "edge": 0.058,
           "is_value_bet": true,
           "odds": 123,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            1,
+            0,
+            1,
+            0
+          ]
         },
         {
           "player": "Chase Brown",
@@ -2019,7 +3154,14 @@
           "edge": 0.178,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            70.0,
+            58.0,
+            97.0,
+            91.0,
+            67.0
+          ]
         },
         {
           "player": "Bucky Irving",
@@ -2030,7 +3172,14 @@
           "edge": 0.103,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            117.0,
+            68.0,
+            113.0,
+            89.0,
+            77.0
+          ]
         },
         {
           "player": "Samaje Perine",
@@ -2041,7 +3190,14 @@
           "edge": 0.179,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            9.0,
+            1.0,
+            0.0,
+            0.0,
+            8.0
+          ]
         },
         {
           "player": "Baker Mayfield",
@@ -2052,7 +3208,14 @@
           "edge": 0.097,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            25.0,
+            42.0,
+            2.0,
+            68.0,
+            23.0
+          ]
         },
         {
           "player": "Joe Burrow",
@@ -2063,7 +3226,14 @@
           "edge": 0.05,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            -2.0,
+            0.0,
+            19.0,
+            25.0,
+            -1.0
+          ]
         }
       ]
     },
@@ -2104,7 +3274,14 @@
           "edge": 0.045,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            234.0,
+            193.0,
+            308.0,
+            169.0,
+            41.0
+          ]
         },
         {
           "player": "Deshaun Watson",
@@ -2115,7 +3292,14 @@
           "edge": 0.107,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            196.0,
+            176.0,
+            125.0,
+            168.0,
+            128.0
+          ]
         },
         {
           "player": "Parker Washington",
@@ -2126,7 +3310,14 @@
           "edge": 0.142,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            15.0,
+            54.0,
+            54.0,
+            31.0,
+            15.0
+          ]
         },
         {
           "player": "Jakobi Meyers",
@@ -2137,7 +3328,14 @@
           "edge": 0.335,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            67.0,
+            59.0,
+            41.0,
+            61.0,
+            123.0
+          ]
         },
         {
           "player": "Brenton Strange",
@@ -2148,7 +3346,14 @@
           "edge": 0.122,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            21.0,
+            73.0,
+            22.0,
+            0.0,
+            60.0
+          ]
         },
         {
           "player": "Jerry Jeudy",
@@ -2159,7 +3364,14 @@
           "edge": 0.461,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            64.0,
+            108.0,
+            20.0,
+            94.0,
+            63.0
+          ]
         },
         {
           "player": "Parker Washington",
@@ -2170,7 +3382,14 @@
           "edge": 0.068,
           "is_value_bet": true,
           "odds": -159,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            6,
+            3,
+            2
+          ]
         },
         {
           "player": "Jakobi Meyers",
@@ -2181,7 +3400,14 @@
           "edge": 0.294,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            5,
+            2,
+            5,
+            9
+          ]
         },
         {
           "player": "Brenton Strange",
@@ -2192,7 +3418,14 @@
           "edge": 0.108,
           "is_value_bet": true,
           "odds": -129,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            11,
+            2,
+            0,
+            4
+          ]
         },
         {
           "player": "Jerry Jeudy",
@@ -2203,7 +3436,14 @@
           "edge": 0.385,
           "is_value_bet": true,
           "odds": -168,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            11,
+            2,
+            12,
+            6
+          ]
         },
         {
           "player": "Chris Rodriguez Jr.",
@@ -2214,7 +3454,14 @@
           "edge": 0.071,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            43.0,
+            21.0,
+            29.0,
+            35.0,
+            58.0
+          ]
         },
         {
           "player": "Deshaun Watson",
@@ -2225,7 +3472,14 @@
           "edge": 0.025,
           "is_value_bet": false,
           "odds": -107,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            26.0,
+            32.0,
+            14.0,
+            17.0,
+            0.0
+          ]
         },
         {
           "player": "Trevor Lawrence",
@@ -2236,7 +3490,14 @@
           "edge": 0.038,
           "is_value_bet": false,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            17.0,
+            13.0,
+            10.0,
+            8.0,
+            6.0
+          ]
         }
       ]
     },
@@ -2290,7 +3551,14 @@
           "edge": 0.019,
           "is_value_bet": false,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            494.0,
+            336.0,
+            303.0,
+            231.0,
+            313.0
+          ]
         },
         {
           "player": "Amon-Ra St. Brown",
@@ -2301,7 +3569,14 @@
           "edge": 0.149,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            193.0,
+            70.0,
+            60.0,
+            77.0,
+            137.0
+          ]
         },
         {
           "player": "Chris Olave",
@@ -2312,7 +3587,14 @@
           "edge": 0.278,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            87.0,
+            10.0,
+            5.0,
+            107.0,
+            13.0
+          ]
         },
         {
           "player": "Jameson Williams",
@@ -2323,7 +3605,14 @@
           "edge": 0.052,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            37.0,
+            143.0,
+            77.0,
+            34.0,
+            19.0
+          ]
         },
         {
           "player": "Sam LaPorta",
@@ -2334,7 +3623,14 @@
           "edge": 0.287,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            111.0,
+            43.0,
+            64.0,
+            63.0,
+            51.0
+          ]
         },
         {
           "player": "Juwan Johnson",
@@ -2345,7 +3641,14 @@
           "edge": 0.05,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            50.0,
+            12.0,
+            27.0,
+            66.0,
+            80.0
+          ]
         },
         {
           "player": "Devaughn Vele",
@@ -2356,7 +3659,14 @@
           "edge": 0.255,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            21.0,
+            27.0,
+            50.0,
+            0.0
+          ]
         },
         {
           "player": "Jahmyr Gibbs",
@@ -2367,7 +3677,14 @@
           "edge": 0.161,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            83.0,
+            45.0,
+            46.0,
+            31.0,
+            70.0
+          ]
         },
         {
           "player": "Amon-Ra St. Brown",
@@ -2378,7 +3695,14 @@
           "edge": 0.004,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14,
+            6,
+            8,
+            6,
+            8
+          ]
         },
         {
           "player": "Chris Olave",
@@ -2389,7 +3713,14 @@
           "edge": 0.296,
           "is_value_bet": true,
           "odds": -136,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8,
+            2,
+            1,
+            8,
+            1
+          ]
         },
         {
           "player": "Jahmyr Gibbs",
@@ -2400,7 +3731,14 @@
           "edge": 0.074,
           "is_value_bet": true,
           "odds": -144,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            4,
+            4,
+            5,
+            6
+          ]
         },
         {
           "player": "Juwan Johnson",
@@ -2411,7 +3749,14 @@
           "edge": 0.094,
           "is_value_bet": true,
           "odds": -157,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            2,
+            6,
+            6
+          ]
         },
         {
           "player": "Sam LaPorta",
@@ -2422,7 +3767,14 @@
           "edge": 0.182,
           "is_value_bet": true,
           "odds": -160,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            4,
+            6,
+            7,
+            6
+          ]
         },
         {
           "player": "Jameson Williams",
@@ -2433,7 +3785,14 @@
           "edge": 0.088,
           "is_value_bet": true,
           "odds": -153,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            5,
+            5,
+            6,
+            1
+          ]
         },
         {
           "player": "Devaughn Vele",
@@ -2444,7 +3803,14 @@
           "edge": 0.253,
           "is_value_bet": true,
           "odds": -124,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            2,
+            2,
+            4,
+            0
+          ]
         },
         {
           "player": "Jahmyr Gibbs",
@@ -2455,7 +3821,14 @@
           "edge": 0.085,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            31.0,
+            109.0,
+            117.0,
+            139.0,
+            105.0
+          ]
         }
       ]
     },
@@ -2503,7 +3876,14 @@
           "edge": 0.087,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            233.0,
+            149.0,
+            314.0,
+            160.0,
+            223.0
+          ]
         },
         {
           "player": "Garrett Wilson",
@@ -2514,7 +3894,14 @@
           "edge": 0.007,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            114.0,
+            56.0,
+            54.0,
+            66.0,
+            51.0
+          ]
         },
         {
           "player": "Wan'Dale Robinson",
@@ -2525,7 +3912,14 @@
           "edge": 0.128,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            38.0,
+            38.0,
+            62.0,
+            71.0,
+            43.0
+          ]
         },
         {
           "player": "Adonai Mitchell",
@@ -2536,7 +3930,14 @@
           "edge": 0.23,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            0.0,
+            36.0,
+            22.0,
+            0.0
+          ]
         },
         {
           "player": "Calvin Ridley",
@@ -2547,7 +3948,14 @@
           "edge": 0.389,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            59.0,
+            41.0,
+            78.0,
+            84.0,
+            76.0
+          ]
         },
         {
           "player": "Tyjae Spears",
@@ -2558,7 +3966,14 @@
           "edge": 0.11,
           "is_value_bet": true,
           "odds": -116,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            2.0,
+            87.0,
+            39.0,
+            8.0
+          ]
         },
         {
           "player": "Breece Hall",
@@ -2569,7 +3984,14 @@
           "edge": 0.054,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            21.0,
+            38.0,
+            8.0,
+            15.0
+          ]
         },
         {
           "player": "Tony Pollard",
@@ -2580,7 +4002,14 @@
           "edge": 0.148,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            33.0,
+            22.0,
+            0.0,
+            5.0,
+            0.0
+          ]
         },
         {
           "player": "Garrett Wilson",
@@ -2591,7 +4020,14 @@
           "edge": 0.111,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            3,
+            6,
+            7,
+            4
+          ]
         },
         {
           "player": "Wan'Dale Robinson",
@@ -2602,7 +4038,14 @@
           "edge": 0.015,
           "is_value_bet": false,
           "odds": -122,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            4,
+            7,
+            5,
+            10
+          ]
         },
         {
           "player": "Tyjae Spears",
@@ -2613,7 +4056,14 @@
           "edge": 0.086,
           "is_value_bet": true,
           "odds": 113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            1,
+            6,
+            3,
+            3
+          ]
         },
         {
           "player": "Adonai Mitchell",
@@ -2624,7 +4074,14 @@
           "edge": 0.214,
           "is_value_bet": true,
           "odds": 104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            0,
+            1,
+            2,
+            0
+          ]
         },
         {
           "player": "Breece Hall",
@@ -2635,7 +4092,14 @@
           "edge": 0.038,
           "is_value_bet": false,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            2,
+            5,
+            1,
+            3
+          ]
         },
         {
           "player": "Calvin Ridley",
@@ -2646,7 +4110,14 @@
           "edge": 0.423,
           "is_value_bet": true,
           "odds": 144,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            3,
+            3,
+            5,
+            3
+          ]
         },
         {
           "player": "Tony Pollard",
@@ -2657,7 +4128,14 @@
           "edge": 0.145,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            2,
+            0,
+            2,
+            0
+          ]
         },
         {
           "player": "Breece Hall",
@@ -2668,7 +4146,14 @@
           "edge": 0.2,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            60.0,
+            30.0,
+            52.0,
+            45.0,
+            57.0
+          ]
         },
         {
           "player": "Tony Pollard",
@@ -2679,7 +4164,14 @@
           "edge": 0.166,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            35.0,
+            102.0,
+            45.0,
+            35.0,
+            62.0
+          ]
         },
         {
           "player": "Tyjae Spears",
@@ -2690,7 +4182,14 @@
           "edge": 0.072,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3.0,
+            21.0,
+            5.0,
+            27.0,
+            95.0
+          ]
         },
         {
           "player": "Braelon Allen",
@@ -2701,7 +4200,14 @@
           "edge": 0.054,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            43.0,
+            5.0,
+            5.0,
+            26.0,
+            15.0
+          ]
         },
         {
           "player": "Geno Smith",
@@ -2712,7 +4218,14 @@
           "edge": 0.062,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            5.0,
+            8.0,
+            19.0,
+            14.0
+          ]
         }
       ]
     },
@@ -2756,7 +4269,14 @@
           "edge": 0.061,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            195.0,
+            284.0,
+            281.0,
+            346.0,
+            242.0
+          ]
         },
         {
           "player": "Jacoby Brissett",
@@ -2767,7 +4287,14 @@
           "edge": 0.246,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            98.0,
+            168.0,
+            160.0,
+            132.0,
+            -2.0
+          ]
         },
         {
           "player": "Trey McBride",
@@ -2778,7 +4305,14 @@
           "edge": 0.247,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            70.0,
+            87.0,
+            20.0,
+            123.0,
+            65.0
+          ]
         },
         {
           "player": "Ladd McConkey",
@@ -2789,7 +4323,14 @@
           "edge": 0.199,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            58.0,
+            87.0,
+            94.0,
+            95.0,
+            197.0
+          ]
         },
         {
           "player": "Quentin Johnston",
@@ -2800,7 +4341,14 @@
           "edge": 0.307,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            45.0,
+            18.0,
+            48.0,
+            186.0,
+            0.0
+          ]
         },
         {
           "player": "Michael Wilson",
@@ -2811,7 +4359,14 @@
           "edge": 0.057,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            55.0,
+            57.0,
+            9.0,
+            44.0,
+            22.0
+          ]
         },
         {
           "player": "Kendrick Bourne",
@@ -2822,7 +4377,14 @@
           "edge": 0.136,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            39.0,
+            44.0,
+            18.0,
+            22.0,
+            12.0
+          ]
         },
         {
           "player": "Charlie Kolar",
@@ -2833,7 +4395,14 @@
           "edge": 0.029,
           "is_value_bet": false,
           "odds": -116,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            64.0,
+            14.0,
+            9.0,
+            4.0,
+            6.0
+          ]
         },
         {
           "player": "Trey McBride",
@@ -2844,7 +4413,14 @@
           "edge": 0.069,
           "is_value_bet": true,
           "odds": 112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            9,
+            3,
+            12,
+            7
+          ]
         },
         {
           "player": "Ladd McConkey",
@@ -2855,7 +4431,14 @@
           "edge": 0.257,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            6,
+            8,
+            5,
+            9
+          ]
         },
         {
           "player": "Michael Wilson",
@@ -2866,7 +4449,14 @@
           "edge": 0.192,
           "is_value_bet": true,
           "odds": -105,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            2,
+            2,
+            2,
+            4
+          ]
         },
         {
           "player": "Quentin Johnston",
@@ -2877,7 +4467,14 @@
           "edge": 0.396,
           "is_value_bet": true,
           "odds": 110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            3,
+            5,
+            13,
+            0
+          ]
         },
         {
           "player": "Kendrick Bourne",
@@ -2888,7 +4485,14 @@
           "edge": 0.09,
           "is_value_bet": true,
           "odds": 137,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            2,
+            2,
+            2
+          ]
         },
         {
           "player": "Charlie Kolar",
@@ -2899,7 +4503,14 @@
           "edge": 0.105,
           "is_value_bet": true,
           "odds": 126,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            1,
+            1,
+            1,
+            1
+          ]
         },
         {
           "player": "Justin Herbert",
@@ -2910,7 +4521,14 @@
           "edge": 0.001,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            28.0,
+            12.0,
+            42.0,
+            0.0
+          ]
         },
         {
           "player": "Jacoby Brissett",
@@ -2921,7 +4539,14 @@
           "edge": 0.011,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            3.0,
+            10.0,
+            11.0,
+            0.0
+          ]
         }
       ]
     },
@@ -2966,7 +4591,14 @@
           "edge": 0.295,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            229.0,
+            182.0,
+            185.0,
+            69.0,
+            212.0
+          ]
         },
         {
           "player": "Kyler Murray",
@@ -2977,7 +4609,14 @@
           "edge": 0.076,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            259.0,
+            224.0,
+            202.0,
+            321.0,
+            242.0
+          ]
         },
         {
           "player": "Justin Jefferson",
@@ -2988,7 +4627,14 @@
           "edge": 0.031,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            73.0,
+            144.0,
+            92.0,
+            54.0,
+            58.0
+          ]
         },
         {
           "player": "Christian Watson",
@@ -2999,7 +4645,14 @@
           "edge": 0.26,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            67.0,
+            114.0,
+            56.0,
+            0.0,
+            0.0
+          ]
         },
         {
           "player": "Tucker Kraft",
@@ -3010,7 +4663,14 @@
           "edge": 0.175,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            34.0,
+            63.0,
+            53.0,
+            36.0,
+            26.0
+          ]
         },
         {
           "player": "Jordan Addison",
@@ -3021,7 +4681,14 @@
           "edge": 0.221,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            63.0,
+            35.0,
+            69.0,
+            0.0,
+            29.0
+          ]
         },
         {
           "player": "Jayden Reed",
@@ -3032,7 +4699,14 @@
           "edge": 0.203,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            34.0,
+            76.0,
+            6.0,
+            48.0,
+            46.0
+          ]
         },
         {
           "player": "T.J. Hockenson",
@@ -3043,7 +4717,14 @@
           "edge": 0.202,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            52.0,
+            27.0,
+            68.0,
+            9.0,
+            64.0
+          ]
         },
         {
           "player": "Jauan Jennings",
@@ -3054,7 +4735,14 @@
           "edge": 0.428,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            90.0,
+            31.0,
+            51.0,
+            67.0,
+            52.0
+          ]
         },
         {
           "player": "Aaron Jones",
@@ -3065,7 +4753,14 @@
           "edge": 0.179,
           "is_value_bet": true,
           "odds": -105,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            20.0,
+            26.0,
+            30.0,
+            30.0,
+            12.0
+          ]
         },
         {
           "player": "Justin Jefferson",
@@ -3076,7 +4771,14 @@
           "edge": 0.033,
           "is_value_bet": false,
           "odds": -146,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            10,
+            8,
+            3,
+            5
+          ]
         },
         {
           "player": "Tucker Kraft",
@@ -3087,7 +4789,14 @@
           "edge": 0.242,
           "is_value_bet": true,
           "odds": -163,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            2,
+            4,
+            5
+          ]
         },
         {
           "player": "Christian Watson",
@@ -3098,7 +4807,14 @@
           "edge": 0.303,
           "is_value_bet": true,
           "odds": 129,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            4,
+            3,
+            0,
+            0
+          ]
         },
         {
           "player": "T.J. Hockenson",
@@ -3109,7 +4825,14 @@
           "edge": 0.043,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            2,
+            5,
+            2,
+            5
+          ]
         },
         {
           "player": "Jayden Reed",
@@ -3120,7 +4843,14 @@
           "edge": 0.23,
           "is_value_bet": true,
           "odds": -120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            3,
+            1,
+            2,
+            4
+          ]
         },
         {
           "player": "Jordan Addison",
@@ -3131,7 +4861,14 @@
           "edge": 0.287,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            5,
+            6,
+            1,
+            3
+          ]
         },
         {
           "player": "Aaron Jones",
@@ -3142,7 +4879,14 @@
           "edge": 0.082,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            4,
+            5,
+            3
+          ]
         },
         {
           "player": "Jauan Jennings",
@@ -3153,7 +4897,14 @@
           "edge": 0.459,
           "is_value_bet": true,
           "odds": 143,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            2,
+            4,
+            7,
+            7
+          ]
         },
         {
           "player": "Jordan Mason",
@@ -3164,7 +4915,14 @@
           "edge": 0.273,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            18.0,
+            5.0,
+            13.0,
+            8.0,
+            78.0
+          ]
         },
         {
           "player": "Aaron Jones",
@@ -3175,7 +4933,14 @@
           "edge": 0.325,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            86.0,
+            67.0,
+            47.0,
+            45.0,
+            48.0
+          ]
         },
         {
           "player": "Kyler Murray",
@@ -3186,7 +4951,14 @@
           "edge": 0.083,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            16.0,
+            11.0,
+            63.0,
+            32.0,
+            22.0
+          ]
         },
         {
           "player": "Jordan Love",
@@ -3194,10 +4966,17 @@
           "line": 10.5,
           "predicted_value": 10.800000190734863,
           "side": "over",
-          "edge": 0.017,
+          "edge": 0.008,
           "is_value_bet": false,
-          "odds": -106,
-          "sportsbook": "DraftKings"
+          "odds": -110,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4.0,
+            2.0,
+            6.0,
+            0.0,
+            10.0
+          ]
         }
       ]
     },
@@ -3258,7 +5037,14 @@
           "edge": 0.16,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            306.0,
+            173.0,
+            245.0,
+            344.0,
+            112.0
+          ]
         },
         {
           "player": "Malik Willis",
@@ -3269,7 +5055,14 @@
           "edge": 0.325,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            122.0,
+            202.0,
+            56.0,
+            34.0,
+            136.0
+          ]
         },
         {
           "player": "Brock Bowers",
@@ -3280,7 +5073,14 @@
           "edge": 0.075,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            49.0,
+            35.0,
+            99.0,
+            77.0,
+            50.0
+          ]
         },
         {
           "player": "Tre Tucker",
@@ -3291,7 +5091,14 @@
           "edge": 0.177,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7.0,
+            18.0,
+            41.0,
+            24.0,
+            24.0
+          ]
         },
         {
           "player": "De'Von Achane",
@@ -3302,7 +5109,14 @@
           "edge": 0.09,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            30.0,
+            7.0,
+            30.0,
+            5.0,
+            21.0
+          ]
         },
         {
           "player": "Malik Washington",
@@ -3313,7 +5127,14 @@
           "edge": 0.0,
           "is_value_bet": false,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            52.0,
+            28.0,
+            41.0,
+            48.0
+          ]
         },
         {
           "player": "Greg Dulcich",
@@ -3324,7 +5145,14 @@
           "edge": 0.043,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            22.0,
+            3.0,
+            12.0,
+            16.0,
+            0.0
+          ]
         },
         {
           "player": "Jalen Nailor",
@@ -3335,7 +5163,14 @@
           "edge": 0.022,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5.0,
+            5.0,
+            81.0,
+            53.0,
+            33.0
+          ]
         },
         {
           "player": "Michael Mayer",
@@ -3346,7 +5181,14 @@
           "edge": 0.055,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            68.0,
+            11.0,
+            0.0,
+            14.0,
+            21.0
+          ]
         },
         {
           "player": "Brock Bowers",
@@ -3357,7 +5199,14 @@
           "edge": 0.008,
           "is_value_bet": false,
           "odds": 112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            3,
+            11,
+            7,
+            4
+          ]
         },
         {
           "player": "De'Von Achane",
@@ -3368,7 +5217,14 @@
           "edge": 0.237,
           "is_value_bet": true,
           "odds": -166,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            1,
+            4,
+            1,
+            3
+          ]
         },
         {
           "player": "Tre Tucker",
@@ -3379,7 +5235,14 @@
           "edge": 0.193,
           "is_value_bet": true,
           "odds": -121,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            2,
+            2,
+            2,
+            3
+          ]
         },
         {
           "player": "Malik Washington",
@@ -3390,7 +5253,14 @@
           "edge": 0.016,
           "is_value_bet": false,
           "odds": 117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            5,
+            3,
+            4,
+            4
+          ]
         },
         {
           "player": "Greg Dulcich",
@@ -3401,7 +5271,14 @@
           "edge": 0.027,
           "is_value_bet": false,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            1,
+            2,
+            3,
+            0
+          ]
         },
         {
           "player": "Michael Mayer",
@@ -3412,7 +5289,14 @@
           "edge": 0.053,
           "is_value_bet": true,
           "odds": 133,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            1,
+            0,
+            1,
+            4
+          ]
         },
         {
           "player": "Jalen Nailor",
@@ -3423,7 +5307,14 @@
           "edge": 0.039,
           "is_value_bet": false,
           "odds": 151,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            1,
+            5,
+            3,
+            3
+          ]
         },
         {
           "player": "De'Von Achane",
@@ -3434,7 +5325,14 @@
           "edge": 0.271,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            32.0,
+            24.0,
+            107.0,
+            56.0,
+            9.0
+          ]
         },
         {
           "player": "Malik Willis",
@@ -3445,7 +5343,14 @@
           "edge": 0.193,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            41.0,
+            73.0,
+            23.0,
+            -2.0,
+            3.0
+          ]
         }
       ]
     },
@@ -3493,7 +5398,14 @@
           "edge": 0.153,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            11.0,
+            131.0,
+            128.0,
+            246.0,
+            221.0
+          ]
         },
         {
           "player": "Jayden Daniels",
@@ -3504,7 +5416,14 @@
           "edge": 0.094,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            227.0,
+            38.0,
+            268.0,
+            299.0,
+            255.0
+          ]
         },
         {
           "player": "DeVonta Smith",
@@ -3515,7 +5434,50 @@
           "edge": 0.271,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            120.0,
+            55.0,
+            21.0,
+            45.0,
+            69.0
+          ]
+        },
+        {
+          "player": "Terry McLaurin",
+          "stat": "receiving_yards",
+          "line": 50.5,
+          "predicted_value": 59.900001525878906,
+          "side": "over",
+          "edge": 0.145,
+          "is_value_bet": true,
+          "odds": -110,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5.0,
+            62.0,
+            89.0,
+            87.0,
+            51.0
+          ]
+        },
+        {
+          "player": "Stefon Diggs",
+          "stat": "receiving_yards",
+          "line": 40.5,
+          "predicted_value": 61.20000076293945,
+          "side": "over",
+          "edge": 0.287,
+          "is_value_bet": true,
+          "odds": -111,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            69.0,
+            82.0,
+            77.0,
+            23.0,
+            81.0
+          ]
         },
         {
           "player": "Dallas Goedert",
@@ -3526,7 +5488,14 @@
           "edge": 0.139,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            55.0,
+            47.0,
+            56.0,
+            85.0,
+            27.0
+          ]
         },
         {
           "player": "Dontayvion Wicks",
@@ -3537,7 +5506,14 @@
           "edge": 0.026,
           "is_value_bet": false,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            14.0,
+            13.0,
+            43.0,
+            49.0,
+            39.0
+          ]
         },
         {
           "player": "Chig Okonkwo",
@@ -3548,7 +5524,14 @@
           "edge": 0.229,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            46.0,
+            36.0,
+            63.0,
+            34.0,
+            36.0
+          ]
         },
         {
           "player": "Saquon Barkley",
@@ -3559,7 +5542,14 @@
           "edge": 0.023,
           "is_value_bet": false,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2.0,
+            4.0,
+            27.0,
+            4.0,
+            40.0
+          ]
         },
         {
           "player": "Rachaad White",
@@ -3567,10 +5557,17 @@
           "line": 14.5,
           "predicted_value": 19.399999618530273,
           "side": "over",
-          "edge": 0.086,
+          "edge": 0.079,
           "is_value_bet": true,
-          "odds": -107,
-          "sportsbook": "DraftKings"
+          "odds": -110,
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            19.0,
+            17.0,
+            50.0,
+            4.0,
+            14.0
+          ]
         },
         {
           "player": "DeVonta Smith",
@@ -3581,7 +5578,14 @@
           "edge": 0.235,
           "is_value_bet": true,
           "odds": -141,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            6,
+            4,
+            4,
+            4,
+            4
+          ]
         },
         {
           "player": "Terry McLaurin",
@@ -3592,7 +5596,14 @@
           "edge": 0.182,
           "is_value_bet": true,
           "odds": -162,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            8,
+            7,
+            4,
+            3
+          ]
         },
         {
           "player": "Stefon Diggs",
@@ -3603,7 +5614,14 @@
           "edge": 0.27,
           "is_value_bet": true,
           "odds": -144,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            6,
+            6,
+            5,
+            5
+          ]
         },
         {
           "player": "Dallas Goedert",
@@ -3614,7 +5632,14 @@
           "edge": 0.083,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            4,
+            4,
+            7,
+            2
+          ]
         },
         {
           "player": "Chig Okonkwo",
@@ -3625,7 +5650,14 @@
           "edge": 0.147,
           "is_value_bet": true,
           "odds": -142,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            3,
+            6,
+            3,
+            2
+          ]
         },
         {
           "player": "Dontayvion Wicks",
@@ -3636,7 +5668,14 @@
           "edge": 0.154,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            3,
+            4,
+            5,
+            2
+          ]
         },
         {
           "player": "Saquon Barkley",
@@ -3647,7 +5686,14 @@
           "edge": 0.125,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            2,
+            4,
+            1,
+            6
+          ]
         },
         {
           "player": "Rachaad White",
@@ -3658,7 +5704,14 @@
           "edge": 0.065,
           "is_value_bet": true,
           "odds": 142,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            2,
+            7,
+            1,
+            2
+          ]
         },
         {
           "player": "Saquon Barkley",
@@ -3669,7 +5722,14 @@
           "edge": 0.195,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            167.0,
+            119.0,
+            205.0,
+            118.0,
+            57.0
+          ]
         },
         {
           "player": "Jayden Daniels",
@@ -3680,7 +5740,14 @@
           "edge": 0.265,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            127.0,
+            27.0,
+            36.0,
+            51.0,
+            48.0
+          ]
         },
         {
           "player": "Jalen Hurts",
@@ -3691,7 +5758,14 @@
           "edge": 0.233,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            41.0,
+            36.0,
+            70.0,
+            16.0,
+            72.0
+          ]
         },
         {
           "player": "Rachaad White",
@@ -3702,7 +5776,14 @@
           "edge": 0.34,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            90.0,
+            64.0,
+            10.0,
+            30.0,
+            1.0
+          ]
         }
       ]
     },
@@ -3760,7 +5841,14 @@
           "edge": 0.03,
           "is_value_bet": false,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            221.0,
+            352.0,
+            178.0,
+            243.0,
+            133.0
+          ]
         },
         {
           "player": "CeeDee Lamb",
@@ -3771,7 +5859,14 @@
           "edge": 0.037,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            67.0,
+            39.0,
+            93.0,
+            116.0,
+            105.0
+          ]
         },
         {
           "player": "George Pickens",
@@ -3782,7 +5877,14 @@
           "edge": 0.21,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            48.0,
+            74.0,
+            50.0,
+            0.0,
+            87.0
+          ]
         },
         {
           "player": "Malik Nabers",
@@ -3793,7 +5895,14 @@
           "edge": 0.133,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            79.0,
+            82.0,
+            68.0,
+            171.0,
+            64.0
+          ]
         },
         {
           "player": "Isaiah Likely",
@@ -3804,7 +5913,14 @@
           "edge": 0.167,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            29.0,
+            9.0,
+            38.0,
+            53.0,
+            73.0
+          ]
         },
         {
           "player": "Jake Ferguson",
@@ -3815,7 +5931,14 @@
           "edge": 0.012,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            32.0,
+            23.0,
+            40.0,
+            18.0,
+            12.0
+          ]
         },
         {
           "player": "Javonte Williams",
@@ -3826,7 +5949,14 @@
           "edge": 0.26,
           "is_value_bet": true,
           "odds": -105,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8.0,
+            29.0,
+            0.0,
+            50.0,
+            14.0
+          ]
         },
         {
           "player": "CeeDee Lamb",
@@ -3837,7 +5967,14 @@
           "edge": 0.015,
           "is_value_bet": false,
           "odds": -150,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            10,
+            2,
+            6,
+            9,
+            7
+          ]
         },
         {
           "player": "Malik Nabers",
@@ -3848,7 +5985,14 @@
           "edge": 0.078,
           "is_value_bet": true,
           "odds": 119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            10,
+            7,
+            7,
+            5
+          ]
         },
         {
           "player": "George Pickens",
@@ -3859,7 +6003,14 @@
           "edge": 0.116,
           "is_value_bet": true,
           "odds": 120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            3,
+            3,
+            1,
+            5
+          ]
         },
         {
           "player": "Jake Ferguson",
@@ -3870,7 +6021,14 @@
           "edge": 0.085,
           "is_value_bet": true,
           "odds": -119,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            2,
+            6,
+            3,
+            2
+          ]
         },
         {
           "player": "Isaiah Likely",
@@ -3881,7 +6039,14 @@
           "edge": 0.207,
           "is_value_bet": true,
           "odds": -131,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            1,
+            3,
+            3,
+            4
+          ]
         },
         {
           "player": "Javonte Williams",
@@ -3892,7 +6057,14 @@
           "edge": 0.176,
           "is_value_bet": true,
           "odds": -183,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            2,
+            7,
+            2,
+            3,
+            2
+          ]
         },
         {
           "player": "Javonte Williams",
@@ -3903,7 +6075,14 @@
           "edge": 0.479,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            15.0,
+            24.0,
+            0.0,
+            28.0,
+            29.0
+          ]
         },
         {
           "player": "Dak Prescott",
@@ -3914,7 +6093,14 @@
           "edge": 0.012,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            -1.0,
+            3.0,
+            1.0,
+            -1.0,
+            30.0
+          ]
         }
       ]
     },
@@ -3955,7 +6141,14 @@
           "edge": 0.017,
           "is_value_bet": false,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            260.0,
+            320.0,
+            177.0,
+            245.0,
+            257.0
+          ]
         },
         {
           "player": "Bo Nix",
@@ -3966,7 +6159,14 @@
           "edge": 0.073,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            130.0,
+            263.0,
+            219.0,
+            321.0,
+            144.0
+          ]
         },
         {
           "player": "Rashee Rice",
@@ -3977,7 +6177,14 @@
           "edge": 0.02,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            46.0,
+            39.0,
+            103.0,
+            75.0,
+            110.0
+          ]
         },
         {
           "player": "Jaylen Waddle",
@@ -3988,7 +6195,14 @@
           "edge": 0.036,
           "is_value_bet": false,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            144.0,
+            53.0,
+            99.0,
+            0.0,
+            44.0
+          ]
         },
         {
           "player": "Courtland Sutton",
@@ -3999,7 +6213,14 @@
           "edge": 0.243,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            32.0,
+            50.0,
+            55.0,
+            98.0,
+            75.0
+          ]
         },
         {
           "player": "Travis Kelce",
@@ -4010,7 +6231,14 @@
           "edge": 0.165,
           "is_value_bet": true,
           "odds": -115,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            30.0,
+            84.0,
+            117.0,
+            19.0,
+            39.0
+          ]
         },
         {
           "player": "Xavier Worthy",
@@ -4021,7 +6249,14 @@
           "edge": 0.332,
           "is_value_bet": true,
           "odds": -112,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            65.0,
+            79.0,
+            45.0,
+            85.0,
+            157.0
+          ]
         },
         {
           "player": "Evan Engram",
@@ -4032,7 +6267,14 @@
           "edge": 0.329,
           "is_value_bet": true,
           "odds": -113,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            45.0,
+            40.0,
+            28.0,
+            41.0,
+            33.0
+          ]
         },
         {
           "player": "Tyquan Thornton",
@@ -4043,7 +6285,14 @@
           "edge": 0.109,
           "is_value_bet": true,
           "odds": -109,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            24.0,
+            27.0,
+            0.0,
+            0.0,
+            20.0
+          ]
         },
         {
           "player": "Kenneth Walker III",
@@ -4054,7 +6303,14 @@
           "edge": 0.015,
           "is_value_bet": false,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            33.0,
+            26.0,
+            2.0,
+            22.0,
+            3.0
+          ]
         },
         {
           "player": "Noah Gray",
@@ -4065,7 +6321,14 @@
           "edge": 0.093,
           "is_value_bet": true,
           "odds": -106,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            10.0,
+            6.0,
+            1.0,
+            13.0,
+            2.0
+          ]
         },
         {
           "player": "Adam Trautman",
@@ -4076,7 +6339,14 @@
           "edge": 0.078,
           "is_value_bet": true,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0.0,
+            20.0,
+            5.0,
+            5.0,
+            2.0
+          ]
         },
         {
           "player": "J.K. Dobbins",
@@ -4087,7 +6357,14 @@
           "edge": 0.161,
           "is_value_bet": true,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3.0,
+            19.0,
+            7.0,
+            12.0,
+            0.0
+          ]
         },
         {
           "player": "Rashee Rice",
@@ -4098,7 +6375,14 @@
           "edge": 0.103,
           "is_value_bet": true,
           "odds": -104,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8,
+            6,
+            7,
+            5,
+            12
+          ]
         },
         {
           "player": "Jaylen Waddle",
@@ -4109,7 +6393,14 @@
           "edge": 0.147,
           "is_value_bet": true,
           "odds": -106,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            8,
+            4,
+            9,
+            0,
+            4
+          ]
         },
         {
           "player": "Travis Kelce",
@@ -4120,7 +6411,14 @@
           "edge": 0.149,
           "is_value_bet": true,
           "odds": 120,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            8,
+            7,
+            2,
+            4
+          ]
         },
         {
           "player": "Courtland Sutton",
@@ -4131,7 +6429,14 @@
           "edge": 0.147,
           "is_value_bet": true,
           "odds": 128,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            5,
+            5,
+            5,
+            5
+          ]
         },
         {
           "player": "Xavier Worthy",
@@ -4142,7 +6447,14 @@
           "edge": 0.371,
           "is_value_bet": true,
           "odds": -108,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            7,
+            8,
+            5,
+            6,
+            8
+          ]
         },
         {
           "player": "Kenneth Walker III",
@@ -4153,7 +6465,14 @@
           "edge": 0.135,
           "is_value_bet": true,
           "odds": 118,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            4,
+            3,
+            1,
+            3,
+            1
+          ]
         },
         {
           "player": "Evan Engram",
@@ -4164,7 +6483,14 @@
           "edge": 0.353,
           "is_value_bet": true,
           "odds": -137,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            5,
+            6,
+            5,
+            7,
+            4
+          ]
         },
         {
           "player": "Tyquan Thornton",
@@ -4175,7 +6501,14 @@
           "edge": 0.025,
           "is_value_bet": false,
           "odds": -131,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            3,
+            2,
+            0,
+            0,
+            2
+          ]
         },
         {
           "player": "Noah Gray",
@@ -4186,7 +6519,14 @@
           "edge": 0.132,
           "is_value_bet": true,
           "odds": 136,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            1,
+            1,
+            1,
+            3,
+            1
+          ]
         },
         {
           "player": "Adam Trautman",
@@ -4197,7 +6537,14 @@
           "edge": 0.142,
           "is_value_bet": true,
           "odds": 177,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            0,
+            2,
+            1,
+            1,
+            1
+          ]
         },
         {
           "player": "Kenneth Walker III",
@@ -4208,7 +6555,14 @@
           "edge": 0.167,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            21.0,
+            86.0,
+            54.0,
+            53.0,
+            78.0
+          ]
         },
         {
           "player": "J.K. Dobbins",
@@ -4219,7 +6573,14 @@
           "edge": 0.112,
           "is_value_bet": true,
           "odds": -111,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            56.0,
+            40.0,
+            76.0,
+            63.0,
+            26.0
+          ]
         },
         {
           "player": "Bo Nix",
@@ -4230,7 +6591,14 @@
           "edge": 0.134,
           "is_value_bet": true,
           "odds": -117,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            23.0,
+            25.0,
+            31.0,
+            47.0,
+            43.0
+          ]
         },
         {
           "player": "Patrick Mahomes",
@@ -4241,7 +6609,14 @@
           "edge": 0.095,
           "is_value_bet": true,
           "odds": -110,
-          "sportsbook": "DraftKings"
+          "sportsbook": "DraftKings",
+          "recent_games": [
+            33.0,
+            12.0,
+            14.0,
+            43.0,
+            25.0
+          ]
         }
       ]
     },
@@ -4887,8 +7262,8 @@
       "sportsbook": "DraftKings",
       "value_bet": {
         "side": "Los Angeles Rams",
-        "edge": 0.075,
-        "odds": -440
+        "edge": 0.08,
+        "odds": -425
       },
       "high_confidence": {
         "side": "Los Angeles Rams",
@@ -5697,8 +8072,8 @@
       "sportsbook": "DraftKings",
       "value_bet": {
         "side": "Philadelphia Eagles",
-        "edge": 0.039,
-        "odds": 102
+        "edge": 0.045,
+        "odds": 105
       },
       "high_confidence": null,
       "upset_watch": null,
