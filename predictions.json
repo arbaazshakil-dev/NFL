@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-07T14:03:46.327501+00:00",
+  "generated_at": "2026-09-08T14:02:42.518542+00:00",
   "games": [
     {
       "matchup": "New England Patriots @ Seattle Seahawks",
@@ -18,89 +18,9 @@
       "odds_pending": true
     },
     {
-      "matchup": "Chicago Bears @ Carolina Panthers",
-      "home_team": "Carolina Panthers",
-      "away_team": "Chicago Bears",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Tampa Bay Buccaneers @ Cincinnati Bengals",
-      "home_team": "Cincinnati Bengals",
-      "away_team": "Tampa Bay Buccaneers",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "New Orleans Saints @ Detroit Lions",
-      "home_team": "Detroit Lions",
-      "away_team": "New Orleans Saints",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Buffalo Bills @ Houston Texans",
-      "home_team": "Houston Texans",
-      "away_team": "Buffalo Bills",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Baltimore Ravens @ Indianapolis Colts",
-      "home_team": "Indianapolis Colts",
-      "away_team": "Baltimore Ravens",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Cleveland Browns @ Jacksonville Jaguars",
-      "home_team": "Jacksonville Jaguars",
-      "away_team": "Cleveland Browns",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Atlanta Falcons @ Pittsburgh Steelers",
-      "home_team": "Pittsburgh Steelers",
-      "away_team": "Atlanta Falcons",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "New York Jets @ Tennessee Titans",
-      "home_team": "Tennessee Titans",
-      "away_team": "New York Jets",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Arizona Cardinals @ Los Angeles Chargers",
-      "home_team": "Los Angeles Chargers",
-      "away_team": "Arizona Cardinals",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Miami Dolphins @ Las Vegas Raiders",
-      "home_team": "Las Vegas Raiders",
-      "away_team": "Miami Dolphins",
-      "commence_time": "2026-09-13T00:00:00",
-      "week": 1,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Green Bay Packers @ Minnesota Vikings",
-      "home_team": "Minnesota Vikings",
-      "away_team": "Green Bay Packers",
+      "matchup": "Dallas Cowboys @ New York Giants",
+      "home_team": "New York Giants",
+      "away_team": "Dallas Cowboys",
       "commence_time": "2026-09-13T00:00:00",
       "week": 1,
       "odds_pending": true
@@ -114,9 +34,89 @@
       "odds_pending": true
     },
     {
-      "matchup": "Dallas Cowboys @ New York Giants",
-      "home_team": "New York Giants",
-      "away_team": "Dallas Cowboys",
+      "matchup": "Green Bay Packers @ Minnesota Vikings",
+      "home_team": "Minnesota Vikings",
+      "away_team": "Green Bay Packers",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Miami Dolphins @ Las Vegas Raiders",
+      "home_team": "Las Vegas Raiders",
+      "away_team": "Miami Dolphins",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Arizona Cardinals @ Los Angeles Chargers",
+      "home_team": "Los Angeles Chargers",
+      "away_team": "Arizona Cardinals",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "New York Jets @ Tennessee Titans",
+      "home_team": "Tennessee Titans",
+      "away_team": "New York Jets",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Atlanta Falcons @ Pittsburgh Steelers",
+      "home_team": "Pittsburgh Steelers",
+      "away_team": "Atlanta Falcons",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Cleveland Browns @ Jacksonville Jaguars",
+      "home_team": "Jacksonville Jaguars",
+      "away_team": "Cleveland Browns",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Baltimore Ravens @ Indianapolis Colts",
+      "home_team": "Indianapolis Colts",
+      "away_team": "Baltimore Ravens",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Buffalo Bills @ Houston Texans",
+      "home_team": "Houston Texans",
+      "away_team": "Buffalo Bills",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "New Orleans Saints @ Detroit Lions",
+      "home_team": "Detroit Lions",
+      "away_team": "New Orleans Saints",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Tampa Bay Buccaneers @ Cincinnati Bengals",
+      "home_team": "Cincinnati Bengals",
+      "away_team": "Tampa Bay Buccaneers",
+      "commence_time": "2026-09-13T00:00:00",
+      "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Chicago Bears @ Carolina Panthers",
+      "home_team": "Carolina Panthers",
+      "away_team": "Chicago Bears",
       "commence_time": "2026-09-13T00:00:00",
       "week": 1,
       "odds_pending": true
@@ -127,6 +127,14 @@
       "away_team": "Denver Broncos",
       "commence_time": "2026-09-14T00:00:00",
       "week": 1,
+      "odds_pending": true
+    },
+    {
+      "matchup": "Detroit Lions @ Buffalo Bills",
+      "home_team": "Buffalo Bills",
+      "away_team": "Detroit Lions",
+      "commence_time": "2026-09-17T00:00:00",
+      "week": 2,
       "odds_pending": true
     }
   ]
