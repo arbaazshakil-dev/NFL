@@ -120,10 +120,15 @@ def get_player_recent_stat_history(weekly_df: pd.DataFrame | None, player_name: 
     Used to back up a prop value bet with what the player has actually done
     recently, rather than just the model's predicted number.
     """
-    if weekly_df is None or stat_col not in weekly_df.columns:
+    if weekly_df is None:
+        print(f"    [history] weekly stats file not loaded — nfl_player_weekly_stats.parquet missing")
+        return []
+    if stat_col not in weekly_df.columns:
+        print(f"    [history] '{stat_col}' not a column in weekly stats file")
         return []
     rows = weekly_df[weekly_df["player_display_name"] == player_name].sort_values(["season", "week"])
     if rows.empty:
+        print(f"    [history] no rows matched player_display_name == '{player_name}' in weekly stats")
         return []
     return rows[stat_col].tail(n_games).tolist()
 
