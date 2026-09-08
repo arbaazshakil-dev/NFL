@@ -18,7 +18,24 @@ import os
 import json
 from datetime import datetime, timezone
 import joblib
+import numpy as np
 import pandas as pd
+
+
+class NumpyEncoder(json.JSONEncoder):
+    """
+    Model predictions (margin, total, probabilities) come back as NumPy
+    scalar types (e.g. float32), which Python's built-in json module
+    can't serialize. This converts them to native Python types first.
+    """
+    def default(self, obj):
+        if isinstance(obj, (np.floating,)):
+            return float(obj)
+        if isinstance(obj, (np.integer,)):
+            return int(obj)
+        if isinstance(obj, np.ndarray):
+            return obj.tolist()
+        return super().default(obj)
 
 from odds_api import get_odds, get_player_props, american_to_implied_prob, remove_vig_two_way
 from edge_detection import (
@@ -502,7 +519,7 @@ def run_predictions(api_key: str):
         "games": dashboard_games,
     }
     with open("predictions.json", "w") as f:
-        json.dump(output, f, indent=2)
+        json.dump(output, f, indent=2, cls=NumpyEncoder)
     print(f"Wrote {len(dashboard_games)} games to predictions.json")
 
 
