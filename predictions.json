@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-08T23:34:50.242127+00:00",
+  "generated_at": "2026-09-08T23:45:07.021924+00:00",
   "games": [
     {
       "matchup": "New England Patriots @ Seattle Seahawks",
@@ -45,10 +45,10 @@
         {
           "player": "Drake Maye",
           "stat": "passing_yards",
-          "line": 232.5,
+          "line": 233.5,
           "predicted_value": 211.8000030517578,
           "side": "under",
-          "edge": 0.09,
+          "edge": 0.095,
           "is_value_bet": true,
           "odds": -113,
           "sportsbook": "DraftKings",
@@ -81,12 +81,12 @@
         {
           "player": "Jaxon Smith-Njigba",
           "stat": "receiving_yards",
-          "line": 82.5,
+          "line": 81.5,
           "predicted_value": 66.30000305175781,
           "side": "under",
-          "edge": 0.23,
+          "edge": 0.221,
           "is_value_bet": true,
-          "odds": -113,
+          "odds": -111,
           "sportsbook": "DraftKings",
           "recent_games": [
             82.0,
@@ -102,9 +102,9 @@
           "line": 62.5,
           "predicted_value": 53.099998474121094,
           "side": "under",
-          "edge": 0.144,
+          "edge": 0.142,
           "is_value_bet": true,
-          "odds": -110,
+          "odds": -111,
           "sportsbook": "DraftKings",
           "recent_games": [
             36.0,
@@ -153,12 +153,12 @@
         {
           "player": "Rashid Shaheed",
           "stat": "receiving_yards",
-          "line": 31.5,
+          "line": 32.5,
           "predicted_value": 59.5,
           "side": "over",
-          "edge": 0.359,
+          "edge": 0.353,
           "is_value_bet": true,
-          "odds": -111,
+          "odds": -110,
           "sportsbook": "DraftKings",
           "recent_games": [
             96.0,
@@ -210,9 +210,9 @@
           "line": 6.5,
           "predicted_value": 5.199999809265137,
           "side": "under",
-          "edge": 0.228,
+          "edge": 0.219,
           "is_value_bet": true,
-          "odds": -124,
+          "odds": -129,
           "sportsbook": "DraftKings",
           "recent_games": [
             5,
@@ -228,9 +228,9 @@
           "line": 5.5,
           "predicted_value": 4.400000095367432,
           "side": "under",
-          "edge": 0.14,
+          "edge": 0.179,
           "is_value_bet": true,
-          "odds": -160,
+          "odds": -135,
           "sportsbook": "DraftKings",
           "recent_games": [
             3,
