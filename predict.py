@@ -455,11 +455,21 @@ def run_predictions(api_key: str):
             upset = evaluate_upset(game_label, home_team, away_team, probs["home_win_prob"], home_ml, away_ml, primary_book["title"])
             if upset:
                 print(f"  >>> UPSET WATCH: {upset.underdog} (+{upset.underdog_odds}) model gives {upset.model_underdog_win_prob} vs market {upset.market_underdog_implied_prob}")
+                # Pull each side's actual scoring over their last 5 games so
+                # the dashboard can show *why* the model likes the underdog —
+                # not just the probability gap, but the recent form behind it.
+                underdog_is_home = upset.underdog == home_team
+                underdog_abbr = home_abbr if underdog_is_home else away_abbr
+                favorite_abbr = away_abbr if underdog_is_home else home_abbr
+                favorite_team = away_team if underdog_is_home else home_team
                 game_entry["upset_watch"] = {
                     "underdog": upset.underdog,
                     "odds": upset.underdog_odds,
                     "model_prob": upset.model_underdog_win_prob,
                     "market_prob": upset.market_underdog_implied_prob,
+                    "favorite": favorite_team,
+                    "underdog_recent_scores": get_team_recent_scores(features_df, underdog_abbr),
+                    "favorite_recent_scores": get_team_recent_scores(features_df, favorite_abbr),
                 }
 
         if spread_line is not None:

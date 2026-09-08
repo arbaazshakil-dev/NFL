@@ -250,6 +250,74 @@
     padding: 4px 10px;
   }
 
+  /* Expandable signals (upset watch, prop over/under) — a details/summary
+     wrapper around the existing .signal styling so the row itself stays
+     unchanged when collapsed, and reveals a "why" panel underneath when tapped. */
+  details.signal-expand {
+    padding: 0;
+    border-left: 3px solid transparent;
+    background: rgba(244, 241, 234, 0.03);
+  }
+
+  details.signal-expand.signal-upset { border-left-color: var(--steel); }
+  details.signal-expand.signal-prop-over { border-left-color: var(--green); }
+  details.signal-expand.signal-prop-under { border-left-color: var(--redflag); }
+
+  details.signal-expand > summary {
+    font-size: 13px;
+    padding: 7px 10px;
+    cursor: pointer;
+    list-style: none;
+  }
+
+  details.signal-expand > summary::-webkit-details-marker { display: none; }
+
+  details.signal-expand > summary::after {
+    content: ' — why?';
+    color: var(--chalk-dim);
+    font-size: 11px;
+  }
+
+  details.signal-expand[open] > summary::after {
+    content: '';
+  }
+
+  .signal-why {
+    padding: 2px 10px 10px;
+    font-size: 12px;
+    color: var(--chalk-dim);
+    line-height: 1.5;
+  }
+
+  .form-compare {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+  }
+
+  .form-side {
+    flex: 1;
+  }
+
+  .form-side-label {
+    font-size: 11px;
+    color: var(--chalk);
+    margin-bottom: 3px;
+  }
+
+  .form-scores {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+  }
+
+  .form-score {
+    font-size: 11px;
+    padding: 2px 6px;
+    background: rgba(244, 241, 234, 0.06);
+    border-radius: 3px;
+  }
+
   .injury-report {
     margin-top: 14px;
     display: flex;
@@ -380,15 +448,58 @@ function round1(n) {
   return Math.round(n * 10) / 10;
 }
 
+function renderUpsetSignal(upset) {
+  const modelPct = Math.round(upset.model_prob * 100);
+  const marketPct = Math.round(upset.market_prob * 100);
+  const gap = modelPct - marketPct;
+
+  const underdogScores = upset.underdog_recent_scores || [];
+  const favoriteScores = upset.favorite_recent_scores || [];
+
+  const formHtml = (underdogScores.length || favoriteScores.length) ? `
+    <div class="form-compare">
+      <div class="form-side">
+        <div class="form-side-label">${upset.underdog} — last ${underdogScores.length}</div>
+        <div class="form-scores">${underdogScores.map(s => `<span class="form-score">${round1(s)}</span>`).join('')}</div>
+      </div>
+      <div class="form-side">
+        <div class="form-side-label">${upset.favorite || 'Favorite'} — last ${favoriteScores.length}</div>
+        <div class="form-scores">${favoriteScores.map(s => `<span class="form-score">${round1(s)}</span>`).join('')}</div>
+      </div>
+    </div>
+  ` : '';
+
+  return `
+    <details class="signal-expand signal-upset">
+      <summary><span class="signal-tag">Upset watch</span>${upset.underdog} (+${upset.odds}) &middot; model ${modelPct}% vs market ${marketPct}%</summary>
+      <div class="signal-why">
+        The model rates ${upset.underdog}'s win chance ${gap} points higher than the market's implied probability.
+        ${formHtml}
+      </div>
+    </details>
+  `;
+}
+
 function renderPropSignal(prop) {
   const statLabel = prop.stat.replace('_', ' ');
   const sideClass = prop.side.toLowerCase() === 'over' ? 'over' : 'under';
-  return `<div class="signal signal-prop-${sideClass}">
-    <span class="signal-tag">Prop value</span>${prop.player}
-    <span class="signal-side signal-side-${sideClass}">${prop.side}</span>
-    ${prop.line} ${statLabel} (model ${round1(prop.predicted_value)})
-    &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}
-  </div>`;
+  const predicted = round1(prop.predicted_value);
+  const gap = round1(Math.abs(predicted - prop.line));
+
+  return `
+    <details class="signal-expand signal-prop-${sideClass}">
+      <summary>
+        <span class="signal-tag">Prop value</span>${prop.player}
+        <span class="signal-side signal-side-${sideClass}">${prop.side}</span>
+        ${prop.line} ${statLabel} (model ${predicted})
+        &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}
+      </summary>
+      <div class="signal-why">
+        The model projects ${prop.player} for ${predicted} ${statLabel}, ${gap} ${sideClass === 'over' ? 'above' : 'below'}
+        the posted line of ${prop.line} — based on their recent rolling performance in this stat, not a single-game trend.
+      </div>
+    </details>
+  `;
 }
 
 function renderGame(game, idx) {
@@ -439,7 +550,7 @@ function renderGame(game, idx) {
     signals += `<div class="signal signal-value"><span class="signal-tag">High confidence</span>${game.high_confidence.side} win prob ${Math.round(game.high_confidence.prob * 100)}%</div>`;
   }
   if (game.upset_watch) {
-    signals += `<div class="signal signal-upset"><span class="signal-tag">Upset watch</span>${game.upset_watch.underdog} (+${game.upset_watch.odds}) &middot; model ${Math.round(game.upset_watch.model_prob * 100)}% vs market ${Math.round(game.upset_watch.market_prob * 100)}%</div>`;
+    signals += renderUpsetSignal(game.upset_watch);
   }
   (game.scoring_fades || []).forEach(fade => {
     signals += `<div class="signal signal-fade"><span class="signal-tag">Scoring fade</span>${fade.team} implied ${round1(fade.implied_total)}pts, averaging ${round1(fade.recent_avg)} over last ${fade.games_used}</div>`;
@@ -516,9 +627,10 @@ function renderPropsToggle(game) {
     .sort((a, b) => b.edge - a.edge)
     .map(p => {
       const statLabel = p.stat.replace('_', ' ');
-      const rowClass = p.is_value_bet ? 'prop-row prop-row-value' : 'prop-row';
+      const sideClass = p.side.toLowerCase() === 'over' ? 'over' : 'under';
+      const rowClass = p.is_value_bet ? `prop-row prop-row-value ${sideClass}` : 'prop-row';
       return `<div class="${rowClass}">
-        <span>${p.player} — ${p.side} ${p.line} ${statLabel} (model ${p.predicted_value})</span>
+        <span>${p.player} — <span class="signal-side signal-side-${sideClass}">${p.side}</span> ${p.line} ${statLabel} (model ${round1(p.predicted_value)})</span>
         <span>${p.odds > 0 ? '+' : ''}${p.odds}</span>
       </div>`;
     })
