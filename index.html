@@ -15,6 +15,7 @@
     --amber: #E8A33D;
     --steel: #6E93AC;
     --redflag: #C24E4E;
+    --green: #4FA36B;
     --row-border: rgba(244, 241, 234, 0.09);
   }
 
@@ -71,33 +72,107 @@
     line-height: 1.6;
   }
 
-  .game-row {
-    padding: 20px;
+  /* ---- Collapsed row (the tappable summary) ---- */
+
+  .game {
     border-bottom: 1px solid var(--row-border);
   }
 
-  .matchup-line {
+  .game-summary {
     display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 4px;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    width: 100%;
+    text-align: left;
+    color: inherit;
+    font: inherit;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  .teams {
+  .game-summary:active {
+    background: rgba(244, 241, 234, 0.04);
+  }
+
+  .call-bar {
+    width: 4px;
+    align-self: stretch;
+    min-height: 40px;
+    border-radius: 2px;
+    flex-shrink: 0;
+  }
+
+  .call-bar.good { background: var(--green); }
+  .call-bar.risk { background: var(--redflag); }
+  .call-bar.neutral { background: var(--turf-line); }
+
+  .summary-main {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .summary-teams {
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 
-  .book {
+  .summary-sub {
     color: var(--chalk-dim);
-    font-size: 12px;
+    font-size: 12.5px;
+    margin-top: 3px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
-  .kickoff {
+  .summary-pick {
+    color: var(--chalk);
+  }
+
+  .signal-count {
+    font-size: 11px;
+    padding: 2px 7px;
+    background: rgba(244, 241, 234, 0.08);
+    border-radius: 10px;
+    color: var(--chalk-dim);
+  }
+
+  .signal-count.has-signals {
+    color: var(--turf);
+    background: var(--green);
+    font-weight: 600;
+  }
+
+  .chevron {
     color: var(--chalk-dim);
     font-size: 13px;
-    margin-bottom: 14px;
+    transition: transform 0.18s ease;
+    flex-shrink: 0;
+  }
+
+  .game[open] .chevron {
+    transform: rotate(90deg);
+  }
+
+  /* Hide native <details> marker */
+  .game > summary::-webkit-details-marker,
+  .game > summary::marker {
+    display: none;
+    content: '';
+  }
+
+  /* ---- Expanded detail ---- */
+
+  .game-detail {
+    padding: 4px 20px 22px;
   }
 
   .stat-grid {
@@ -157,7 +232,7 @@
     background: rgba(244, 241, 234, 0.03);
   }
 
-  .signal-value { border-left-color: var(--amber); }
+  .signal-value { border-left-color: var(--green); }
   .signal-upset { border-left-color: var(--steel); }
   .signal-fade { border-left-color: var(--redflag); }
   .signal-prop { border-left-color: #8B6FB3; }
@@ -270,26 +345,60 @@ async function loadDashboard() {
   }
 }
 
-function renderGame(game) {
+// Counts how many actionable signals a game has (value bets, upsets, fades,
+// prop value bets) — drives both the color bar and the signal-count chip
+// on the collapsed row, so you can tell at a glance which games are worth
+// opening without expanding every card.
+function countSignals(game) {
+  let good = 0;
+  let risk = 0;
+  if (game.value_bet) good++;
+  if (game.high_confidence) good++;
+  if (game.upset_watch) good++;
+  good += (game.player_props || []).filter(p => p.is_value_bet).length;
+  risk += (game.scoring_fades || []).length;
+  return { good, risk, total: good + risk };
+}
+
+function renderGame(game, idx) {
   const kickoff = game.commence_time
     ? new Date(game.commence_time).toLocaleString('en-US', { weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' })
     : '';
 
   if (game.odds_pending) {
     return `
-      <div class="game-row">
-        <div class="matchup-line">
-          <span class="teams">${game.away_team} @ ${game.home_team}</span>
-          <span class="book">Week ${game.week || ''}</span>
+      <details class="game">
+        <summary class="game-summary">
+          <div class="call-bar neutral"></div>
+          <div class="summary-main">
+            <div class="summary-teams">${game.away_team} @ ${game.home_team}</div>
+            <div class="summary-sub">${kickoff} &middot; Week ${game.week || ''}</div>
+          </div>
+          <span class="signal-count">pending</span>
+          <span class="chevron">&#9656;</span>
+        </summary>
+        <div class="game-detail">
+          <div class="signal signal-upset">Odds not posted yet — predictions will appear once a sportsbook prices this game.</div>
         </div>
-        <div class="kickoff">${kickoff}</div>
-        <div class="signal signal-upset" style="margin-top:10px;">Odds not posted yet — predictions will appear once a sportsbook prices this game.</div>
-      </div>
+      </details>
     `;
   }
 
   const homePct = Math.round(game.home_win_prob * 100);
   const awayPct = Math.round(game.away_win_prob * 100);
+  const { good, risk, total } = countSignals(game);
+
+  // The color bar on the collapsed row is the at-a-glance read: green means
+  // the model found at least one favorable signal (value bet, high
+  // confidence pick, upset watch, or a prop edge) and no fades outweigh it;
+  // red means a scoring fade is the dominant signal; gray means nothing
+  // stands out either way.
+  let barClass = 'neutral';
+  if (good > 0 && good >= risk) barClass = 'good';
+  else if (risk > 0) barClass = 'risk';
+
+  const pickTeam = game.predicted_margin > 0 ? game.home_team : game.away_team;
+  const pickMargin = Math.abs(game.predicted_margin).toFixed(1);
 
   let signals = '';
   if (game.value_bet) {
@@ -309,42 +418,55 @@ function renderGame(game) {
     signals += `<div class="signal signal-prop"><span class="signal-tag">Prop value</span>${prop.player} ${prop.side} ${prop.line} ${statLabel} (model ${prop.predicted_value}) &middot; ${prop.odds > 0 ? '+' : ''}${prop.odds} &middot; ${prop.sportsbook}</div>`;
   });
 
+  const countChip = total > 0
+    ? `<span class="signal-count has-signals">${total} signal${total === 1 ? '' : 's'}</span>`
+    : `<span class="signal-count">no edge</span>`;
+
   return `
-    <div class="game-row">
-      <div class="matchup-line">
-        <span class="teams">${game.away_team} @ ${game.home_team}</span>
-        <span class="book">${game.sportsbook || ''}</span>
-      </div>
-      <div class="kickoff">${kickoff}</div>
-
-      <div class="stat-grid">
-        <div class="stat">
-          <div class="stat-label">Predicted margin</div>
-          <div class="stat-value">${game.predicted_margin > 0 ? game.home_team : game.away_team} ${Math.abs(game.predicted_margin).toFixed(1)}</div>
+    <details class="game">
+      <summary class="game-summary">
+        <div class="call-bar ${barClass}"></div>
+        <div class="summary-main">
+          <div class="summary-teams">${game.away_team} @ ${game.home_team}</div>
+          <div class="summary-sub">
+            <span class="summary-pick">${pickTeam} &minus;${pickMargin}</span>
+            &middot; ${kickoff}
+          </div>
         </div>
-        <div class="stat">
-          <div class="stat-label">Predicted total</div>
-          <div class="stat-value">${game.predicted_total.toFixed(1)}</div>
-        </div>
-        <div class="stat">
-          <div class="stat-label">Market line</div>
-          <div class="stat-value">${game.spread_line !== null ? game.spread_line : '—'} / ${game.total_line !== null ? game.total_line : '—'}</div>
-        </div>
-      </div>
+        ${countChip}
+        <span class="chevron">&#9656;</span>
+      </summary>
 
-      <div class="prob-bar">
-        <div class="prob-away" style="width:${awayPct}%"></div>
-        <div class="prob-home" style="width:${homePct}%"></div>
-      </div>
-      <div class="prob-labels">
-        <span>${game.away_team} ${awayPct}%</span>
-        <span>${game.home_team} ${homePct}%</span>
-      </div>
+      <div class="game-detail">
+        <div class="stat-grid">
+          <div class="stat">
+            <div class="stat-label">Predicted margin</div>
+            <div class="stat-value">${pickTeam} ${pickMargin}</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Predicted total</div>
+            <div class="stat-value">${game.predicted_total.toFixed(1)}</div>
+          </div>
+          <div class="stat">
+            <div class="stat-label">Market line</div>
+            <div class="stat-value">${game.spread_line !== null ? game.spread_line : '—'} / ${game.total_line !== null ? game.total_line : '—'}</div>
+          </div>
+        </div>
 
-      ${signals ? `<div class="signals">${signals}</div>` : ''}
-      ${renderInjuryReport(game)}
-      ${renderPropsToggle(game)}
-    </div>
+        <div class="prob-bar">
+          <div class="prob-away" style="width:${awayPct}%"></div>
+          <div class="prob-home" style="width:${homePct}%"></div>
+        </div>
+        <div class="prob-labels">
+          <span>${game.away_team} ${awayPct}%</span>
+          <span>${game.home_team} ${homePct}%</span>
+        </div>
+
+        ${signals ? `<div class="signals">${signals}</div>` : ''}
+        ${renderInjuryReport(game)}
+        ${renderPropsToggle(game)}
+      </div>
+    </details>
   `;
 }
 
