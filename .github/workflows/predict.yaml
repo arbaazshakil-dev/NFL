@@ -1,12 +1,16 @@
 name: Run NFL Predictions
 
-# Runs daily at 14:00 UTC (adjust to your timezone/needs) to check upcoming
-# games against live odds, plus manual trigger anytime. Trains a fresh model
-# each run (fast, ~30s) rather than depending on a separate workflow's
-# artifact — simpler and avoids cross-workflow permission issues.
+# Runs Mon/Thu/Sun at 14:00 UTC (NFL's main game days, so odds are freshest
+# right before/around those games), plus manual trigger anytime. Trains a
+# fresh model each run (fast, ~30s) rather than depending on a separate
+# workflow's artifact — simpler and avoids cross-workflow permission issues.
+#
+# Changed from daily to 3x/week to stay well under SportsGameOdds's
+# 2,500 entities/month free-tier cap — a full run (odds + player props
+# for ~16 games) uses ~80 entities, so daily would risk ~2,400+/month.
 on:
   schedule:
-    - cron: "0 14 * * *"
+    - cron: "0 14 * * 1,4,0"
   workflow_dispatch: {}
 
 jobs:
