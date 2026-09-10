@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-10T13:59:18.232080+00:00",
+  "generated_at": "2026-09-10T14:03:29.473211+00:00",
   "games": [
     {
       "matchup": "San Francisco 49ers @ Los Angeles Rams",
@@ -11,12 +11,12 @@
       "home_win_prob": 0.863,
       "away_win_prob": 0.137,
       "spread_line": -3.5,
-      "total_line": 48.0,
-      "sportsbook": "betmgm",
+      "total_line": 48.5,
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Los Angeles Rams",
-        "edge": 0.216,
-        "odds": -210
+        "edge": 0.224,
+        "odds": -200
       },
       "high_confidence": {
         "side": "Los Angeles Rams",
@@ -581,11 +581,11 @@
       "away_win_prob": 0.186,
       "spread_line": -1.5,
       "total_line": 38.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Tennessee Titans",
-        "edge": 0.282,
-        "odds": -125
+        "edge": 0.292,
+        "odds": -120
       },
       "high_confidence": {
         "side": "Tennessee Titans",
@@ -942,11 +942,11 @@
       "away_win_prob": 0.084,
       "spread_line": -8.5,
       "total_line": 40.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Jacksonville Jaguars",
-        "edge": 0.136,
-        "odds": -450
+        "edge": 0.14,
+        "odds": -417
       },
       "high_confidence": {
         "side": "Jacksonville Jaguars",
@@ -1242,14 +1242,14 @@
       "away_win_prob": 0.363,
       "spread_line": -3.5,
       "total_line": 50.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Tampa Bay Buccaneers",
-        "odds": 165,
+        "odds": 175,
         "model_prob": 0.363,
-        "market_prob": 0.361,
+        "market_prob": 0.35,
         "favorite": "Cincinnati Bengals",
         "underdog_recent_scores": [
           20.0,
@@ -1650,16 +1650,16 @@
       "predicted_total": 45.900001525878906,
       "home_win_prob": 0.597,
       "away_win_prob": 0.403,
-      "spread_line": -7.0,
-      "total_line": 50.0,
-      "sportsbook": "betmgm",
+      "spread_line": -6.5,
+      "total_line": 49.5,
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "New Orleans Saints",
-        "odds": 260,
+        "odds": 250,
         "model_prob": 0.403,
-        "market_prob": 0.266,
+        "market_prob": 0.272,
         "favorite": "Detroit Lions",
         "underdog_recent_scores": [
           24.0,
@@ -1929,7 +1929,7 @@
       "away_win_prob": 0.385,
       "spread_line": 1.5,
       "total_line": 44.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Houston Texans",
         "edge": 0.137,
@@ -2388,18 +2388,18 @@
       "away_win_prob": 0.584,
       "spread_line": 3.5,
       "total_line": 47.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Indianapolis Colts",
-        "edge": 0.042,
-        "odds": 155
+        "edge": 0.032,
+        "odds": 150
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Indianapolis Colts",
-        "odds": 155,
+        "odds": 150,
         "model_prob": 0.416,
-        "market_prob": 0.374,
+        "market_prob": 0.384,
         "favorite": "Baltimore Ravens",
         "underdog_recent_scores": [
           19.0,
@@ -2528,6 +2528,24 @@
             30.0,
             12.0,
             50.0
+          ]
+        },
+        {
+          "player": "Alec Pierce",
+          "stat": "receiving_yards",
+          "line": 45.5,
+          "predicted_value": 43.29999923706055,
+          "side": "under",
+          "edge": 0.029,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "draftkings",
+          "recent_games": [
+            39.0,
+            16.0,
+            0.0,
+            122.0,
+            57.0
           ]
         },
         {
@@ -2793,9 +2811,9 @@
       "predicted_total": 51.599998474121094,
       "home_win_prob": 0.213,
       "away_win_prob": 0.787,
-      "spread_line": 3.0,
-      "total_line": 47.0,
-      "sportsbook": "betmgm",
+      "spread_line": 3.5,
+      "total_line": 47.5,
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": null,
@@ -3131,14 +3149,14 @@
       "away_win_prob": 0.473,
       "spread_line": -3.5,
       "total_line": 42.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Atlanta Falcons",
-        "odds": 155,
+        "odds": 150,
         "model_prob": 0.473,
-        "market_prob": 0.374,
+        "market_prob": 0.384,
         "favorite": "Pittsburgh Steelers",
         "underdog_recent_scores": [
           9.0,
@@ -3184,24 +3202,6 @@
             256.0,
             112.0,
             274.0
-          ]
-        },
-        {
-          "player": "Tua Tagovailoa",
-          "stat": "passing_yards",
-          "line": 206.5,
-          "predicted_value": 264.5,
-          "side": "over",
-          "edge": 0.241,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "draftkings",
-          "recent_games": [
-            317.0,
-            365.0,
-            331.0,
-            196.0,
-            215.0
           ]
         },
         {
@@ -3612,15 +3612,15 @@
       "home_win_prob": 0.535,
       "away_win_prob": 0.465,
       "spread_line": -1.5,
-      "total_line": 46.0,
-      "sportsbook": "betmgm",
+      "total_line": 46.5,
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": null,
       "scoring_fades": [
         {
           "team": "Green Bay Packers",
-          "implied_total": 22.2,
+          "implied_total": 22.5,
           "recent_avg": 19.2,
           "games_used": 5
         }
@@ -4037,16 +4037,16 @@
       "predicted_total": 45.20000076293945,
       "home_win_prob": 0.289,
       "away_win_prob": 0.711,
-      "spread_line": -3.0,
-      "total_line": 40.0,
-      "sportsbook": "betmgm",
+      "spread_line": -3.5,
+      "total_line": 40.5,
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Miami Dolphins",
         "odds": 140,
         "model_prob": 0.711,
-        "market_prob": 0.396,
+        "market_prob": 0.399,
         "favorite": "Las Vegas Raiders",
         "underdog_recent_scores": [
           34.0,
@@ -4066,7 +4066,7 @@
       "scoring_fades": [
         {
           "team": "Las Vegas Raiders",
-          "implied_total": 21.5,
+          "implied_total": 22.0,
           "recent_avg": 12.4,
           "games_used": 5
         }
@@ -4079,13 +4079,13 @@
         {
           "player": "Devon Achane",
           "stat": "rushing_yards",
-          "line": 70.5,
+          "line": 68.5,
           "predicted_value": 47.0,
           "side": "under",
-          "edge": 0.29,
+          "edge": 0.274,
           "is_value_bet": true,
           "odds": -114,
-          "sportsbook": "draftkings",
+          "sportsbook": "fanduel",
           "recent_games": [
             24.0,
             41.0,
@@ -4100,10 +4100,10 @@
           "line": 39.5,
           "predicted_value": 23.5,
           "side": "under",
-          "edge": 0.209,
+          "edge": 0.212,
           "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             41.0,
             73.0,
@@ -4118,10 +4118,10 @@
           "line": 0.5,
           "predicted_value": 3.200000047683716,
           "side": "over",
-          "edge": 0.101,
+          "edge": 0.11,
           "is_value_bet": true,
-          "odds": 117,
-          "sportsbook": "draftkings",
+          "odds": 120,
+          "sportsbook": "fanduel",
           "recent_games": [
             0.0,
             0.0,
@@ -4133,13 +4133,13 @@
         {
           "player": "Devon Achane",
           "stat": "receiving_yards",
-          "line": 28.5,
+          "line": 27.5,
           "predicted_value": 44.70000076293945,
           "side": "over",
-          "edge": 0.232,
+          "edge": 0.244,
           "is_value_bet": true,
-          "odds": -112,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             45.0,
             35.0,
@@ -4151,13 +4151,13 @@
         {
           "player": "Tre Tucker",
           "stat": "receiving_yards",
-          "line": 48.5,
+          "line": 45.5,
           "predicted_value": 28.299999237060547,
           "side": "under",
-          "edge": 0.279,
+          "edge": 0.244,
           "is_value_bet": true,
-          "odds": -112,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             7.0,
             18.0,
@@ -4169,13 +4169,13 @@
         {
           "player": "Greg Dulcich",
           "stat": "receiving_yards",
-          "line": 27.5,
+          "line": 26.5,
           "predicted_value": 24.299999237060547,
           "side": "under",
-          "edge": 0.047,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "draftkings",
+          "edge": 0.034,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             22.0,
             3.0,
@@ -4190,10 +4190,10 @@
           "line": 37.5,
           "predicted_value": 23.799999237060547,
           "side": "under",
-          "edge": 0.194,
+          "edge": 0.2,
           "is_value_bet": true,
-          "odds": -115,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             5.0,
             5.0,
@@ -4208,10 +4208,10 @@
           "line": 27.5,
           "predicted_value": 27.700000762939453,
           "side": "over",
-          "edge": 0.0,
+          "edge": 0.002,
           "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             0.0,
             52.0,
@@ -4223,13 +4223,13 @@
         {
           "player": "Michael Mayer",
           "stat": "receiving_yards",
-          "line": 40.5,
+          "line": 37.5,
           "predicted_value": 21.299999237060547,
           "side": "under",
-          "edge": 0.272,
+          "edge": 0.232,
           "is_value_bet": true,
-          "odds": -110,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             68.0,
             11.0,
@@ -4241,13 +4241,13 @@
         {
           "player": "Malik Willis",
           "stat": "passing_yards",
-          "line": 183.5,
+          "line": 184.5,
           "predicted_value": 99.4000015258789,
           "side": "under",
-          "edge": 0.33,
+          "edge": 0.331,
           "is_value_bet": true,
-          "odds": -111,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             122.0,
             202.0,
@@ -4259,13 +4259,13 @@
         {
           "player": "Kirk Cousins",
           "stat": "passing_yards",
-          "line": 209.5,
+          "line": 207.5,
           "predicted_value": 253.6999969482422,
           "side": "over",
-          "edge": 0.193,
+          "edge": 0.198,
           "is_value_bet": true,
-          "odds": -111,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             306.0,
             173.0,
@@ -4280,10 +4280,10 @@
           "line": 4.5,
           "predicted_value": 2.5,
           "side": "under",
-          "edge": 0.313,
+          "edge": 0.314,
           "is_value_bet": true,
-          "odds": -138,
-          "sportsbook": "draftkings",
+          "odds": -140,
+          "sportsbook": "fanduel",
           "recent_games": [
             2,
             2,
@@ -4298,10 +4298,10 @@
           "line": 4.5,
           "predicted_value": 4.400000095367432,
           "side": "over",
-          "edge": 0.06,
+          "edge": 0.064,
           "is_value_bet": true,
           "odds": 122,
-          "sportsbook": "draftkings",
+          "sportsbook": "fanduel",
           "recent_games": [
             6,
             7,
@@ -4316,10 +4316,10 @@
           "line": 2.5,
           "predicted_value": 2.700000047683716,
           "side": "under",
-          "edge": 0.014,
+          "edge": 0.022,
           "is_value_bet": false,
-          "odds": 116,
-          "sportsbook": "draftkings",
+          "odds": 118,
+          "sportsbook": "fanduel",
           "recent_games": [
             0,
             5,
@@ -4334,10 +4334,10 @@
           "line": 3.5,
           "predicted_value": 2.0999999046325684,
           "side": "under",
-          "edge": 0.187,
+          "edge": 0.2,
           "is_value_bet": true,
-          "odds": -163,
-          "sportsbook": "draftkings",
+          "odds": -158,
+          "sportsbook": "fanduel",
           "recent_games": [
             1,
             1,
@@ -4352,10 +4352,10 @@
           "line": 4.5,
           "predicted_value": 2.299999952316284,
           "side": "under",
-          "edge": 0.359,
+          "edge": 0.378,
           "is_value_bet": true,
-          "odds": -122,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             7,
             1,
@@ -4370,10 +4370,10 @@
           "line": 2.5,
           "predicted_value": 2.5999999046325684,
           "side": "over",
-          "edge": 0.016,
+          "edge": 0.027,
           "is_value_bet": false,
-          "odds": -118,
-          "sportsbook": "draftkings",
+          "odds": -114,
+          "sportsbook": "fanduel",
           "recent_games": [
             2,
             1,
@@ -4394,12 +4394,12 @@
       "home_win_prob": 0.839,
       "away_win_prob": 0.161,
       "spread_line": -9.5,
-      "total_line": 47.0,
-      "sportsbook": "betmgm",
+      "total_line": 47.5,
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Los Angeles Chargers",
-        "edge": 0.031,
-        "odds": -525
+        "edge": 0.041,
+        "odds": -500
       },
       "high_confidence": {
         "side": "Los Angeles Chargers",
@@ -4409,7 +4409,7 @@
       "scoring_fades": [
         {
           "team": "Los Angeles Chargers",
-          "implied_total": 28.2,
+          "implied_total": 28.5,
           "recent_avg": 14.4,
           "games_used": 5
         }
@@ -4666,11 +4666,11 @@
       "away_win_prob": 0.22,
       "spread_line": -5.5,
       "total_line": 44.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Philadelphia Eagles",
-        "edge": 0.11,
-        "odds": -235
+        "edge": 0.109,
+        "odds": -238
       },
       "high_confidence": {
         "side": "Philadelphia Eagles",
@@ -5061,20 +5061,20 @@
       "predicted_total": 46.400001525878906,
       "home_win_prob": 0.524,
       "away_win_prob": 0.476,
-      "spread_line": 3.0,
-      "total_line": 48.0,
-      "sportsbook": "betmgm",
+      "spread_line": 2.5,
+      "total_line": 48.5,
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "New York Giants",
-        "edge": 0.118,
-        "odds": 138
+        "edge": 0.115,
+        "odds": 135
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "New York Giants",
-        "odds": 138,
+        "odds": 135,
         "model_prob": 0.524,
-        "market_prob": 0.406,
+        "market_prob": 0.409,
         "favorite": "Dallas Cowboys",
         "underdog_recent_scores": [
           15.0,
@@ -5380,7 +5380,7 @@
       "away_win_prob": 0.869,
       "spread_line": -2.5,
       "total_line": 43.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": null,
@@ -5894,13 +5894,13 @@
       "predicted_total": 47.400001525878906,
       "home_win_prob": 0.655,
       "away_win_prob": 0.345,
-      "spread_line": -3.0,
+      "spread_line": -2.5,
       "total_line": 52.5,
-      "sportsbook": "betmgm",
+      "sportsbook": "pointsbet",
       "value_bet": {
         "side": "Buffalo Bills",
-        "edge": 0.056,
-        "odds": -165
+        "edge": 0.062,
+        "odds": -164
       },
       "high_confidence": null,
       "upset_watch": null,
