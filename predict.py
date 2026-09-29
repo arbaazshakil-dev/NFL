@@ -28,6 +28,7 @@ and shared/ on your Python path.
 import os
 import sys
 import json
+import time
 import traceback
 from datetime import datetime, timezone
 
@@ -54,6 +55,10 @@ from train import predict_probabilities
 
 # Set to False if you want QB-out signals alerted anyway (still flagged).
 SUPPRESS_SIGNALS_WHEN_QB_OUT = True
+
+# Odds API plan allows 10 requests/minute. One props request is made per
+# game, so wait between them to stay under the cap (7s ≈ 8-9 requests/min).
+PROPS_REQUEST_DELAY_SECONDS = 7
 
 
 class NumpyEncoder(json.JSONEncoder):
@@ -235,6 +240,10 @@ def run_player_props(props_bundle, player_features_df, player_weekly_df, event_i
     results = []
     if props_bundle is None or player_features_df is None:
         return results
+
+    # Rate limit: pause before every props request (the main odds call has
+    # already used one request this minute).
+    time.sleep(PROPS_REQUEST_DELAY_SECONDS)
 
     try:
         event_odds = get_player_props("nfl", event_id, api_key)
