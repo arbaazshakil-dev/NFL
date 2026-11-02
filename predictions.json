@@ -1,1929 +1,25 @@
 {
-  "generated_at": "2026-11-01T18:51:43.265250+00:00",
+  "generated_at": "2026-11-02T22:43:12.184992+00:00",
   "games": [
-    {
-      "matchup": "Los Angeles Chargers @ Los Angeles Rams",
-      "home_team": "Los Angeles Rams",
-      "away_team": "Los Angeles Chargers",
-      "commence_time": "2026-11-01T21:05:00.000Z",
-      "predicted_margin": 4.6,
-      "predicted_total": 44.2,
-      "home_win_prob": 0.634,
-      "away_win_prob": 0.366,
-      "spread_line": -6.5,
-      "total_line": 45.5,
-      "sportsbook": "pointsbet",
-      "value_bet": null,
-      "high_confidence": null,
-      "upset_watch": {
-        "underdog": "Los Angeles Chargers",
-        "odds": 230,
-        "model_prob": 0.366,
-        "market_prob": 0.292,
-        "favorite": "Los Angeles Rams",
-        "underdog_recent_scores": [
-          14.0,
-          16.0,
-          23.0,
-          17.0,
-          6.0
-        ],
-        "favorite_recent_scores": [
-          26.0,
-          24.0,
-          34.0,
-          16.0,
-          35.0
-        ]
-      },
-      "scoring_fades": [
-        {
-          "team": "Los Angeles Chargers",
-          "implied_total": 19.5,
-          "recent_avg": 15.2,
-          "games_used": 5
-        }
-      ],
-      "injury_report": {
-        "home": [
-          {
-            "player": "Joe Cardona",
-            "position": "LS",
-            "status": "Doubtful"
-          },
-          {
-            "player": "Coleman Shelton",
-            "position": "C",
-            "status": "Questionable"
-          },
-          {
-            "player": "Colby Parkinson",
-            "position": "TE",
-            "status": "Questionable"
-          },
-          {
-            "player": "Trent McDuffie",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Jordan Whittington",
-            "position": "WR",
-            "status": "Questionable"
-          }
-        ],
-        "away": [
-          {
-            "player": "Donte Jackson",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Derwin James",
-            "position": "S",
-            "status": "Out"
-          },
-          {
-            "player": "Kayode Awosika",
-            "position": "G",
-            "status": "Out"
-          },
-          {
-            "player": "Deane Leonard",
-            "position": "CB",
-            "status": "Out"
-          },
-          {
-            "player": "Rodney Shelley",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Brenen Thompson",
-            "position": "WR",
-            "status": "Out"
-          }
-        ]
-      },
-      "qb_out": {},
-      "suppressed_signals": [],
-      "player_props": [
-        {
-          "player": "Justin Herbert",
-          "stat": "passing_yards",
-          "line": 205.5,
-          "predicted_value": 251.5,
-          "side": "over",
-          "edge": 0.198,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            195.0,
-            284.0,
-            281.0,
-            346.0,
-            242.0
-          ]
-        },
-        {
-          "player": "Matthew Stafford",
-          "stat": "passing_yards",
-          "line": 248.5,
-          "predicted_value": 184.6,
-          "side": "under",
-          "edge": 0.264,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            160.0,
-            110.0,
-            189.0,
-            209.0,
-            324.0
-          ]
-        },
-        {
-          "player": "Kyren Williams",
-          "stat": "rushing_yards",
-          "line": 58.5,
-          "predicted_value": 79.1,
-          "side": "over",
-          "edge": 0.264,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            108.0,
-            122.0,
-            56.0,
-            76.0,
-            106.0
-          ]
-        },
-        {
-          "player": "Blake Corum",
-          "stat": "rushing_yards",
-          "line": 47.5,
-          "predicted_value": 22.2,
-          "side": "under",
-          "edge": 0.312,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            34.0,
-            5.0,
-            14.0,
-            -4.0,
-            10.0
-          ]
-        },
-        {
-          "player": "Puka Nacua",
-          "stat": "rushing_yards",
-          "line": 0.5,
-          "predicted_value": 11.0,
-          "side": "over",
-          "edge": 0.114,
-          "is_value_bet": true,
-          "odds": -128,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            11.0,
-            0.0,
-            0.0,
-            7.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Matthew Stafford",
-          "stat": "rushing_yards",
-          "line": 0.5,
-          "predicted_value": 12.4,
-          "side": "over",
-          "edge": 0.244,
-          "is_value_bet": true,
-          "odds": 126,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            18.0,
-            -4.0,
-            16.0,
-            -1.0,
-            5.0
-          ]
-        },
-        {
-          "player": "Kimani Vidal",
-          "stat": "rushing_yards",
-          "line": 22.5,
-          "predicted_value": 22.7,
-          "side": "over",
-          "edge": 0.002,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            20.0,
-            34.0,
-            9.0,
-            24.0,
-            24.0
-          ]
-        },
-        {
-          "player": "Keaton Mitchell",
-          "stat": "rushing_yards",
-          "line": 14.5,
-          "predicted_value": 44.4,
-          "side": "over",
-          "edge": 0.352,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            64.0,
-            54.0,
-            73.0,
-            20.0,
-            10.0
-          ]
-        },
-        {
-          "player": "Kyren Williams",
-          "stat": "receiving_yards",
-          "line": 24.5,
-          "predicted_value": 13.9,
-          "side": "under",
-          "edge": 0.157,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            4.0,
-            7.0,
-            16.0,
-            16.0,
-            -1.0
-          ]
-        },
-        {
-          "player": "Ladd McConkey",
-          "stat": "receiving_yards",
-          "line": 47.5,
-          "predicted_value": 67.0,
-          "side": "over",
-          "edge": 0.272,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            58.0,
-            87.0,
-            94.0,
-            95.0,
-            197.0
-          ]
-        },
-        {
-          "player": "Puka Nacua",
-          "stat": "receiving_yards",
-          "line": 91.5,
-          "predicted_value": 84.3,
-          "side": "under",
-          "edge": 0.109,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            97.0,
-            56.0,
-            129.0,
-            44.0,
-            97.0
-          ]
-        },
-        {
-          "player": "Blake Corum",
-          "stat": "receiving_yards",
-          "line": 6.5,
-          "predicted_value": 6.9,
-          "side": "over",
-          "edge": 0.006,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            15.0,
-            0.0,
-            0.0,
-            12.0
-          ]
-        },
-        {
-          "player": "Tyler Higbee",
-          "stat": "receiving_yards",
-          "line": 34.5,
-          "predicted_value": 23.5,
-          "side": "under",
-          "edge": 0.162,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            11.0,
-            9.0,
-            46.0,
-            58.0,
-            54.0
-          ]
-        },
-        {
-          "player": "Charlie Kolar",
-          "stat": "receiving_yards",
-          "line": 17.5,
-          "predicted_value": 18.9,
-          "side": "over",
-          "edge": 0.021,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            64.0,
-            14.0,
-            9.0,
-            4.0,
-            6.0
-          ]
-        },
-        {
-          "player": "Kimani Vidal",
-          "stat": "receiving_yards",
-          "line": 7.5,
-          "predicted_value": 8.6,
-          "side": "over",
-          "edge": 0.017,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            0.0,
-            13.0,
-            0.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Keaton Mitchell",
-          "stat": "receiving_yards",
-          "line": 6.5,
-          "predicted_value": 15.7,
-          "side": "over",
-          "edge": 0.137,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            25.0,
-            8.0,
-            15.0,
-            28.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Quentin Johnston",
-          "stat": "receiving_yards",
-          "line": 33.5,
-          "predicted_value": 63.8,
-          "side": "over",
-          "edge": 0.376,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            45.0,
-            18.0,
-            48.0,
-            186.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Blake Corum",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 0.9,
-          "side": "over",
-          "edge": 0.018,
-          "is_value_bet": false,
-          "odds": 162,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            2.0,
-            0.0,
-            0.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Kyren Williams",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 1.9,
-          "side": "under",
-          "edge": 0.279,
-          "is_value_bet": true,
-          "odds": -130,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            1.0,
-            3.0,
-            3.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Puka Nacua",
-          "stat": "receptions",
-          "line": 7.5,
-          "predicted_value": 6.3,
-          "side": "under",
-          "edge": 0.271,
-          "is_value_bet": true,
-          "odds": 104,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            7.0,
-            8.0,
-            10.0,
-            5.0,
-            6.0
-          ]
-        },
-        {
-          "player": "Tyler Higbee",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 2.5,
-          "side": "under",
-          "edge": 0.191,
-          "is_value_bet": true,
-          "odds": -120,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            1.0,
-            2.0,
-            5.0,
-            5.0,
-            7.0
-          ]
-        },
-        {
-          "player": "Ladd McConkey",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 5.8,
-          "side": "over",
-          "edge": 0.308,
-          "is_value_bet": true,
-          "odds": -160,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            6.0,
-            8.0,
-            5.0,
-            9.0
-          ]
-        },
-        {
-          "player": "Charlie Kolar",
-          "stat": "receptions",
-          "line": 2.5,
-          "predicted_value": 1.4,
-          "side": "under",
-          "edge": 0.158,
-          "is_value_bet": true,
-          "odds": -152,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            3.0,
-            1.0,
-            1.0,
-            1.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Kimani Vidal",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 1.0,
-          "side": "under",
-          "edge": 0.076,
-          "is_value_bet": true,
-          "odds": -132,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            0.0,
-            2.0,
-            0.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Quentin Johnston",
-          "stat": "receptions",
-          "line": 2.5,
-          "predicted_value": 5.4,
-          "side": "over",
-          "edge": 0.439,
-          "is_value_bet": true,
-          "odds": -114,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            3.0,
-            5.0,
-            13.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Keaton Mitchell",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 1.4,
-          "side": "over",
-          "edge": 0.01,
-          "is_value_bet": false,
-          "odds": 102,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            1.0,
-            2.0,
-            1.0,
-            0.0
-          ]
-        }
-      ]
-    },
-    {
-      "matchup": "Kansas City Chiefs @ Denver Broncos",
-      "home_team": "Denver Broncos",
-      "away_team": "Kansas City Chiefs",
-      "commence_time": "2026-11-01T21:25:00.000Z",
-      "predicted_margin": -4.2,
-      "predicted_total": 48.6,
-      "home_win_prob": 0.378,
-      "away_win_prob": 0.622,
-      "spread_line": 1.5,
-      "total_line": 41.5,
-      "sportsbook": "pointsbet",
-      "value_bet": null,
-      "high_confidence": null,
-      "upset_watch": null,
-      "scoring_fades": [],
-      "injury_report": {
-        "home": [
-          {
-            "player": "Garett Bolles",
-            "position": "T",
-            "status": "Questionable"
-          },
-          {
-            "player": "Zach Allen",
-            "position": "DE",
-            "status": "Questionable"
-          },
-          {
-            "player": "Brandon Jones",
-            "position": "S",
-            "status": "Questionable"
-          },
-          {
-            "player": "Talanoa Hufanga",
-            "position": "S",
-            "status": "Out"
-          },
-          {
-            "player": "Jaylen Waddle",
-            "position": "WR",
-            "status": "Questionable"
-          },
-          {
-            "player": "RJ Harvey",
-            "position": "RB",
-            "status": "Out"
-          }
-        ],
-        "away": [
-          {
-            "player": "L'Jarius Sneed",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Omarr Norman-Lott",
-            "position": "DT",
-            "status": "Out"
-          },
-          {
-            "player": "R Mason Thomas",
-            "position": "DE",
-            "status": "Questionable"
-          },
-          {
-            "player": "Mansoor Delane",
-            "position": "CB",
-            "status": "Questionable"
-          }
-        ]
-      },
-      "qb_out": {},
-      "suppressed_signals": [],
-      "player_props": [
-        {
-          "player": "Bo Nix",
-          "stat": "passing_yards",
-          "line": 208.5,
-          "predicted_value": 246.9,
-          "side": "over",
-          "edge": 0.167,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            130.0,
-            263.0,
-            219.0,
-            321.0,
-            144.0
-          ]
-        },
-        {
-          "player": "Patrick Mahomes",
-          "stat": "passing_yards",
-          "line": 220.5,
-          "predicted_value": 236.7,
-          "side": "over",
-          "edge": 0.072,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            260.0,
-            320.0,
-            177.0,
-            245.0,
-            257.0
-          ]
-        },
-        {
-          "player": "Bo Nix",
-          "stat": "rushing_yards",
-          "line": 14.5,
-          "predicted_value": 26.1,
-          "side": "over",
-          "edge": 0.158,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            23.0,
-            25.0,
-            31.0,
-            47.0,
-            43.0
-          ]
-        },
-        {
-          "player": "Patrick Mahomes",
-          "stat": "rushing_yards",
-          "line": 13.5,
-          "predicted_value": 22.1,
-          "side": "over",
-          "edge": 0.118,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            33.0,
-            12.0,
-            14.0,
-            43.0,
-            25.0
-          ]
-        },
-        {
-          "player": "Kenneth Walker",
-          "stat": "rushing_yards",
-          "line": 85.5,
-          "predicted_value": 58.6,
-          "side": "under",
-          "edge": 0.327,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            83.0,
-            54.0,
-            41.0,
-            49.0,
-            31.0
-          ]
-        },
-        {
-          "player": "J.K. Dobbins",
-          "stat": "rushing_yards",
-          "line": 30.5,
-          "predicted_value": 58.5,
-          "side": "over",
-          "edge": 0.336,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            56.0,
-            40.0,
-            76.0,
-            63.0,
-            26.0
-          ]
-        },
-        {
-          "player": "Kenneth Walker",
-          "stat": "receiving_yards",
-          "line": 18.5,
-          "predicted_value": 24.0,
-          "side": "over",
-          "edge": 0.082,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            24.0,
-            5.0,
-            52.0,
-            -3.0,
-            28.0
-          ]
-        },
-        {
-          "player": "Travis Kelce",
-          "stat": "receiving_yards",
-          "line": 46.5,
-          "predicted_value": 53.2,
-          "side": "over",
-          "edge": 0.1,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            30.0,
-            84.0,
-            117.0,
-            19.0,
-            39.0
-          ]
-        },
-        {
-          "player": "Noah Gray",
-          "stat": "receiving_yards",
-          "line": 14.5,
-          "predicted_value": 15.8,
-          "side": "over",
-          "edge": 0.02,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            10.0,
-            6.0,
-            1.0,
-            13.0,
-            2.0
-          ]
-        },
-        {
-          "player": "Rashee Rice",
-          "stat": "receiving_yards",
-          "line": 49.5,
-          "predicted_value": 59.9,
-          "side": "over",
-          "edge": 0.155,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            46.0,
-            39.0,
-            103.0,
-            75.0,
-            110.0
-          ]
-        },
-        {
-          "player": "Xavier Worthy",
-          "stat": "receiving_yards",
-          "line": 29.5,
-          "predicted_value": 62.7,
-          "side": "over",
-          "edge": 0.397,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            65.0,
-            79.0,
-            45.0,
-            85.0,
-            157.0
-          ]
-        },
-        {
-          "player": "Evan Engram",
-          "stat": "receiving_yards",
-          "line": 24.5,
-          "predicted_value": 47.6,
-          "side": "over",
-          "edge": 0.311,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            45.0,
-            40.0,
-            28.0,
-            41.0,
-            33.0
-          ]
-        },
-        {
-          "player": "Courtland Sutton",
-          "stat": "receiving_yards",
-          "line": 35.5,
-          "predicted_value": 62.0,
-          "side": "over",
-          "edge": 0.344,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            32.0,
-            50.0,
-            55.0,
-            98.0,
-            75.0
-          ]
-        },
-        {
-          "player": "Jaylen Waddle",
-          "stat": "receiving_yards",
-          "line": 39.5,
-          "predicted_value": 52.9,
-          "side": "over",
-          "edge": 0.195,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            144.0,
-            53.0,
-            99.0,
-            0.0,
-            44.0
-          ]
-        },
-        {
-          "player": "Troy Franklin",
-          "stat": "receiving_yards",
-          "line": 14.5,
-          "predicted_value": 21.1,
-          "side": "over",
-          "edge": 0.1,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            9.0,
-            25.0,
-            -1.0,
-            12.0,
-            54.0
-          ]
-        },
-        {
-          "player": "Marvin Mims Jr.",
-          "stat": "receiving_yards",
-          "line": 16.5,
-          "predicted_value": 19.1,
-          "side": "over",
-          "edge": 0.04,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            11.0,
-            0.0,
-            63.0,
-            16.0
-          ]
-        },
-        {
-          "player": "Kenneth Walker",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 2.7,
-          "side": "under",
-          "edge": 0.056,
-          "is_value_bet": true,
-          "odds": -188,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            3.0,
-            2.0,
-            4.0,
-            2.0,
-            8.0
-          ]
-        },
-        {
-          "player": "Travis Kelce",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 4.9,
-          "side": "over",
-          "edge": 0.128,
-          "is_value_bet": true,
-          "odds": 108,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            8.0,
-            7.0,
-            2.0,
-            4.0
-          ]
-        },
-        {
-          "player": "Rashee Rice",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 5.1,
-          "side": "over",
-          "edge": 0.167,
-          "is_value_bet": true,
-          "odds": 104,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            8.0,
-            6.0,
-            7.0,
-            5.0,
-            12.0
-          ]
-        },
-        {
-          "player": "Noah Gray",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 1.7,
-          "side": "over",
-          "edge": 0.039,
-          "is_value_bet": false,
-          "odds": -112,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            1.0,
-            1.0,
-            1.0,
-            3.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Xavier Worthy",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 5.5,
-          "side": "over",
-          "edge": 0.427,
-          "is_value_bet": true,
-          "odds": 116,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            7.0,
-            8.0,
-            5.0,
-            6.0,
-            8.0
-          ]
-        },
-        {
-          "player": "Evan Engram",
-          "stat": "receptions",
-          "line": 2.5,
-          "predicted_value": 4.9,
-          "side": "over",
-          "edge": 0.384,
-          "is_value_bet": true,
-          "odds": -122,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            6.0,
-            5.0,
-            7.0,
-            4.0
-          ]
-        },
-        {
-          "player": "Courtland Sutton",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 4.8,
-          "side": "over",
-          "edge": 0.328,
-          "is_value_bet": true,
-          "odds": 120,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            3.0,
-            5.0,
-            5.0,
-            5.0,
-            5.0
-          ]
-        },
-        {
-          "player": "Jaylen Waddle",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 3.9,
-          "side": "over",
-          "edge": 0.031,
-          "is_value_bet": false,
-          "odds": -140,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            8.0,
-            4.0,
-            9.0,
-            0.0,
-            4.0
-          ]
-        },
-        {
-          "player": "Troy Franklin",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 2.2,
-          "side": "over",
-          "edge": 0.172,
-          "is_value_bet": true,
-          "odds": -106,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            2.0,
-            1.0,
-            2.0,
-            2.0
-          ]
-        },
-        {
-          "player": "Marvin Mims Jr.",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 1.9,
-          "side": "over",
-          "edge": 0.01,
-          "is_value_bet": false,
-          "odds": -162,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            1.0,
-            2.0,
-            0.0,
-            3.0,
-            1.0
-          ]
-        }
-      ]
-    },
-    {
-      "matchup": "New England Patriots @ Miami Dolphins",
-      "home_team": "Miami Dolphins",
-      "away_team": "New England Patriots",
-      "commence_time": "2026-11-01T21:25:00.000Z",
-      "predicted_margin": -6.0,
-      "predicted_total": 46.3,
-      "home_win_prob": 0.329,
-      "away_win_prob": 0.671,
-      "spread_line": 6.5,
-      "total_line": 41.5,
-      "sportsbook": "pointsbet",
-      "value_bet": {
-        "side": "Miami Dolphins",
-        "edge": 0.076,
-        "odds": 280
-      },
-      "high_confidence": null,
-      "upset_watch": {
-        "underdog": "Miami Dolphins",
-        "odds": 280,
-        "model_prob": 0.329,
-        "market_prob": 0.253,
-        "favorite": "New England Patriots",
-        "underdog_recent_scores": [
-          13.0,
-          10.0,
-          10.0,
-          24.0,
-          28.0
-        ],
-        "favorite_recent_scores": [
-          6.0,
-          29.0,
-          45.0,
-          26.0,
-          24.0
-        ]
-      },
-      "scoring_fades": [],
-      "injury_report": {
-        "home": [
-          {
-            "player": "Reese Taylor",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Julius Brents",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Kadyn Proctor",
-            "position": "T",
-            "status": "Out"
-          }
-        ],
-        "away": [
-          {
-            "player": "Carlton Davis III",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "A.J. Brown",
-            "position": "WR",
-            "status": "Questionable"
-          },
-          {
-            "player": "Christian Elliss",
-            "position": "LB",
-            "status": "Questionable"
-          },
-          {
-            "player": "TreVeyon Henderson",
-            "position": "RB",
-            "status": "Questionable"
-          }
-        ]
-      },
-      "qb_out": {},
-      "suppressed_signals": [],
-      "player_props": [
-        {
-          "player": "Drake Maye",
-          "stat": "passing_yards",
-          "line": 237.5,
-          "predicted_value": 211.8,
-          "side": "under",
-          "edge": 0.114,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            238.0,
-            202.0,
-            261.0,
-            117.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Malik Willis",
-          "stat": "passing_yards",
-          "line": 178.5,
-          "predicted_value": 99.4,
-          "side": "under",
-          "edge": 0.314,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            122.0,
-            202.0,
-            56.0,
-            34.0,
-            136.0
-          ]
-        },
-        {
-          "player": "Drake Maye",
-          "stat": "rushing_yards",
-          "line": 23.5,
-          "predicted_value": 24.9,
-          "side": "over",
-          "edge": 0.02,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            59.0,
-            14.0,
-            30.0,
-            32.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Malik Willis",
-          "stat": "rushing_yards",
-          "line": 33.5,
-          "predicted_value": 23.5,
-          "side": "under",
-          "edge": 0.136,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            41.0,
-            73.0,
-            23.0,
-            -2.0,
-            3.0
-          ]
-        },
-        {
-          "player": "Jaylen Wright",
-          "stat": "rushing_yards",
-          "line": 13.5,
-          "predicted_value": 16.5,
-          "side": "over",
-          "edge": 0.041,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            4.0,
-            28.0,
-            7.0,
-            3.0,
-            -4.0
-          ]
-        },
-        {
-          "player": "Malik Washington",
-          "stat": "rushing_yards",
-          "line": 5.5,
-          "predicted_value": 3.5,
-          "side": "under",
-          "edge": 0.004,
-          "is_value_bet": false,
-          "odds": -125,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            0.0,
-            0.0,
-            -11.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Hunter Henry",
-          "stat": "receiving_yards",
-          "line": 45.5,
-          "predicted_value": 53.7,
-          "side": "over",
-          "edge": 0.123,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            44.0,
-            75.0,
-            25.0,
-            39.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Rhamondre Stevenson",
-          "stat": "receiving_yards",
-          "line": 24.5,
-          "predicted_value": 16.6,
-          "side": "under",
-          "edge": 0.118,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            21.0,
-            16.0,
-            13.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Greg Dulcich",
-          "stat": "receiving_yards",
-          "line": 29.5,
-          "predicted_value": 24.3,
-          "side": "under",
-          "edge": 0.079,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            22.0,
-            3.0,
-            12.0,
-            16.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Malik Washington",
-          "stat": "receiving_yards",
-          "line": 41.5,
-          "predicted_value": 27.7,
-          "side": "under",
-          "edge": 0.201,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            52.0,
-            28.0,
-            41.0,
-            48.0
-          ]
-        },
-        {
-          "player": "Hunter Henry",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 4.9,
-          "side": "over",
-          "edge": 0.152,
-          "is_value_bet": true,
-          "odds": 120,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            7.0,
-            4.0,
-            4.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Rhamondre Stevenson",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 1.8,
-          "side": "under",
-          "edge": 0.244,
-          "is_value_bet": true,
-          "odds": -154,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            3.0,
-            1.0,
-            1.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Greg Dulcich",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 2.6,
-          "side": "under",
-          "edge": 0.111,
-          "is_value_bet": true,
-          "odds": -154,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            1.0,
-            2.0,
-            3.0,
-            0.0
-          ]
-        },
-        {
-          "player": "Malik Washington",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 2.7,
-          "side": "under",
-          "edge": 0.28,
-          "is_value_bet": true,
-          "odds": -140,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            0.0,
-            5.0,
-            3.0,
-            4.0,
-            4.0
-          ]
-        }
-      ]
-    },
-    {
-      "matchup": "Philadelphia Eagles @ Washington Commanders",
-      "home_team": "Washington Commanders",
-      "away_team": "Philadelphia Eagles",
-      "commence_time": "2026-11-02T01:20:00.000Z",
-      "predicted_margin": 3.1,
-      "predicted_total": 47.5,
-      "home_win_prob": 0.591,
-      "away_win_prob": 0.409,
-      "spread_line": -6.5,
-      "total_line": 40.5,
-      "sportsbook": "pointsbet",
-      "value_bet": null,
-      "high_confidence": null,
-      "upset_watch": {
-        "underdog": "Philadelphia Eagles",
-        "odds": 220,
-        "model_prob": 0.409,
-        "market_prob": 0.298,
-        "favorite": "Washington Commanders",
-        "underdog_recent_scores": [
-          7.0,
-          20.0,
-          17.0,
-          14.0,
-          21.0
-        ],
-        "favorite_recent_scores": [
-          20.0,
-          33.0,
-          13.0,
-          27.0,
-          17.0
-        ]
-      },
-      "scoring_fades": [],
-      "injury_report": {
-        "home": [
-          {
-            "player": "Daron Payne",
-            "position": "DT",
-            "status": "Out"
-          },
-          {
-            "player": "Javon Kinlaw",
-            "position": "DT",
-            "status": "Out"
-          },
-          {
-            "player": "John Bates",
-            "position": "TE",
-            "status": "Questionable"
-          },
-          {
-            "player": "Treylon Burks",
-            "position": "WR",
-            "status": "Questionable"
-          },
-          {
-            "player": "Jer'Zhan Newton",
-            "position": "DT",
-            "status": "Questionable"
-          }
-        ],
-        "away": [
-          {
-            "player": "Jonathan Jones",
-            "position": "CB",
-            "status": "Out"
-          },
-          {
-            "player": "DeVonta Smith",
-            "position": "WR",
-            "status": "Out"
-          },
-          {
-            "player": "Britain Covey",
-            "position": "WR",
-            "status": "Out"
-          },
-          {
-            "player": "Dontayvion Wicks",
-            "position": "WR",
-            "status": "Out"
-          },
-          {
-            "player": "Jakorian Bennett",
-            "position": "CB",
-            "status": "Questionable"
-          },
-          {
-            "player": "Jihaad Campbell",
-            "position": "LB",
-            "status": "Out"
-          }
-        ]
-      },
-      "qb_out": {},
-      "suppressed_signals": [],
-      "player_props": [
-        {
-          "player": "Jayden Daniels",
-          "stat": "passing_yards",
-          "line": 198.5,
-          "predicted_value": 222.6,
-          "side": "over",
-          "edge": 0.107,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            227.0,
-            38.0,
-            268.0,
-            299.0,
-            255.0
-          ]
-        },
-        {
-          "player": "Jayden Daniels",
-          "stat": "rushing_yards",
-          "line": 36.5,
-          "predicted_value": 56.6,
-          "side": "over",
-          "edge": 0.259,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            127.0,
-            27.0,
-            36.0,
-            51.0,
-            48.0
-          ]
-        },
-        {
-          "player": "Jeremy McNichols",
-          "stat": "rushing_yards",
-          "line": 19.5,
-          "predicted_value": 11.6,
-          "side": "under",
-          "edge": 0.109,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            4.0,
-            3.0,
-            5.0,
-            1.0,
-            8.0
-          ]
-        },
-        {
-          "player": "Rachaad White",
-          "stat": "rushing_yards",
-          "line": 39.5,
-          "predicted_value": 51.9,
-          "side": "over",
-          "edge": 0.168,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            90.0,
-            64.0,
-            10.0,
-            30.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Saquon Barkley",
-          "stat": "rushing_yards",
-          "line": 44.5,
-          "predicted_value": 92.4,
-          "side": "over",
-          "edge": 0.453,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            167.0,
-            119.0,
-            205.0,
-            118.0,
-            57.0
-          ]
-        },
-        {
-          "player": "Chig Okonkwo",
-          "stat": "receiving_yards",
-          "line": 32.5,
-          "predicted_value": 40.8,
-          "side": "over",
-          "edge": 0.125,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            46.0,
-            36.0,
-            63.0,
-            34.0,
-            36.0
-          ]
-        },
-        {
-          "player": "Dyami Brown",
-          "stat": "receiving_yards",
-          "line": 12.5,
-          "predicted_value": 44.1,
-          "side": "over",
-          "edge": 0.386,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            56.0,
-            16.0,
-            89.0,
-            98.0,
-            42.0
-          ]
-        },
-        {
-          "player": "Rachaad White",
-          "stat": "receiving_yards",
-          "line": 13.5,
-          "predicted_value": 19.4,
-          "side": "over",
-          "edge": 0.113,
-          "is_value_bet": true,
-          "odds": -102,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            19.0,
-            17.0,
-            50.0,
-            4.0,
-            14.0
-          ]
-        },
-        {
-          "player": "Stefon Diggs",
-          "stat": "receiving_yards",
-          "line": 42.5,
-          "predicted_value": 61.2,
-          "side": "over",
-          "edge": 0.262,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            69.0,
-            82.0,
-            77.0,
-            23.0,
-            81.0
-          ]
-        },
-        {
-          "player": "Treylon Burks",
-          "stat": "receiving_yards",
-          "line": 21.5,
-          "predicted_value": 14.0,
-          "side": "under",
-          "edge": 0.112,
-          "is_value_bet": true,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            0.0,
-            9.0,
-            13.0,
-            10.0
-          ]
-        },
-        {
-          "player": "Dallas Goedert",
-          "stat": "receiving_yards",
-          "line": 45.5,
-          "predicted_value": 44.0,
-          "side": "under",
-          "edge": 0.023,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            55.0,
-            47.0,
-            56.0,
-            85.0,
-            27.0
-          ]
-        },
-        {
-          "player": "Saquon Barkley",
-          "stat": "receiving_yards",
-          "line": 12.5,
-          "predicted_value": 15.0,
-          "side": "over",
-          "edge": 0.038,
-          "is_value_bet": false,
-          "odds": -113,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            4.0,
-            27.0,
-            4.0,
-            40.0
-          ]
-        },
-        {
-          "player": "Chig Okonkwo",
-          "stat": "receptions",
-          "line": 3.5,
-          "predicted_value": 3.5,
-          "side": "over",
-          "edge": 0.043,
-          "is_value_bet": true,
-          "odds": 106,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            3.0,
-            6.0,
-            3.0,
-            2.0
-          ]
-        },
-        {
-          "player": "Dyami Brown",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 3.5,
-          "side": "over",
-          "edge": 0.445,
-          "is_value_bet": true,
-          "odds": 130,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            4.0,
-            3.0,
-            5.0,
-            6.0,
-            3.0
-          ]
-        },
-        {
-          "player": "Rachaad White",
-          "stat": "receptions",
-          "line": 2.5,
-          "predicted_value": 2.3,
-          "side": "under",
-          "edge": 0.007,
-          "is_value_bet": false,
-          "odds": -136,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            2.0,
-            7.0,
-            1.0,
-            2.0
-          ]
-        },
-        {
-          "player": "Stefon Diggs",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 5.3,
-          "side": "over",
-          "edge": 0.257,
-          "is_value_bet": true,
-          "odds": 132,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            5.0,
-            6.0,
-            6.0,
-            5.0,
-            5.0
-          ]
-        },
-        {
-          "player": "Treylon Burks",
-          "stat": "receptions",
-          "line": 1.5,
-          "predicted_value": 1.5,
-          "side": "over",
-          "edge": 0.001,
-          "is_value_bet": false,
-          "odds": -114,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            1.0,
-            0.0,
-            1.0,
-            1.0,
-            1.0
-          ]
-        },
-        {
-          "player": "Dallas Goedert",
-          "stat": "receptions",
-          "line": 4.5,
-          "predicted_value": 3.8,
-          "side": "under",
-          "edge": 0.203,
-          "is_value_bet": true,
-          "odds": 112,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            4.0,
-            4.0,
-            4.0,
-            7.0,
-            2.0
-          ]
-        },
-        {
-          "player": "Saquon Barkley",
-          "stat": "receptions",
-          "line": 2.5,
-          "predicted_value": 1.8,
-          "side": "under",
-          "edge": 0.065,
-          "is_value_bet": true,
-          "odds": -158,
-          "sportsbook": "fanduel",
-          "recent_games": [
-            2.0,
-            2.0,
-            4.0,
-            1.0,
-            6.0
-          ]
-        }
-      ]
-    },
     {
       "matchup": "Chicago Bears @ Seattle Seahawks",
       "home_team": "Seattle Seahawks",
       "away_team": "Chicago Bears",
       "commence_time": "2026-11-03T01:15:00.000Z",
-      "predicted_margin": 1.3,
-      "predicted_total": 48.7,
-      "home_win_prob": 0.539,
-      "away_win_prob": 0.461,
-      "spread_line": -3.5,
+      "predicted_margin": 1.0,
+      "predicted_total": 46.8,
+      "home_win_prob": 0.53,
+      "away_win_prob": 0.47,
+      "spread_line": -3.0,
       "total_line": 46.5,
-      "sportsbook": "pointsbet",
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Chicago Bears",
-        "odds": 140,
-        "model_prob": 0.461,
-        "market_prob": 0.399,
+        "odds": 142,
+        "model_prob": 0.47,
+        "market_prob": 0.396,
         "favorite": "Seattle Seahawks",
         "underdog_recent_scores": [
           27.0,
@@ -2008,12 +104,12 @@
         {
           "player": "Caleb Williams",
           "stat": "passing_yards",
-          "line": 227.5,
+          "line": 224.5,
           "predicted_value": 213.0,
           "side": "under",
-          "edge": 0.065,
+          "edge": 0.051,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             134.0,
@@ -2026,12 +122,12 @@
         {
           "player": "Sam Darnold",
           "stat": "passing_yards",
-          "line": 237.5,
+          "line": 238.5,
           "predicted_value": 259.4,
           "side": "over",
-          "edge": 0.098,
+          "edge": 0.093,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             231.0,
@@ -2044,12 +140,12 @@
         {
           "player": "Caleb Williams",
           "stat": "rushing_yards",
-          "line": 22.5,
+          "line": 24.5,
           "predicted_value": 18.7,
           "side": "under",
-          "edge": 0.052,
+          "edge": 0.08,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             27.0,
@@ -2067,7 +163,7 @@
           "side": "over",
           "edge": 0.106,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             0.0,
@@ -2080,12 +176,12 @@
         {
           "player": "D'Andre Swift",
           "stat": "rushing_yards",
-          "line": 61.5,
+          "line": 59.5,
           "predicted_value": 43.1,
           "side": "under",
-          "edge": 0.24,
+          "edge": 0.217,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             38.0,
@@ -2103,7 +199,7 @@
           "side": "over",
           "edge": 0.132,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             9.0,
@@ -2116,12 +212,12 @@
         {
           "player": "Zach Charbonnet",
           "stat": "rushing_yards",
-          "line": 32.5,
+          "line": 27.5,
           "predicted_value": 46.5,
           "side": "over",
-          "edge": 0.188,
+          "edge": 0.247,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             134.0,
@@ -2134,12 +230,12 @@
         {
           "player": "Roschon Johnson",
           "stat": "rushing_yards",
-          "line": 12.5,
+          "line": 10.5,
           "predicted_value": 12.5,
           "side": "over",
-          "edge": 0.001,
+          "edge": 0.028,
           "is_value_bet": false,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             33.0,
@@ -2157,7 +253,7 @@
           "side": "under",
           "edge": 0.397,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             82.0,
@@ -2175,7 +271,7 @@
           "side": "over",
           "edge": 0.007,
           "is_value_bet": false,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             42.0,
@@ -2193,7 +289,7 @@
           "side": "under",
           "edge": 0.054,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             12.0,
@@ -2204,6 +300,24 @@
           ]
         },
         {
+          "player": "D'Andre Swift",
+          "stat": "receiving_yards",
+          "line": 21.5,
+          "predicted_value": 20.0,
+          "side": "under",
+          "edge": 0.023,
+          "is_value_bet": false,
+          "odds": -113,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            10.0,
+            33.0,
+            28.0,
+            0.0
+          ]
+        },
+        {
           "player": "Zach Charbonnet",
           "stat": "receiving_yards",
           "line": 7.5,
@@ -2211,7 +325,7 @@
           "side": "over",
           "edge": 0.233,
           "is_value_bet": true,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             59.0,
@@ -2229,7 +343,7 @@
           "side": "under",
           "edge": 0.0,
           "is_value_bet": false,
-          "odds": -114,
+          "odds": -113,
           "sportsbook": "fanduel",
           "recent_games": [
             0.0,
@@ -2237,6 +351,42 @@
             29.0,
             29.0,
             61.0
+          ]
+        },
+        {
+          "player": "Roschon Johnson",
+          "stat": "receiving_yards",
+          "line": 3.5,
+          "predicted_value": 9.0,
+          "side": "over",
+          "edge": 0.108,
+          "is_value_bet": true,
+          "odds": -102,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            8.0,
+            10.0,
+            0.0,
+            0.0,
+            16.0
+          ]
+        },
+        {
+          "player": "Eric Saubert",
+          "stat": "receiving_yards",
+          "line": 4.5,
+          "predicted_value": 12.1,
+          "side": "over",
+          "edge": 0.214,
+          "is_value_bet": true,
+          "odds": 136,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            7.0,
+            0.0,
+            4.0,
+            2.0,
+            17.0
           ]
         },
         {
@@ -2299,9 +449,9 @@
           "line": 3.5,
           "predicted_value": 2.1,
           "side": "under",
-          "edge": 0.157,
+          "edge": 0.209,
           "is_value_bet": true,
-          "odds": -188,
+          "odds": -148,
           "sportsbook": "fanduel",
           "recent_games": [
             1.0,
@@ -2346,6 +496,24 @@
             1.0,
             5.0
           ]
+        },
+        {
+          "player": "Roschon Johnson",
+          "stat": "receptions",
+          "line": 0.5,
+          "predicted_value": 1.1,
+          "side": "over",
+          "edge": 0.032,
+          "is_value_bet": false,
+          "odds": -172,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            1.0,
+            1.0,
+            0.0,
+            0.0,
+            5.0
+          ]
         }
       ]
     },
@@ -2354,44 +522,41 @@
       "home_team": "Baltimore Ravens",
       "away_team": "Jacksonville Jaguars",
       "commence_time": "2026-11-06T01:15:00.000Z",
-      "predicted_margin": 2.7,
-      "predicted_total": 43.5,
-      "home_win_prob": 0.58,
-      "away_win_prob": 0.42,
-      "spread_line": -3.0,
-      "total_line": 48.5,
+      "predicted_margin": 6.8,
+      "predicted_total": 46.2,
+      "home_win_prob": 0.694,
+      "away_win_prob": 0.306,
+      "spread_line": 8.5,
+      "total_line": 42.5,
       "sportsbook": "draftkings",
-      "value_bet": null,
+      "value_bet": {
+        "side": "Baltimore Ravens",
+        "edge": 0.46,
+        "odds": 310
+      },
       "high_confidence": null,
       "upset_watch": {
-        "underdog": "Jacksonville Jaguars",
-        "odds": 130,
-        "model_prob": 0.42,
-        "market_prob": 0.417,
-        "favorite": "Baltimore Ravens",
+        "underdog": "Baltimore Ravens",
+        "odds": 310,
+        "model_prob": 0.694,
+        "market_prob": 0.234,
+        "favorite": "Jacksonville Jaguars",
         "underdog_recent_scores": [
-          13.0,
-          35.0,
-          22.0,
-          19.0,
-          31.0
-        ],
-        "favorite_recent_scores": [
-          34.0,
           24.0,
           30.0,
           10.0,
-          13.0
+          13.0,
+          10.0
+        ],
+        "favorite_recent_scores": [
+          35.0,
+          22.0,
+          19.0,
+          31.0,
+          42.0
         ]
       },
-      "scoring_fades": [
-        {
-          "team": "Baltimore Ravens",
-          "implied_total": 25.8,
-          "recent_avg": 22.2,
-          "games_used": 5
-        }
-      ],
+      "scoring_fades": [],
       "injury_report": {
         "home": [
           {
@@ -2430,45 +595,424 @@
       },
       "qb_out": {},
       "suppressed_signals": [],
-      "player_props": []
+      "player_props": [
+        {
+          "player": "Trevor Lawrence",
+          "stat": "passing_yards",
+          "line": 237.5,
+          "predicted_value": 245.9,
+          "side": "over",
+          "edge": 0.038,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            234.0,
+            193.0,
+            308.0,
+            169.0,
+            41.0
+          ]
+        },
+        {
+          "player": "Chris Rodriguez Jr.",
+          "stat": "rushing_yards",
+          "line": 29.5,
+          "predicted_value": 29.9,
+          "side": "over",
+          "edge": 0.006,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            43.0,
+            21.0,
+            29.0,
+            35.0,
+            58.0
+          ]
+        },
+        {
+          "player": "Derrick Henry",
+          "stat": "rushing_yards",
+          "line": 70.5,
+          "predicted_value": 103.9,
+          "side": "over",
+          "edge": 0.379,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            162.0,
+            147.0,
+            138.0,
+            186.0,
+            84.0
+          ]
+        },
+        {
+          "player": "Justice Hill",
+          "stat": "rushing_yards",
+          "line": 16.5,
+          "predicted_value": 18.0,
+          "side": "over",
+          "edge": 0.021,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            6.0,
+            7.0,
+            30.0,
+            12.0,
+            50.0
+          ]
+        },
+        {
+          "player": "Trevor Lawrence",
+          "stat": "rushing_yards",
+          "line": 12.5,
+          "predicted_value": 15.0,
+          "side": "over",
+          "edge": 0.035,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            17.0,
+            13.0,
+            10.0,
+            8.0,
+            6.0
+          ]
+        },
+        {
+          "player": "Brenton Strange",
+          "stat": "receptions",
+          "line": 3.5,
+          "predicted_value": 2.8,
+          "side": "under",
+          "edge": 0.153,
+          "is_value_bet": true,
+          "odds": -108,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            1.0,
+            11.0,
+            2.0,
+            0.0,
+            4.0
+          ]
+        },
+        {
+          "player": "Derrick Henry",
+          "stat": "receptions",
+          "line": 1.5,
+          "predicted_value": 1.3,
+          "side": "under",
+          "edge": 0.063,
+          "is_value_bet": true,
+          "odds": -102,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            2.0,
+            2.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Jakobi Meyers",
+          "stat": "receptions",
+          "line": 3.5,
+          "predicted_value": 5.0,
+          "side": "over",
+          "edge": 0.353,
+          "is_value_bet": true,
+          "odds": 116,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            7.0,
+            5.0,
+            2.0,
+            5.0,
+            9.0
+          ]
+        },
+        {
+          "player": "Justice Hill",
+          "stat": "receptions",
+          "line": 2.5,
+          "predicted_value": 2.7,
+          "side": "over",
+          "edge": 0.103,
+          "is_value_bet": true,
+          "odds": 116,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            4.0,
+            5.0,
+            0.0,
+            4.0,
+            2.0
+          ]
+        },
+        {
+          "player": "Mark Andrews",
+          "stat": "receptions",
+          "line": 2.5,
+          "predicted_value": 2.8,
+          "side": "under",
+          "edge": 0.002,
+          "is_value_bet": false,
+          "odds": 112,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            4.0,
+            2.0,
+            4.0,
+            2.0,
+            5.0
+          ]
+        },
+        {
+          "player": "Parker Washington",
+          "stat": "receptions",
+          "line": 4.5,
+          "predicted_value": 3.8,
+          "side": "under",
+          "edge": 0.12,
+          "is_value_bet": true,
+          "odds": -130,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            3.0,
+            6.0,
+            3.0,
+            2.0
+          ]
+        },
+        {
+          "player": "Rashod Bateman",
+          "stat": "receptions",
+          "line": 1.5,
+          "predicted_value": 2.5,
+          "side": "over",
+          "edge": 0.17,
+          "is_value_bet": true,
+          "odds": -130,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            1.0,
+            1.0,
+            5.0,
+            2.0,
+            4.0
+          ]
+        },
+        {
+          "player": "Zay Flowers",
+          "stat": "receptions",
+          "line": 4.5,
+          "predicted_value": 4.1,
+          "side": "under",
+          "edge": 0.01,
+          "is_value_bet": false,
+          "odds": -160,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            3.0,
+            6.0,
+            5.0,
+            2.0,
+            1.0
+          ]
+        },
+        {
+          "player": "Brenton Strange",
+          "stat": "receiving_yards",
+          "line": 35.5,
+          "predicted_value": 27.7,
+          "side": "under",
+          "edge": 0.117,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            21.0,
+            73.0,
+            22.0,
+            0.0,
+            60.0
+          ]
+        },
+        {
+          "player": "Derrick Henry",
+          "stat": "receiving_yards",
+          "line": 8.5,
+          "predicted_value": 13.6,
+          "side": "over",
+          "edge": 0.078,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            27.0,
+            18.0,
+            23.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Jakobi Meyers",
+          "stat": "receiving_yards",
+          "line": 40.5,
+          "predicted_value": 62.5,
+          "side": "over",
+          "edge": 0.299,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            67.0,
+            59.0,
+            41.0,
+            61.0,
+            123.0
+          ]
+        },
+        {
+          "player": "Justice Hill",
+          "stat": "receiving_yards",
+          "line": 12.5,
+          "predicted_value": 23.3,
+          "side": "over",
+          "edge": 0.159,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            15.0,
+            61.0,
+            0.0,
+            13.0,
+            7.0
+          ]
+        },
+        {
+          "player": "Mark Andrews",
+          "stat": "receiving_yards",
+          "line": 19.5,
+          "predicted_value": 37.5,
+          "side": "over",
+          "edge": 0.254,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            37.0,
+            68.0,
+            54.0,
+            27.0,
+            61.0
+          ]
+        },
+        {
+          "player": "Parker Washington",
+          "stat": "receiving_yards",
+          "line": 63.5,
+          "predicted_value": 44.3,
+          "side": "under",
+          "edge": 0.268,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            15.0,
+            54.0,
+            54.0,
+            31.0,
+            15.0
+          ]
+        },
+        {
+          "player": "Rashod Bateman",
+          "stat": "receiving_yards",
+          "line": 16.5,
+          "predicted_value": 35.8,
+          "side": "over",
+          "edge": 0.269,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            14.0,
+            12.0,
+            76.0,
+            24.0,
+            66.0
+          ]
+        },
+        {
+          "player": "Zay Flowers",
+          "stat": "receiving_yards",
+          "line": 45.5,
+          "predicted_value": 54.8,
+          "side": "over",
+          "edge": 0.139,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            74.0,
+            53.0,
+            100.0,
+            31.0,
+            12.0
+          ]
+        }
+      ]
     },
     {
       "matchup": "Cincinnati Bengals @ Atlanta Falcons",
       "home_team": "Atlanta Falcons",
       "away_team": "Cincinnati Bengals",
       "commence_time": "2026-11-08T14:30:00.000Z",
-      "predicted_margin": -0.7,
-      "predicted_total": 43.7,
-      "home_win_prob": 0.479,
-      "away_win_prob": 0.521,
-      "spread_line": 4.5,
-      "total_line": 49.5,
-      "sportsbook": "pointsbet",
+      "predicted_margin": 6.1,
+      "predicted_total": 47.4,
+      "home_win_prob": 0.676,
+      "away_win_prob": 0.324,
+      "spread_line": 3.0,
+      "total_line": 52.5,
+      "sportsbook": "draftkings",
       "value_bet": {
         "side": "Atlanta Falcons",
-        "edge": 0.143,
-        "odds": 185
+        "edge": 0.276,
+        "odds": 140
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Atlanta Falcons",
-        "odds": 185,
-        "model_prob": 0.479,
-        "market_prob": 0.336,
+        "odds": 140,
+        "model_prob": 0.676,
+        "market_prob": 0.4,
         "favorite": "Cincinnati Bengals",
         "underdog_recent_scores": [
-          35.0,
           45.0,
           23.0,
           23.0,
-          29.0
+          29.0,
+          0.0
         ],
         "favorite_recent_scores": [
-          20.0,
           27.0,
           17.0,
           31.0,
-          35.0
+          35.0,
+          43.0
         ]
       },
       "scoring_fades": [],
@@ -2535,31 +1079,283 @@
       },
       "qb_out": {},
       "suppressed_signals": [],
-      "player_props": []
+      "player_props": [
+        {
+          "player": "Joe Burrow",
+          "stat": "passing_yards",
+          "line": 268.5,
+          "predicted_value": 267.7,
+          "side": "under",
+          "edge": 0.004,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            369.0,
+            271.0,
+            252.0,
+            412.0,
+            277.0
+          ]
+        },
+        {
+          "player": "Drake London",
+          "stat": "receptions",
+          "line": 5.5,
+          "predicted_value": 5.3,
+          "side": "under",
+          "edge": 0.064,
+          "is_value_bet": true,
+          "odds": -102,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            5.0,
+            3.0,
+            5.0,
+            7.0,
+            10.0
+          ]
+        },
+        {
+          "player": "Ja'Marr Chase",
+          "stat": "receptions",
+          "line": 6.5,
+          "predicted_value": 7.0,
+          "side": "over",
+          "edge": 0.099,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            14.0,
+            9.0,
+            6.0,
+            9.0,
+            10.0
+          ]
+        },
+        {
+          "player": "Mike Gesicki",
+          "stat": "receptions",
+          "line": 2.5,
+          "predicted_value": 3.5,
+          "side": "over",
+          "edge": 0.207,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            3.0,
+            3.0,
+            2.0,
+            10.0,
+            8.0
+          ]
+        },
+        {
+          "player": "Chase Brown",
+          "stat": "receptions",
+          "line": 3.5,
+          "predicted_value": 3.4,
+          "side": "under",
+          "edge": 0.035,
+          "is_value_bet": false,
+          "odds": -106,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            3.0,
+            6.0,
+            3.0,
+            3.0,
+            4.0
+          ]
+        },
+        {
+          "player": "Tee Higgins",
+          "stat": "receptions",
+          "line": 5.5,
+          "predicted_value": 5.4,
+          "side": "over",
+          "edge": 0.051,
+          "is_value_bet": true,
+          "odds": 116,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            5.0,
+            8.0,
+            11.0,
+            4.0
+          ]
+        },
+        {
+          "player": "Chase Brown",
+          "stat": "receiving_yards",
+          "line": 19.5,
+          "predicted_value": 36.4,
+          "side": "over",
+          "edge": 0.241,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            30.0,
+            65.0,
+            16.0,
+            18.0,
+            24.0
+          ]
+        },
+        {
+          "player": "Drake London",
+          "stat": "receiving_yards",
+          "line": 78.5,
+          "predicted_value": 72.3,
+          "side": "under",
+          "edge": 0.093,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            70.0,
+            53.0,
+            59.0,
+            106.0,
+            187.0
+          ]
+        },
+        {
+          "player": "Ja'Marr Chase",
+          "stat": "receiving_yards",
+          "line": 75.5,
+          "predicted_value": 91.9,
+          "side": "over",
+          "edge": 0.234,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            177.0,
+            94.0,
+            97.0,
+            102.0,
+            96.0
+          ]
+        },
+        {
+          "player": "Mike Gesicki",
+          "stat": "receiving_yards",
+          "line": 26.5,
+          "predicted_value": 40.1,
+          "side": "over",
+          "edge": 0.198,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            24.0,
+            37.0,
+            14.0,
+            86.0,
+            68.0
+          ]
+        },
+        {
+          "player": "Tee Higgins",
+          "stat": "receiving_yards",
+          "line": 71.5,
+          "predicted_value": 70.1,
+          "side": "under",
+          "edge": 0.021,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            23.0,
+            88.0,
+            58.0,
+            131.0,
+            53.0
+          ]
+        },
+        {
+          "player": "Bijan Robinson",
+          "stat": "rushing_yards",
+          "line": 95.5,
+          "predicted_value": 114.0,
+          "side": "over",
+          "edge": 0.241,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            92.0,
+            125.0,
+            94.0,
+            90.0,
+            170.0
+          ]
+        },
+        {
+          "player": "Chase Brown",
+          "stat": "rushing_yards",
+          "line": 54.5,
+          "predicted_value": 71.4,
+          "side": "over",
+          "edge": 0.223,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            70.0,
+            58.0,
+            97.0,
+            91.0,
+            67.0
+          ]
+        }
+      ]
     },
     {
       "matchup": "New York Giants @ Philadelphia Eagles",
       "home_team": "Philadelphia Eagles",
       "away_team": "New York Giants",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": -5.7,
-      "predicted_total": 47.7,
-      "home_win_prob": 0.337,
-      "away_win_prob": 0.663,
-      "spread_line": 1.5,
+      "predicted_margin": 0.9,
+      "predicted_total": 47.0,
+      "home_win_prob": 0.527,
+      "away_win_prob": 0.473,
+      "spread_line": 3.5,
       "total_line": 40.5,
-      "sportsbook": "pointsbet",
-      "value_bet": null,
+      "sportsbook": "draftkings",
+      "value_bet": {
+        "side": "Philadelphia Eagles",
+        "edge": 0.131,
+        "odds": 142
+      },
       "high_confidence": null,
-      "upset_watch": null,
-      "scoring_fades": [
-        {
-          "team": "Philadelphia Eagles",
-          "implied_total": 19.5,
-          "recent_avg": 15.8,
-          "games_used": 5
-        }
-      ],
+      "upset_watch": {
+        "underdog": "Philadelphia Eagles",
+        "odds": 142,
+        "model_prob": 0.527,
+        "market_prob": 0.396,
+        "favorite": "New York Giants",
+        "underdog_recent_scores": [
+          20.0,
+          17.0,
+          14.0,
+          21.0,
+          10.0
+        ],
+        "favorite_recent_scores": [
+          12.0,
+          36.0,
+          27.0,
+          27.0,
+          27.0
+        ]
+      },
+      "scoring_fades": [],
       "injury_report": {
         "home": [
           {
@@ -2645,45 +1441,45 @@
       "home_team": "Miami Dolphins",
       "away_team": "Detroit Lions",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": -2.9,
-      "predicted_total": 45.3,
-      "home_win_prob": 0.415,
-      "away_win_prob": 0.585,
-      "spread_line": 7.5,
-      "total_line": 48.5,
-      "sportsbook": "pointsbet",
+      "predicted_margin": -3.2,
+      "predicted_total": 44.7,
+      "home_win_prob": 0.406,
+      "away_win_prob": 0.594,
+      "spread_line": 7.0,
+      "total_line": 50.5,
+      "sportsbook": "draftkings",
       "value_bet": {
         "side": "Miami Dolphins",
-        "edge": 0.191,
-        "odds": 330
+        "edge": 0.163,
+        "odds": 295
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Miami Dolphins",
-        "odds": 330,
-        "model_prob": 0.415,
-        "market_prob": 0.224,
+        "odds": 295,
+        "model_prob": 0.406,
+        "market_prob": 0.243,
         "favorite": "Detroit Lions",
         "underdog_recent_scores": [
-          13.0,
           10.0,
           10.0,
           24.0,
-          28.0
+          28.0,
+          19.0
         ],
         "favorite_recent_scores": [
           31.0,
-          31.0,
           26.0,
           45.0,
-          20.0
+          20.0,
+          19.0
         ]
       },
       "scoring_fades": [
         {
           "team": "Miami Dolphins",
-          "implied_total": 20.5,
-          "recent_avg": 17.0,
+          "implied_total": 21.8,
+          "recent_avg": 18.2,
           "games_used": 5
         }
       ],
@@ -2727,28 +1523,41 @@
       "home_team": "Kansas City Chiefs",
       "away_team": "New York Jets",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": 14.7,
-      "predicted_total": 43.9,
-      "home_win_prob": 0.862,
-      "away_win_prob": 0.138,
+      "predicted_margin": -0.5,
+      "predicted_total": 39.5,
+      "home_win_prob": 0.484,
+      "away_win_prob": 0.516,
       "spread_line": -9.5,
-      "total_line": 43.5,
-      "sportsbook": "pointsbet",
-      "value_bet": {
-        "side": "Kansas City Chiefs",
-        "edge": 0.064,
-        "odds": -500
+      "total_line": 46.5,
+      "sportsbook": "draftkings",
+      "value_bet": null,
+      "high_confidence": null,
+      "upset_watch": {
+        "underdog": "New York Jets",
+        "odds": 360,
+        "model_prob": 0.516,
+        "market_prob": 0.209,
+        "favorite": "Kansas City Chiefs",
+        "underdog_recent_scores": [
+          12.0,
+          17.0,
+          19.0,
+          25.0,
+          33.0
+        ],
+        "favorite_recent_scores": [
+          24.0,
+          30.0,
+          22.0,
+          3.0,
+          24.0
+        ]
       },
-      "high_confidence": {
-        "side": "Kansas City Chiefs",
-        "prob": 0.862
-      },
-      "upset_watch": null,
       "scoring_fades": [
         {
           "team": "Kansas City Chiefs",
-          "implied_total": 26.5,
-          "recent_avg": 22.4,
+          "implied_total": 28.0,
+          "recent_avg": 20.6,
           "games_used": 5
         }
       ],
@@ -2817,45 +1626,48 @@
       "home_team": "Indianapolis Colts",
       "away_team": "Dallas Cowboys",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": 1.5,
-      "predicted_total": 48.8,
-      "home_win_prob": 0.546,
-      "away_win_prob": 0.454,
-      "spread_line": 4.5,
+      "predicted_margin": 12.2,
+      "predicted_total": 46.8,
+      "home_win_prob": 0.818,
+      "away_win_prob": 0.182,
+      "spread_line": 6.0,
       "total_line": 51.5,
-      "sportsbook": "pointsbet",
+      "sportsbook": "draftkings",
       "value_bet": {
         "side": "Indianapolis Colts",
-        "edge": 0.217,
-        "odds": 190
+        "edge": 0.514,
+        "odds": 215
       },
-      "high_confidence": null,
+      "high_confidence": {
+        "side": "Indianapolis Colts",
+        "prob": 0.818
+      },
       "upset_watch": {
         "underdog": "Indianapolis Colts",
-        "odds": 190,
-        "model_prob": 0.546,
-        "market_prob": 0.329,
+        "odds": 215,
+        "model_prob": 0.818,
+        "market_prob": 0.304,
         "favorite": "Dallas Cowboys",
         "underdog_recent_scores": [
-          19.0,
           30.0,
           22.0,
           20.0,
-          10.0
+          10.0,
+          7.0
         ],
         "favorite_recent_scores": [
-          31.0,
           34.0,
           16.0,
           13.0,
-          38.0
+          38.0,
+          30.0
         ]
       },
       "scoring_fades": [
         {
           "team": "Indianapolis Colts",
-          "implied_total": 23.5,
-          "recent_avg": 20.2,
+          "implied_total": 22.8,
+          "recent_avg": 17.8,
           "games_used": 5
         }
       ],
@@ -2934,38 +1746,38 @@
       "home_team": "Washington Commanders",
       "away_team": "Los Angeles Rams",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": 1.2,
-      "predicted_total": 45.2,
-      "home_win_prob": 0.536,
-      "away_win_prob": 0.464,
+      "predicted_margin": 4.7,
+      "predicted_total": 46.2,
+      "home_win_prob": 0.637,
+      "away_win_prob": 0.363,
       "spread_line": 5.5,
-      "total_line": 48.5,
-      "sportsbook": "pointsbet",
+      "total_line": 47.5,
+      "sportsbook": "draftkings",
       "value_bet": {
         "side": "Washington Commanders",
-        "edge": 0.2,
-        "odds": 185
+        "edge": 0.294,
+        "odds": 180
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Washington Commanders",
-        "odds": 185,
-        "model_prob": 0.536,
-        "market_prob": 0.336,
+        "odds": 180,
+        "model_prob": 0.637,
+        "market_prob": 0.343,
         "favorite": "Los Angeles Rams",
         "underdog_recent_scores": [
-          20.0,
           33.0,
           13.0,
           27.0,
-          17.0
+          17.0,
+          27.0
         ],
         "favorite_recent_scores": [
-          26.0,
           24.0,
           34.0,
           16.0,
-          35.0
+          35.0,
+          24.0
         ]
       },
       "scoring_fades": [],
@@ -3034,17 +1846,17 @@
       "home_team": "Carolina Panthers",
       "away_team": "Denver Broncos",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": 2.9,
-      "predicted_total": 45.3,
-      "home_win_prob": 0.586,
-      "away_win_prob": 0.414,
-      "spread_line": 2.5,
-      "total_line": 44.5,
+      "predicted_margin": 0.1,
+      "predicted_total": 48.5,
+      "home_win_prob": 0.503,
+      "away_win_prob": 0.497,
+      "spread_line": 3.0,
+      "total_line": 43.5,
       "sportsbook": "draftkings",
       "value_bet": {
         "side": "Carolina Panthers",
-        "edge": 0.149,
-        "odds": 120
+        "edge": 0.075,
+        "odds": 124
       },
       "high_confidence": null,
       "upset_watch": null,
@@ -3119,17 +1931,24 @@
       "home_team": "New Orleans Saints",
       "away_team": "Cleveland Browns",
       "commence_time": "2026-11-08T18:00:00.000Z",
-      "predicted_margin": 1.0,
-      "predicted_total": 44.2,
-      "home_win_prob": 0.529,
-      "away_win_prob": 0.471,
+      "predicted_margin": 1.3,
+      "predicted_total": 45.5,
+      "home_win_prob": 0.539,
+      "away_win_prob": 0.461,
       "spread_line": -2.5,
       "total_line": 43.5,
-      "sportsbook": "pointsbet",
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": null,
-      "scoring_fades": [],
+      "scoring_fades": [
+        {
+          "team": "Cleveland Browns",
+          "implied_total": 20.5,
+          "recent_avg": 17.0,
+          "games_used": 5
+        }
+      ],
       "injury_report": {
         "home": [
           {
@@ -3170,31 +1989,31 @@
       "home_team": "Los Angeles Chargers",
       "away_team": "Houston Texans",
       "commence_time": "2026-11-08T21:05:00.000Z",
-      "predicted_margin": -1.1,
-      "predicted_total": 50.2,
-      "home_win_prob": 0.467,
-      "away_win_prob": 0.533,
-      "spread_line": 3.5,
-      "total_line": 42.5,
-      "sportsbook": "pointsbet",
+      "predicted_margin": 4.7,
+      "predicted_total": 44.1,
+      "home_win_prob": 0.636,
+      "away_win_prob": 0.364,
+      "spread_line": 4.5,
+      "total_line": 40.5,
+      "sportsbook": "draftkings",
       "value_bet": {
         "side": "Los Angeles Chargers",
-        "edge": 0.097,
-        "odds": 160
+        "edge": 0.293,
+        "odds": 180
       },
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Los Angeles Chargers",
-        "odds": 160,
-        "model_prob": 0.467,
-        "market_prob": 0.37,
+        "odds": 180,
+        "model_prob": 0.636,
+        "market_prob": 0.343,
         "favorite": "Houston Texans",
         "underdog_recent_scores": [
-          14.0,
           16.0,
           23.0,
           17.0,
-          6.0
+          6.0,
+          9.0
         ],
         "favorite_recent_scores": [
           17.0,
@@ -3207,8 +2026,8 @@
       "scoring_fades": [
         {
           "team": "Los Angeles Chargers",
-          "implied_total": 19.5,
-          "recent_avg": 15.2,
+          "implied_total": 18.0,
+          "recent_avg": 14.2,
           "games_used": 5
         }
       ],
@@ -3282,16 +2101,36 @@
       "home_team": "New England Patriots",
       "away_team": "Green Bay Packers",
       "commence_time": "2026-11-08T21:25:00.000Z",
-      "predicted_margin": 3.6,
-      "predicted_total": 47.6,
-      "home_win_prob": 0.604,
-      "away_win_prob": 0.396,
-      "spread_line": -2.5,
-      "total_line": null,
-      "sportsbook": "unibet",
+      "predicted_margin": -3.2,
+      "predicted_total": 46.2,
+      "home_win_prob": 0.407,
+      "away_win_prob": 0.593,
+      "spread_line": -3.0,
+      "total_line": 47.5,
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
-      "upset_watch": null,
+      "upset_watch": {
+        "underdog": "Green Bay Packers",
+        "odds": 130,
+        "model_prob": 0.593,
+        "market_prob": 0.417,
+        "favorite": "New England Patriots",
+        "underdog_recent_scores": [
+          17.0,
+          31.0,
+          23.0,
+          17.0,
+          27.0
+        ],
+        "favorite_recent_scores": [
+          29.0,
+          45.0,
+          26.0,
+          24.0,
+          24.0
+        ]
+      },
       "scoring_fades": [],
       "injury_report": {
         "home": [
@@ -3356,34 +2195,251 @@
       },
       "qb_out": {},
       "suppressed_signals": [],
-      "player_props": []
+      "player_props": [
+        {
+          "player": "Drake Maye",
+          "stat": "passing_yards",
+          "line": 228.5,
+          "predicted_value": 211.8,
+          "side": "under",
+          "edge": 0.075,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            238.0,
+            202.0,
+            261.0,
+            117.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Jordan Love",
+          "stat": "passing_yards",
+          "line": 276.5,
+          "predicted_value": 166.2,
+          "side": "under",
+          "edge": 0.393,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            229.0,
+            182.0,
+            185.0,
+            69.0,
+            212.0
+          ]
+        },
+        {
+          "player": "Christian Watson",
+          "stat": "receptions",
+          "line": 4.5,
+          "predicted_value": 2.4,
+          "side": "under",
+          "edge": 0.422,
+          "is_value_bet": true,
+          "odds": 112,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            4.0,
+            3.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Josh Jacobs",
+          "stat": "receptions",
+          "line": 3.5,
+          "predicted_value": 1.6,
+          "side": "under",
+          "edge": 0.362,
+          "is_value_bet": true,
+          "odds": -104,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            4.0,
+            4.0,
+            0.0,
+            1.0,
+            3.0
+          ]
+        },
+        {
+          "player": "Tucker Kraft",
+          "stat": "receptions",
+          "line": 4.5,
+          "predicted_value": 2.7,
+          "side": "under",
+          "edge": 0.328,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            2.0,
+            3.0,
+            2.0,
+            4.0,
+            5.0
+          ]
+        },
+        {
+          "player": "Christian Watson",
+          "stat": "receiving_yards",
+          "line": 73.5,
+          "predicted_value": 38.3,
+          "side": "under",
+          "edge": 0.41,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            67.0,
+            114.0,
+            56.0,
+            0.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Josh Jacobs",
+          "stat": "receiving_yards",
+          "line": 21.5,
+          "predicted_value": 14.4,
+          "side": "under",
+          "edge": 0.107,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            42.0,
+            38.0,
+            0.0,
+            2.0,
+            40.0
+          ]
+        },
+        {
+          "player": "Tucker Kraft",
+          "stat": "receiving_yards",
+          "line": 45.5,
+          "predicted_value": 33.3,
+          "side": "under",
+          "edge": 0.179,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            34.0,
+            63.0,
+            53.0,
+            36.0,
+            26.0
+          ]
+        },
+        {
+          "player": "Drake Maye",
+          "stat": "rushing_yards",
+          "line": 25.5,
+          "predicted_value": 24.9,
+          "side": "under",
+          "edge": 0.008,
+          "is_value_bet": false,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            59.0,
+            14.0,
+            30.0,
+            32.0,
+            0.0
+          ]
+        },
+        {
+          "player": "Jordan Love",
+          "stat": "rushing_yards",
+          "line": 4.5,
+          "predicted_value": 10.8,
+          "side": "over",
+          "edge": 0.118,
+          "is_value_bet": true,
+          "odds": 100,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            4.0,
+            2.0,
+            6.0,
+            0.0,
+            10.0
+          ]
+        },
+        {
+          "player": "Josh Jacobs",
+          "stat": "rushing_yards",
+          "line": 43.5,
+          "predicted_value": 63.9,
+          "side": "over",
+          "edge": 0.262,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            94.0,
+            69.0,
+            69.0,
+            44.0,
+            81.0
+          ]
+        },
+        {
+          "player": "Rhamondre Stevenson",
+          "stat": "rushing_yards",
+          "line": 54.5,
+          "predicted_value": 61.5,
+          "side": "over",
+          "edge": 0.097,
+          "is_value_bet": true,
+          "odds": -114,
+          "sportsbook": "fanduel",
+          "recent_games": [
+            13.0,
+            73.0,
+            69.0,
+            60.0,
+            1.0
+          ]
+        }
+      ]
     },
     {
       "matchup": "Arizona Cardinals @ Seattle Seahawks",
       "home_team": "Seattle Seahawks",
       "away_team": "Arizona Cardinals",
       "commence_time": "2026-11-08T21:25:00.000Z",
-      "predicted_margin": 7.6,
-      "predicted_total": 51.0,
-      "home_win_prob": 0.714,
-      "away_win_prob": 0.286,
+      "predicted_margin": 5.4,
+      "predicted_total": 48.3,
+      "home_win_prob": 0.657,
+      "away_win_prob": 0.343,
       "spread_line": -11.5,
       "total_line": 44.5,
-      "sportsbook": "pointsbet",
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Arizona Cardinals",
-        "odds": 500,
-        "model_prob": 0.286,
-        "market_prob": 0.158,
+        "odds": 525,
+        "model_prob": 0.343,
+        "market_prob": 0.153,
         "favorite": "Seattle Seahawks",
         "underdog_recent_scores": [
-          30.0,
           24.0,
           21.0,
           18.0,
-          16.0
+          16.0,
+          33.0
         ],
         "favorite_recent_scores": [
           31.0,
@@ -3481,27 +2537,27 @@
       "home_team": "San Francisco 49ers",
       "away_team": "Las Vegas Raiders",
       "commence_time": "2026-11-08T21:25:00.000Z",
-      "predicted_margin": 1.9,
-      "predicted_total": 41.7,
-      "home_win_prob": 0.555,
-      "away_win_prob": 0.445,
-      "spread_line": -10.5,
-      "total_line": 48.5,
-      "sportsbook": "pointsbet",
+      "predicted_margin": 4.7,
+      "predicted_total": 43.3,
+      "home_win_prob": 0.636,
+      "away_win_prob": 0.364,
+      "spread_line": -10.0,
+      "total_line": 51.5,
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Las Vegas Raiders",
-        "odds": 425,
-        "model_prob": 0.445,
-        "market_prob": 0.182,
+        "odds": 410,
+        "model_prob": 0.364,
+        "market_prob": 0.188,
         "favorite": "San Francisco 49ers",
         "underdog_recent_scores": [
-          35.0,
           27.0,
           17.0,
           30.0,
-          21.0
+          21.0,
+          38.0
         ],
         "favorite_recent_scores": [
           36.0,
@@ -3511,7 +2567,14 @@
           20.0
         ]
       },
-      "scoring_fades": [],
+      "scoring_fades": [
+        {
+          "team": "San Francisco 49ers",
+          "implied_total": 30.8,
+          "recent_avg": 27.0,
+          "games_used": 5
+        }
+      ],
       "injury_report": {
         "home": [
           {
@@ -3592,27 +2655,27 @@
       "home_team": "Chicago Bears",
       "away_team": "Tampa Bay Buccaneers",
       "commence_time": "2026-11-09T01:20:00.000Z",
-      "predicted_margin": 7.4,
-      "predicted_total": 44.8,
-      "home_win_prob": 0.71,
-      "away_win_prob": 0.29,
-      "spread_line": -6.5,
-      "total_line": 48.5,
-      "sportsbook": "pointsbet",
+      "predicted_margin": 2.1,
+      "predicted_total": 44.4,
+      "home_win_prob": 0.563,
+      "away_win_prob": 0.437,
+      "spread_line": -4.5,
+      "total_line": 47.5,
+      "sportsbook": "draftkings",
       "value_bet": null,
       "high_confidence": null,
       "upset_watch": {
         "underdog": "Tampa Bay Buccaneers",
-        "odds": 240,
-        "model_prob": 0.29,
-        "market_prob": 0.281,
+        "odds": 185,
+        "model_prob": 0.437,
+        "market_prob": 0.336,
         "favorite": "Chicago Bears",
         "underdog_recent_scores": [
-          16.0,
           14.0,
           24.0,
           19.0,
-          43.0
+          43.0,
+          16.0
         ],
         "favorite_recent_scores": [
           27.0,
@@ -3622,14 +2685,7 @@
           30.0
         ]
       },
-      "scoring_fades": [
-        {
-          "team": "Chicago Bears",
-          "implied_total": 27.5,
-          "recent_avg": 23.6,
-          "games_used": 5
-        }
-      ],
+      "scoring_fades": [],
       "injury_report": {
         "home": [
           {
@@ -3671,76 +2727,101 @@
       "player_props": []
     },
     {
-      "matchup": "Baltimore Ravens @ Buffalo Bills",
-      "home_team": "Buffalo Bills",
-      "away_team": "Baltimore Ravens",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Tennessee Titans @ Cincinnati Bengals",
-      "home_team": "Cincinnati Bengals",
-      "away_team": "Tennessee Titans",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Arizona Cardinals @ Dallas Cowboys",
-      "home_team": "Dallas Cowboys",
-      "away_team": "Arizona Cardinals",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Minnesota Vikings @ Detroit Lions",
-      "home_team": "Detroit Lions",
-      "away_team": "Minnesota Vikings",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Indianapolis Colts @ Jacksonville Jaguars",
-      "home_team": "Jacksonville Jaguars",
-      "away_team": "Indianapolis Colts",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Las Vegas Raiders @ New York Jets",
-      "home_team": "New York Jets",
-      "away_team": "Las Vegas Raiders",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Cleveland Browns @ Pittsburgh Steelers",
-      "home_team": "Pittsburgh Steelers",
-      "away_team": "Cleveland Browns",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
-      "matchup": "Atlanta Falcons @ Tampa Bay Buccaneers",
-      "home_team": "Tampa Bay Buccaneers",
-      "away_team": "Atlanta Falcons",
-      "commence_time": "2026-11-01T00:00:00",
-      "week": 8,
-      "odds_pending": true
-    },
-    {
       "matchup": "Buffalo Bills @ Minnesota Vikings",
       "home_team": "Minnesota Vikings",
       "away_team": "Buffalo Bills",
-      "commence_time": "2026-11-09T00:00:00",
-      "week": 9,
-      "odds_pending": true
+      "commence_time": "2026-11-10T01:15:00.000Z",
+      "predicted_margin": 2.5,
+      "predicted_total": 46.9,
+      "home_win_prob": 0.575,
+      "away_win_prob": 0.425,
+      "spread_line": 3.5,
+      "total_line": 46.5,
+      "sportsbook": "draftkings",
+      "value_bet": {
+        "side": "Minnesota Vikings",
+        "edge": 0.191,
+        "odds": 150
+      },
+      "high_confidence": null,
+      "upset_watch": {
+        "underdog": "Minnesota Vikings",
+        "odds": 150,
+        "model_prob": 0.575,
+        "market_prob": 0.384,
+        "favorite": "Buffalo Bills",
+        "underdog_recent_scores": [
+          23.0,
+          15.0,
+          23.0,
+          16.0,
+          15.0
+        ],
+        "favorite_recent_scores": [
+          24.0,
+          26.0,
+          37.0,
+          33.0,
+          36.0
+        ]
+      },
+      "scoring_fades": [
+        {
+          "team": "Minnesota Vikings",
+          "implied_total": 21.5,
+          "recent_avg": 18.4,
+          "games_used": 5
+        }
+      ],
+      "injury_report": {
+        "home": [
+          {
+            "player": "Jay Ward",
+            "position": "S",
+            "status": "Questionable"
+          }
+        ],
+        "away": [
+          {
+            "player": "DJ Moore",
+            "position": "WR",
+            "status": "Questionable"
+          },
+          {
+            "player": "Greg Gaines",
+            "position": "DT",
+            "status": "Questionable"
+          },
+          {
+            "player": "Spencer Brown",
+            "position": "T",
+            "status": "Questionable"
+          },
+          {
+            "player": "Dee Alford",
+            "position": "CB",
+            "status": "Questionable"
+          },
+          {
+            "player": "Tyrell Shavers",
+            "position": "WR",
+            "status": "Out"
+          },
+          {
+            "player": "Dalton Kincaid",
+            "position": "TE",
+            "status": "Questionable"
+          },
+          {
+            "player": "TJ Parker",
+            "position": "LB",
+            "status": "Questionable"
+          }
+        ]
+      },
+      "qb_out": {},
+      "suppressed_signals": [],
+      "player_props": []
     }
   ],
   "errors": []
